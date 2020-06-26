@@ -18,6 +18,7 @@ from django.urls import path, include
 #change trade_map string to empty string to make it home page
 
 urlpatterns = [
+    #path('', include('trade_map.urls')),
     path('admin/', admin.site.urls),
     path('trade_map/', include('trade_map.urls'))
 ]

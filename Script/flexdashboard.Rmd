@@ -1,0 +1,85 @@
+---
+title: "State-level congressional factsheet"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    vertical_layout: scroll
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r load-packages, include=FALSE}
+library(tidyverse)
+library(stringr)
+```
+
+```{r}
+#Loading data, defining function
+
+COUNTRY_DF <- read.csv(file = '../Data/all_tableau_data.csv')
+COLS <- c("Namelsad", "Mexican.Pop", "Latino.Pop", "Total.Pop" )
+COL_NAMES <-c("District", "Mexican Population", "Latino Population", "Total Population")
+STATE <- "Ohio"  #would like to find a way to specify this from the command line
+
+#Selects one specificed state from larger DF and takes a subset of the columns
+subset_state <- function(country_df, state) {
+    state_df <- country_df %>% dplyr::filter(Name == STATE)
+    state_df = state_df[, COLS]
+    for (col in colnames(state_df)) {
+        idx <- match(col, COLS)
+        state_df[[col]] <- prettyNum(state_df[[col]],big.mark=",")
+        names(state_df)[names(state_df) == col] <- COL_NAMES[[idx]]
+    }
+    state_df$District <- factor(state_df$District, levels = str_sort(state_df$District, numeric=TRUE))
+    state_df = state_df[order(state_df$District),]
+    rownames(state_df) <- 1:nrow(state_df)
+    
+    return(state_df)
+}
+
+state_df <- subset_state(COUNTRY_DF, STATE)
+
+```
+
+Row
+-------------------------------------
+
+
+### 
+```{r}
+'figures'
+```
+### Table 2
+```{r}
+'stats'
+```
+### Table 3
+```{r}
+'etc'
+```
+    
+
+Column {data-width=400, data-length=300}
+-------------------------------------
+    
+### Demographic Statistics Table
+    
+```{r}
+
+knitr::kable(
+  state_df, booktabs = TRUE,
+  caption = sprintf('%s and its districts', STATE)
+)
+
+```
+   
+### Placeholder 
+```{r}
+
+knitr::include_graphics(sprintf("../Data/Mexican Pop_maps/%s.png", STATE))
+```
+
+

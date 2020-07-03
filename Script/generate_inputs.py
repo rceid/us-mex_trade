@@ -12,6 +12,7 @@ import census_scripts
 import requests
 import zipfile
 import io
+pd.options.mode.chained_assignment = None
 
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
 
@@ -111,7 +112,7 @@ def get_districts():
     '''
     r = requests.get(SHAPE_URL)
     z = zipfile.ZipFile(io.BytesIO(r.content))
-    z.extractall()
+    z.extractall('.\\..\\Data\\shapefiles')
     [shapefile] =  [f for f in z.namelist() if f.endswith('.shp')]
  
     return gpd.read_file(shapefile)

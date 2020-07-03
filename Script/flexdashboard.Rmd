@@ -19,13 +19,14 @@ library(stringr)
 ```{r}
 #Loading data, defining function
 
-COUNTRY_DF <- read.csv(file = '../Data/all_tableau_data.csv')
-COLS <- c("Namelsad", "Mexican.Pop", "Latino.Pop", "Total.Pop" )
-COL_NAMES <-c("District", "Mexican Population", "Latino Population", "Total Population")
+COUNTRY_DF <- read.csv(file = '../Data/factsheet_data.csv')
+COLS <- c("Namelsad", "Representative", "Mexican.Pop", "Total.Pop", 'Pctmex', "Exports.to.Mexico..2018..USD.Million.", "Total.Jobs..2018")
+COL_NAMES <-c("District", "Representative", "Mexican Population", "Total Population", 'Percent Mexican', "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018")
 STATE <- "Ohio"  #would like to find a way to specify this from the command line
 
 #Selects one specificed state from larger DF and takes a subset of the columns
 subset_state <- function(country_df, state) {
+    country_df$Pctmex <- round(country_df[['Mexican.Pop']] / country_df[['Total.Pop']] * 100, digits=0)
     state_df <- country_df %>% dplyr::filter(Name == STATE)
     state_df = state_df[, COLS]
     for (col in colnames(state_df)) {
@@ -33,6 +34,7 @@ subset_state <- function(country_df, state) {
         state_df[[col]] <- prettyNum(state_df[[col]],big.mark=",")
         names(state_df)[names(state_df) == col] <- COL_NAMES[[idx]]
     }
+    
     state_df$District <- factor(state_df$District, levels = str_sort(state_df$District, numeric=TRUE))
     state_df = state_df[order(state_df$District),]
     rownames(state_df) <- 1:nrow(state_df)
@@ -78,7 +80,6 @@ knitr::kable(
    
 ### Placeholder 
 ```{r}
-
 knitr::include_graphics(sprintf("../Data/Mexican Pop_maps/%s.png", STATE))
 ```
 

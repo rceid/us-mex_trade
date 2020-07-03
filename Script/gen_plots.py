@@ -38,20 +38,21 @@ def plot_state(df, state, stat, path):
     plt.title(stat + " by Congressional District", fontsize=10)
     plt.axis('off')
     file_name = state + '.png'
-    plt.savefig(path + '\\' + file_name)
+    plt.savefig(path + '/' + file_name)
     plt.close(fig)
     
     return state_df
     
 def plot_district(state_df, district, path):
     '''
+    Creates a plot of the shape of a congressional district
     '''
     fig, ax = plt.subplots(1,1, figsize=(15,7))
     district_plot = state_df.loc[state_df["Namelsad"] == district]
     district_plot.plot(edgecolor='black', cmap='Blues_r')
     plt.axis('off')
     file_name = district_plot['Namelsad'].item()
-    plt.savefig(path + '\\' + file_name)
+    plt.savefig(path + '/' + file_name)
     plt.close(fig)
     
 def all_states():
@@ -60,17 +61,22 @@ def all_states():
     '''
     tab_df = generate_inputs.prepare_df(COLS)
     for idx, stat in enumerate(STATS):
-        path = '.\\..\\Data\\' + stat + '_maps'
+        path = '../Data/' + stat + '_maps'
         if not os.path.exists(path):
             os.mkdir(path)
         for State in tab_df['Name'].unique():
             state_df = plot_state(tab_df, State, stat, path)
             if idx == 0:
                 for dist in state_df['Namelsad'].unique():
-                    p = '.\\..\\Data\\District_shapes'
+                    p = '../Data/District_shapes'
                     if not os.path.exists(p):
                         os.mkdir(p)
                     plot_district(state_df, dist, p)
+                    
+                    
+                    
+if __name__ == '__main__':
+    go()
                 
                 
                 

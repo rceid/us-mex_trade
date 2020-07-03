@@ -23,7 +23,7 @@ def prepare_df(cols):
     all_data = merge_clean()
     all_data = trim_alaska(all_data[cols])
     all_data.drop(['geometry'], axis=1)\
-        .to_csv('.\\..\\Data\\factsheet_data.csv')
+        .to_csv('../Data/factsheet_data.csv')
     return all_data
 
 def merge_clean():
@@ -38,9 +38,9 @@ def merge_clean():
 def clean_dfs():
     '''
     '''
-    exports = pd.read_csv(".\\..\\Data\\Mexico_exports_district.csv")
+    exports = pd.read_csv("../Data/Mexico_exports_district.csv")
     census = census_scripts.get_census_data()
-    states = pd.read_excel('.\\..\Data\\state-geocodes-v2016.xls', header=5)
+    states = pd.read_excel('../Data/state-geocodes-v2016.xls', header=5)
     shape = get_districts()
     shape.rename(columns={"STATEFP": 'State (FIPS)', "NAMELSAD":'Namelsad'}, 
                  inplace=True)
@@ -115,13 +115,13 @@ def get_districts():
     '''
     r = requests.get(SHAPE_URL)
     z = zipfile.ZipFile(io.BytesIO(r.content))
-    shape_folder = '.\\..\\Data\\shapefile'
+    shape_folder = '../Data/shapefile'
     if not os.path.exists(shape_folder):
         os.mkdir(shape_folder)
     z.extractall(path=shape_folder)
     [shapefile] =  [f for f in z.namelist() if f.endswith('.shp')]
 
-    return gpd.read_file(shape_folder + '\\' + shapefile)
+    return gpd.read_file(shape_folder + '/' + shapefile)
     
 def trim_alaska(all_data):
     '''

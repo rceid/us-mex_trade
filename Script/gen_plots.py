@@ -38,7 +38,6 @@ def plot_state(df, state, stat, path):
     plt.axis('off')
     file_name = state + '.png'
     plt.savefig(path + '\\' + file_name)
-    #plt.show()
 
 def all_states():
     '''

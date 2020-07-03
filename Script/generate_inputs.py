@@ -15,6 +15,7 @@ import io
 
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
 
+#cols = ['Name', 'Namelsad', 'geometry', 'Mexican Pop', 'Latino Pop', 'Total Pop', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative']
 
 def prepare_df(cols):
     all_data = merge_clean()
@@ -28,6 +29,8 @@ def merge_clean():
     '''
     state, shape, census, export = clean_dfs()
     main_df = merge_dfs(state, shape, census, export)
+    main_df['Namelsad'] = main_df['Name'] + \
+        main_df['Namelsad'].apply(lambda row: format_district(row, True))
     return main_df 
 
 def clean_dfs():
@@ -65,20 +68,35 @@ def clean_exports(exports_df):
     
     return exports_df
 
-def format_district(row):
+def format_district(row, to_state=False):
     '''
     This function formats congressional district into the format of the 
     district shape files, given the current format provided by the census 
     library
     '''
-    if row == '00':
-        return 'Congressional District (at Large)'
-    elif row == '98':
-        return 'Delegate District (at Large)'
-    elif row[0] == '0':
-        return 'Congressional District ' + row.replace('0', '')
+    if not to_state:
+        if row == '00':
+            return 'Congressional District (at Large)'
+        elif row == '98':
+            return 'Delegate District (at Large)'
+        elif row[0] == '0':
+            return 'Congressional District ' + row.replace('0', '')
+        else:
+            return 'Congressional District ' + row
     else:
-        return 'Congressional District ' + row
+        num = ' ' + row[-2:].strip(' ')
+        if num.endswith('1') and num != ' 11':
+            return num + 'st'
+        if num.endswith('2') and num != ' 12':
+            return num + 'nd'
+        if num.endswith('3') and num != ' 13':
+            return num + 'rd'
+        if 'Congressional District (at Large)' in row:
+            return ' ' + row
+        return row if row == 'Congressional District (at Large)' else\
+            num + 'th'
+        
+        
         
 def merge_dfs(state_df, shape_df, census_df, export_df):
     shape_df = pd.merge(state_df, shape_df,
@@ -118,11 +136,4 @@ def trim_alaska(all_data):
         = alaska_trimmed['geometry'].values
         
     return states_trimmed
-
-        
-        
-        
-        
-        
-        
-        
+    

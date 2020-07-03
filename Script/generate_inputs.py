@@ -20,7 +20,6 @@ SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip
 #cols = ['Name', 'Namelsad', 'geometry', 'Mexican Pop', 'Latino Pop', 'Total Pop', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative']
 
 def prepare_df(cols):
-    print('do i even get here')
     all_data = merge_clean()
     all_data = trim_alaska(all_data[cols])
     all_data.drop(['geometry'], axis=1)\
@@ -42,7 +41,6 @@ def clean_dfs():
     exports = pd.read_csv(".\\..\\Data\\Mexico_exports_district.csv")
     census = census_scripts.get_census_data()
     states = pd.read_excel('.\\..\Data\\state-geocodes-v2016.xls', header=5)
-    print('here get districts')
     shape = get_districts()
     shape.rename(columns={"STATEFP": 'State (FIPS)', "NAMELSAD":'Namelsad'}, 
                  inplace=True)

@@ -9,6 +9,7 @@ Created on Tue Jun 30 14:32:07 2020
 import os
 import matplotlib.pyplot as plt
 import generate_inputs
+plt.rcParams.update({'figure.max_open_warning': 0})
 
 STATS = ["Mexican Pop", "Latino Pop", "Total Pop"]
 COLS = ['Name', 'Namelsad', 'geometry', 'Mexican Pop', 
@@ -38,7 +39,8 @@ def plot_state(df, state, stat, path):
     plt.axis('off')
     file_name = state + '.png'
     plt.savefig(path + '\\' + file_name)
-
+    plt.close(fig)
+    
 def all_states():
     '''
     iteratively creates plots for all states for all stats

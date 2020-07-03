@@ -79,10 +79,12 @@ def format_district(row, to_state=False):
     if not to_state:
         if row == '00':
             return 'Congressional District (at Large)'
-        elif row == '98':
+        if row == '98':
             return 'Delegate District (at Large)'
-        elif row[0] == '0':
+        if row[0] == '0':
             return 'Congressional District ' + row.replace('0', '')
+        if row == 'Delegate District (at Large)':
+            return row
         else:
             return 'Congressional District ' + row
     else:

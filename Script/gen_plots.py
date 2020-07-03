@@ -41,14 +41,39 @@ def plot_state(df, state, stat, path):
     plt.savefig(path + '\\' + file_name)
     plt.close(fig)
     
+    return state_df
+    
+def plot_district(state_df, district, path):
+    '''
+    '''
+    fig, ax = plt.subplots(1,1, figsize=(15,7))
+    district_plot = state_df.loc[state_df["Namelsad"] == district]
+    district_plot.plot(edgecolor='black', cmap='Blues_r')
+    plt.axis('off')
+    file_name = district_plot['Namelsad'].item()
+    plt.savefig(path + '\\' + file_name)
+    plt.close(fig)
+    
 def all_states():
     '''
     iteratively creates plots for all states for all stats
     '''
     tab_df = generate_inputs.prepare_df(COLS)
-    for stat in STATS:
+    for idx, stat in enumerate(STATS):
         path = '.\\..\\Data\\' + stat + '_maps'
         if not os.path.exists(path):
             os.mkdir(path)
         for State in tab_df['Name'].unique():
-            plot_state(tab_df, State, stat, path)
+            state_df = plot_state(tab_df, State, stat, path)
+            if idx == 0:
+                for dist in state_df['Namelsad'].unique():
+                    p = '.\\..\\Data\\District_shapes'
+                    if not os.path.exists(p):
+                        os.mkdir(p)
+                    plot_district(state_df, dist, p)
+                
+                
+                
+                
+                
+                

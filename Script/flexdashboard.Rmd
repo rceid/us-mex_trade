@@ -81,6 +81,8 @@ knitr::kable(
 ### Placeholder 
 ```{r}
 knitr::include_graphics(sprintf("../Data/Mexican Pop_maps/%s.png", STATE))
+knitr::include_graphics(sprintf("../Data/Latino Pop_maps/%s.png", STATE))
+
 ```
 
 

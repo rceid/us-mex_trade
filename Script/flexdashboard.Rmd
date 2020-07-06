@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ```{r load-packages, include=FALSE}
 library(tidyverse)
+library(flexdashboard)
 library(stringr)
 ```
 
@@ -46,21 +47,37 @@ state_df <- subset_state(COUNTRY_DF, STATE)
 
 ```
 
+
+
+
+Row
+-------------------------------------
+
+###
+```{r}
+valueBox('boxTitle', color = 'maroon')
+```
+
+
+
 Row
 -------------------------------------
 
 
-### 
+###
 ```{r}
-'figures'
+#valid colors can be found at https://www.rdocumentation.org/packages/shinydashboard/versions/0.7.1/topics/validColors
+valueBox('box 1', color = 'maroon')
 ```
+
 ### Table 2
 ```{r}
-'stats'
+valueBox('box 2', color = 'maroon')
 ```
+
 ### Table 3
 ```{r}
-'etc'
+valueBox('box 3', color = 'maroon')
 ```
     
 

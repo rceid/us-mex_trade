@@ -13,6 +13,9 @@ import requests
 import zipfile
 import io
 import os 
+import jellyfish
+from us import states as st
+
 pd.options.mode.chained_assignment = None
 
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
@@ -38,7 +41,7 @@ def merge_clean():
 def clean_dfs():
     '''
     '''
-    exports = pd.read_csv("../Data/Mexico_exports_district.csv")
+    exports = pd.read_excel("../Data/Mexico_exports.xls")
     census = census_scripts.get_census_data()
     states = pd.read_excel('../Data/state-geocodes-v2016.xls', header=5)
     shape = get_districts()
@@ -58,17 +61,18 @@ def clean_exports(exports_df):
             inplace=True)
     exports_df['Representative'] = exports_df['Nombre'] + ' ' + \
         exports_df['Apellido']
-    exports_df['Representative'] = \
-        np.where((exports_df['Name'] == 'North Carolina') \
-                 & (exports_df['Namelsad'] == 3), 'Greg Murphy', \
-                     np.where((exports_df['Name'] == 'North Carolina') \
-                              & (exports_df['Namelsad'] == 9), "Dan Bishop", \
+    exports_df['Representative'] = np.where((exports_df['Name'] == 'North Carolina') \
+                  & (exports_df['Namelsad'] == '3'), 'Greg Murphy', \
+                      np.where((exports_df['Name'] == 'North Carolina') \
+                              & (exports_df['Namelsad'] == '9'), "Dan Bishop", \
                                   exports_df['Representative']))
     exports_df['Namelsad'] = exports_df['Namelsad']\
         .apply(lambda x: str(x) if len(str(x)) > 1 else '0' + str(x))
     exports_df['Namelsad'] = exports_df['Namelsad'].apply(format_district)
     
     return exports_df
+
+
 
 def format_district(row, to_state=False):
     '''
@@ -99,8 +103,6 @@ def format_district(row, to_state=False):
             return ' ' + row
         return row if row == 'Congressional District (at Large)' else\
             num + 'th'
-        
-        
         
 def merge_dfs(state_df, shape_df, census_df, export_df):
     shape_df = pd.merge(state_df, shape_df,
@@ -144,3 +146,37 @@ def trim_alaska(all_data):
         
     return states_trimmed
     
+##string cleaning function, partially used then went in by hand:
+    
+def get_party(exports_df):
+    '''
+    ''' 
+    similarity = lambda s1, s2: jellyfish.jaro_winkler(s1, s2)
+    party_df = \
+        pd.read_csv\
+            ("https://theunitedstates.io/congress-legislators/legislators-current.csv")
+    party_df['full_name'] = \
+        np.where(party_df['full_name'].isna(),\
+                 party_df['ballotpedia_id'], party_df['full_name'])  
+    party_df = party_df[party_df['type'] == 'rep']
+    name_change = {'Brian Higgins': 'Chris Jacobs', }
+    for prev, current in name_change.items():
+        party_df.loc[party_df.first_name == prev, \
+                 ['full_name', 'last_name']] = current[0], current[1]
+    party_df['state'] = party_df['state'].apply(lambda row: str(st.lookup(row)))
+    
+    exports_df['Party Affiliation'] = 'No match'
+    for _, party in party_df.iterrows():
+        for _, rep in exports_df.iterrows():
+            name = rep['Representative']
+            if name == 'Rodney Davis' and party['full_name'] == 'Rodney Davis':
+                print(similarity(party['last_name'].split()[-1], \
+                          rep['Apellido'].split()[-1]) )
+            if similarity(party['last_name'].split()[-1], \
+                          rep['Apellido'].split()[-1]) > 0.94\
+                and party['state'] == rep['Name']:
+
+                exports_df.loc[exports_df.Representative == name, \
+                               'Party Affiliation'] = party['party']
+                break    
+    return party_df

@@ -11,8 +11,12 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r load-packages, include=FALSE}
+```{r load-packages, message=FALSE, warning=FALSE, include=FALSE}
 library(tidyverse)
+
+#install.packages("remotes")
+#remotes::install_github("rstudio/fontawesome")
+library(fontawesome)
 library(flexdashboard)
 library(stringr)
 ```
@@ -44,7 +48,10 @@ subset_state <- function(country_df, state) {
 }
 
 state_df <- subset_state(COUNTRY_DF, STATE)
+demog_df <- state_df[, c('District', 'Representative', 'Mexican Population', 'Total Population', 'Percent Mexican')] 
+trade_df <- state_df[, c('District', "Representative",  "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018" )]
 
+shape = '../Data/District_shapes/Ohio 1st.png'
 ```
 
 
@@ -52,32 +59,33 @@ state_df <- subset_state(COUNTRY_DF, STATE)
 
 Row
 -------------------------------------
-
 ###
 ```{r}
-valueBox('boxTitle', color = 'maroon')
+valueBox('boxTitle', color = 'maroon', icon ="fas fa-globe-americas")
+
 ```
 
 
 
 Row
 -------------------------------------
-
-
-###
+### 
 ```{r}
 #valid colors can be found at https://www.rdocumentation.org/packages/shinydashboard/versions/0.7.1/topics/validColors
-valueBox('box 1', color = 'maroon')
+valueBox(107, caption = "Population", icon="fas fa-male")
+
 ```
 
 ### Table 2
 ```{r}
-valueBox('box 2', color = 'maroon')
+#valueBox(42, caption = "jobs", icon="fas fa-briefcase")
+knitr::include_graphics(shape)
 ```
 
 ### Table 3
 ```{r}
-valueBox('box 3', color = 'maroon')
+#valueBox('box 3', color = 'maroon')
+valueBox(247, caption = "trade", icon="fas fa-globe-americas", color='maroon')
 ```
     
 
@@ -89,7 +97,7 @@ Column {data-width=400, data-length=300}
 ```{r}
 
 knitr::kable(
-  state_df, booktabs = TRUE,
+  demog_df, booktabs = TRUE,
   caption = sprintf('%s and its districts', STATE)
 )
 
@@ -99,7 +107,7 @@ knitr::kable(
 ```{r}
 knitr::include_graphics(sprintf("../Data/Mexican Pop_maps/%s.png", STATE))
 knitr::include_graphics(sprintf("../Data/Latino Pop_maps/%s.png", STATE))
-
+knitr::include_graphics(shape)
 ```
 
 

@@ -17,6 +17,12 @@ COLS = ['Name', 'Namelsad', 'geometry', 'Mexican Pop',
             'Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
 
+
+def go():
+    delim = select_delim(command_line=True)
+    all_states(COLS, delim)
+        
+
 def select_delim(command_line=True):
     '''
     '''
@@ -25,10 +31,24 @@ def select_delim(command_line=True):
     else:
         return '\\' 
 
-def go():
-    delim = select_delim(command_line=True)
-    all_states(COLS, delim)
-    
+def all_states(cols, delim):
+    '''
+    iteratively creates plots for all states for all stats
+    '''
+    tab_df = generate_inputs.prepare_df(COLS, delim)
+    for idx, stat in enumerate(STATS):
+        path = '..'+ delim + 'Data' + delim + stat + '_maps'
+        if not os.path.exists(path):
+            os.mkdir(path)
+        for State in tab_df['Name'].unique():
+            state_df = plot_state(tab_df, State, stat, path, delim)
+            if idx == 0:
+                for dist in state_df['Namelsad'].unique():
+                    p = '..' + delim + 'Data'+ delim + 'District_shapes'
+                    if not os.path.exists(p):
+                        os.mkdir(p)
+                    plot_district(state_df, dist, p, delim)
+                    
 def plot_state(df, state, stat, path, delim):
     '''
     creates a plot by state of a given statistic and saves the image into
@@ -64,25 +84,7 @@ def plot_district(state_df, district, path, delim):
     plt.savefig(path + delim + file_name)
     plt.close(fig)
     
-def all_states(cols, delim):
-    '''
-    iteratively creates plots for all states for all stats
-    '''
-    tab_df = generate_inputs.prepare_df(COLS, delim)
-    for idx, stat in enumerate(STATS):
-        path = '..'+ delim + 'Data' + delim + stat + '_maps'
-        if not os.path.exists(path):
-            os.mkdir(path)
-        for State in tab_df['Name'].unique():
-            state_df = plot_state(tab_df, State, stat, path, delim)
-            if idx == 0:
-                for dist in state_df['Namelsad'].unique():
-                    p = '..' + delim + 'Data'+ delim + 'District_shapes'
-                    if not os.path.exists(p):
-                        os.mkdir(p)
-                    plot_district(state_df, dist, p, delim)
-                    
-                    
+
                     
 if __name__ == '__main__':
     go()

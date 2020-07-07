@@ -3,8 +3,10 @@ Created on Thu Jun 25 13:13:11 2020
 
 @author: Ray
 """
-
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 import pandas as pd
+pd.options.mode.chained_assignment = None
 import geopandas as gpd
 from shapely.geometry import Polygon
 import numpy as np
@@ -16,17 +18,19 @@ import os
 #import jellyfish
 #from us import states as st
 
-pd.options.mode.chained_assignment = None
-
-
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
 #cols = ['Name', 'Namelsad', 'geometry', 'Mexican Pop', 'Latino Pop', 'Total Pop', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
 def prepare_df(cols, delim):
+    
     all_data = merge_clean(delim)
-    all_data.drop(['geometry'], axis=1)\
-        .to_csv('..' + delim + 'Data' + delim + 'factsheet_data.csv')
-        
+    all_data = trim_alaska(all_data)
+    data_file = all_data.drop(['geometry', 'Region', 'Division', 'State (FIPS)',\
+                               'CD116FP', 'GEOID', 'LSAD', 'CDSESSN', 'MTFCC',\
+                                   'FUNCSTAT', 'ALAND', 'AWATER', 'INTPTLAT',\
+                                       'INTPTLON'], axis=1)
+    data_file.to_csv('..' + delim + 'Data' + delim + 'factsheet_data.csv')
+    
     return all_data
 
 def merge_clean(delim):
@@ -42,9 +46,11 @@ def merge_clean(delim):
 def clean_dfs(delim):
     '''
     '''
-    exports = pd.read_excel('..' + delim + 'Data' + delim + 'Mexico_exports.csv')
+    exports = pd.read_excel('..' + delim + 'Data' + delim + \
+                            'Mexico_exports.csv')
     census = census_scripts.get_census_data()
-    states = pd.read_excel('..' + delim + 'Data' + delim + 'state-geocodes-v2016.xls', header=5)
+    states = pd.read_excel('..' + delim + 'Data' + delim + \
+                           'state-geocodes-v2016.xls', header=5)
     shape = get_districts(delim)
     shape.rename(columns={"STATEFP": 'State (FIPS)', "NAMELSAD":'Namelsad'}, 
                  inplace=True)
@@ -62,7 +68,7 @@ def clean_exports(exports_df):
             inplace=True)
     exports_df['Representative'] = exports_df['Nombre'] + ' ' + \
         exports_df['Apellido']
-    exports_df['Representative'] = np.where((exports_df['Name'] == 'North Carolina') \
+    exports_df['Representative'] = np.where((exports_df['Name'] == 'North Carolina')
                   & (exports_df['Namelsad'] == '3'), 'Greg Murphy', \
                       np.where((exports_df['Name'] == 'North Carolina') \
                               & (exports_df['Namelsad'] == '9'), "Dan Bishop", \
@@ -90,8 +96,6 @@ def format_district(row, to_state=False):
             return 'Delegate District (at Large)'
         if row[0] == '0':
             return 'Congressional District ' + row.replace('0', '')
-        if row == 'Delegate District (at Large)':
-            return row
         else:
             return 'Congressional District ' + row
     else:
@@ -102,10 +106,11 @@ def format_district(row, to_state=False):
             return num + 'nd'
         if num.endswith('3') and num != ' 13':
             return num + 'rd'
-        if 'Congressional District (at Large)' in row:
+        if 'Congressional District (at Large)' in row or \
+            row == 'Delegate District (at Large)':
             return ' ' + row
-        return row if row == 'Congressional District (at Large)' else\
-            num + 'th'
+        else:
+            return num + 'th'
         
 def merge_dfs(state_df, shape_df, census_df, export_df):
     shape_df = pd.merge(state_df, shape_df,
@@ -132,7 +137,6 @@ def trim_alaska(all_data):
     '''
     removes the Aleutian Islands as it distorts Alaska state plot
     '''
-        
     alaska_gdf = all_data.loc[all_data['Name'] == 'Alaska']
     alaska_mp = alaska_gdf['geometry'].values[0]
     ak_exp_gdf = gpd.GeoDataFrame(alaska_mp)
@@ -173,8 +177,6 @@ def trim_alaska(all_data):
 #         for _, rep in exports_df.iterrows():
 #             name = rep['Representative']
 #             if name == 'Rodney Davis' and party['full_name'] == 'Rodney Davis':
-#                 print(similarity(party['last_name'].split()[-1], \
-#                           rep['Apellido'].split()[-1]) )
 #             if similarity(party['last_name'].split()[-1], \
 #                           rep['Apellido'].split()[-1]) > 0.94\
 #                 and party['state'] == rep['Name']:

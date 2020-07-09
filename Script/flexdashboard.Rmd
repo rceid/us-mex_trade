@@ -6,6 +6,18 @@ output:
     vertical_layout: scroll
 ---
 
+<style>
+
+body {
+  padding-top:0px
+}
+
+.navbar{
+  visibility: hidden
+}
+
+</style>
+
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
@@ -19,19 +31,20 @@ library(tidyverse)
 library(fontawesome)
 library(flexdashboard)
 library(stringr)
+library(DT)
 ```
 
 ```{r}
 #Loading data, defining function
 
 COUNTRY_DF <- read.csv(file = '../Data/factsheet_data.csv')
-COLS <- c("Namelsad", "Representative", "Mexican.Pop", "Total.Pop", 'Pctmex', "Exports.to.Mexico..2018..USD.Million.", "Total.Jobs..2018")
-COL_NAMES <-c("District", "Representative", "Mexican Population", "Total Population", 'Percent Mexican', "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018")
+COLS <- c("Namelsad", "Representative", "Party.Affiliation",  "Mexican.Pop", "Total.Pop", "Exports.to.Mexico..2018..USD.Million.", "Total.Jobs..2018")
+COL_NAMES <-c("District", "Representative", "Party Affiliation", "Mexican Population", "Total Population", "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018")
 STATE <- "Ohio"  #would like to find a way to specify this from the command line
 
 #Selects one specificed state from larger DF and takes a subset of the columns
 subset_state <- function(country_df, state) {
-    country_df$Pctmex <- round(country_df[['Mexican.Pop']] / country_df[['Total.Pop']] * 100, digits=0)
+    #country_df$Pctmex <- round(country_df[['Mexican.Pop']] / country_df[['Total.Pop']] * 100, digits=0)
     state_df <- country_df %>% dplyr::filter(Name == STATE)
     state_df = state_df[, COLS]
     for (col in colnames(state_df)) {
@@ -47,67 +60,92 @@ subset_state <- function(country_df, state) {
     return(state_df)
 }
 
+district_info <- function(state_df, dist, col) {
+  c(state_df %>% dplyr::filter(District == dist) %>% select(col))[[1]]
+}
+
 state_df <- subset_state(COUNTRY_DF, STATE)
-demog_df <- state_df[, c('District', 'Representative', 'Mexican Population', 'Total Population', 'Percent Mexican')] 
-trade_df <- state_df[, c('District', "Representative",  "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018" )]
 
-shape = '../Data/District_shapes/Ohio 1st.png'
+#will replace this with iterative generation
+DIST <- 'Ohio 2nd'
+
+party <- paste("(", substr(district_info(state_df, DIST, "Party Affiliation"), 1, 1), ")", sep = "")
+rep <- district_info(state_df, DIST, "Representative")
+rep <- paste(rep, party, sep= " ")
+
+mex_pop <- district_info(state_df, DIST, "Mexican Population")
+shape = (sprintf('../Data/District_shapes/%s.png', DIST))
+
+
+demog_table <- state_df[, c('District', 'Representative', 'Party Affiliation', 'Mexican Population', 'Total Population')] 
+trade_table <- state_df[, c('District', "Representative", 'Party Affiliation',  "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018" )]
+
+test <- fontawesome::fa('../../../../Downloads/republican-solid.svg')
+
+
 ```
-
-
 
 
 Row
 -------------------------------------
 ###
+
 ```{r}
-valueBox('boxTitle', color = 'maroon', icon ="fas fa-globe-americas")
+valueBox(sprintf('%s Demographic Info', DIST), color = 'maroon') 
 
 ```
-
-
 
 Row
 -------------------------------------
 ### 
 ```{r}
 #valid colors can be found at https://www.rdocumentation.org/packages/shinydashboard/versions/0.7.1/topics/validColors
-valueBox(107, caption = "Population", icon="fas fa-male")
+valueBox(mex_pop, caption = "Mexican Population", icon="fa-male", color='maroon')
 
 ```
 
-### Table 2
+###
 ```{r}
+valueBox(rep, caption = "Representative", icon='fa-republican', color='maroon')
 #valueBox(42, caption = "jobs", icon="fas fa-briefcase")
-knitr::include_graphics(shape)
 ```
 
-### Table 3
+### 
 ```{r}
 #valueBox('box 3', color = 'maroon')
-valueBox(247, caption = "trade", icon="fas fa-globe-americas", color='maroon')
+valueBox(247, caption = "trade", color='maroon')
+#knitr::include_graphics(shape)
 ```
     
 
 Column {data-width=400, data-length=300}
 -------------------------------------
-    
-### Demographic Statistics Table
+  
+### Demographic Stats
     
 ```{r}
-
-knitr::kable(
-  demog_df, booktabs = TRUE,
-  caption = sprintf('%s and its districts', STATE)
+datatable(
+  demog_table, options = list(dom = 't',
+                              columnDefs = list(list(className = 'dt-center', targets = "_all")),
+                              initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'background-color': '#8B0000', 'color': '#fff'});",
+    "}")
 )
+  )  %>%
+  formatStyle(
+  'District',
+  target = 'row', 
+  backgroundColor = styleEqual(
+    c(DIST, 1), c('lightgray', 'white'))
+                 )
 
 ```
    
-### Placeholder 
+### Demographic Map 
 ```{r}
 knitr::include_graphics(sprintf("../Data/Mexican Pop_maps/%s.png", STATE))
-knitr::include_graphics(sprintf("../Data/Latino Pop_maps/%s.png", STATE))
-knitr::include_graphics(shape)
+
 ```
 
 

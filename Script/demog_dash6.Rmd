@@ -31,14 +31,6 @@ body {
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r load-packages, message=FALSE, warning=FALSE, include=FALSE}
-
-#install.packages("remotes")
-#remotes::install_github("rstudio/fontawesome")
-library(fontawesome)
-library(flexdashboard)
-library(DT)
-```
 
 ```{r}
 
@@ -90,9 +82,10 @@ Column
 ```{r}
 rows <- nrow(params$demography_table)
 table_size <- paste(toString(39 * rows), 'px', sep='')
+
 if (rows == 1) {datatable(
   params$demography_table, options = list(dom = 't',
-                              scrollY = table_size,
+                              scrollY = '350px',
                               columnDefs = list(list(className = 'dt-center', targets = "_all")),
                               initComplete = JS(
     "function(settings, json) {",

@@ -31,8 +31,8 @@ district_info <- function(state_df, district) {
 
 
 
-state = 'Connecticut'
-district = 'Connecticut 5th'
+state = 'Vermont'
+district = 'Vermont Congressional District (at Large)'
 state_df <- state_df <- subset_state(df, state)
 demog_table <- state_df[, c('District', 'Representative', 'Party Affiliation', 'Mexican Population', 'Total Population')] 
 district_stats <- district_info(state_df, district)

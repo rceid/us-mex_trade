@@ -1,12 +1,18 @@
 # from command line, run:$ Rscript gen_reports.R
 # 
 
-install.packages("dplyr")
-install.packages("stringr")
+#install.packages("dplyr")
+#install.packages("stringr")
+#install.packages("flexdashboard")
+#install.packages("remotes")
+#remotes::install_github("rstudio/fontawesome")
+install.packages("DT")
+library(fontawesome)
 library(dplyr)
 library(stringr)
-library(png)
-library(grid)
+library(flexdashboard)
+library(DT)
+
 
 COUNTRY_DF <- read.csv(file = '../Data/factsheet_data.csv')
 COLS <- c("Name", "Namelsad", "Representative", "Party.Affiliation",  "Mexican.Pop", "Total.Pop", "Exports.to.Mexico..2018..USD.Million.", "Total.Jobs..2018")
@@ -45,8 +51,9 @@ go <- function(){
   states <- dplyr::distinct(df, State)
   demog_folder = '../Data/demographic_factsheets'
   trade_folder = '../Data/demographic_factsheets'
-  if(!dir.exists(data_folder)) {
-    dir.create(data_folder)
+  if(!dir.exists(demog_folder) && !dir.exists(trade_folder) ) {
+    dir.create(demog_folder)
+    dir.create(trade_folder)
   }
   for (i in 1:nrow(states)) {
     state <- states[i,]
@@ -54,17 +61,16 @@ go <- function(){
     demog_table <- state_df[, c('District', 'Representative', 'Party Affiliation', 'Mexican Population', 'Total Population')] 
     trade_table <- state_df[, c('District', "Representative", 'Party Affiliation',  "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018" )]
     districts <- state_df$District
-    print(table_size)
     for (n in 1:length(districts)) {
       district <- toString(districts[[n]])
       district_stats <- district_info(state_df, district)
       if (nrow(demog_table) <= 6) {
-        rmarkdown::render('demog_dash6.Rmd', output_file = district, output_dir = data_folder, 
+        rmarkdown::render('demog_dash6.Rmd', output_file = district, output_dir = demog_folder, 
                           params = list(demography_table = demog_table, district_df=district_stats))
         #rmarkdown::render('trade')
       }
       else {
-        rmarkdown::render('demog_dash.Rmd', output_file = district, output_dir = data_folder, 
+        rmarkdown::render('demog_dash.Rmd', output_file = district, output_dir = demog_folder, 
                           params = list(demography_table = demog_table, district_df=district_stats))
         #rmarkdown::render('trade')
       }

@@ -31,14 +31,6 @@ body {
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r load-packages, message=FALSE, warning=FALSE, include=FALSE}
-
-#install.packages("remotes")
-#remotes::install_github("rstudio/fontawesome")
-library(fontawesome)
-library(flexdashboard)
-library(DT)
-```
 
 ```{r}
 

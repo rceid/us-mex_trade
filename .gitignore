@@ -1,8 +1,9 @@
 # do not track these files
 Data/shapefile
-Data/Mexican Population_maps
-Data/Latino Population_maps
-Data/Total Population_maps
+Data/Maps Mexican Population
+Data/Maps Total Population
+Data/Maps Exports to Mexico, 2018 (USD Million)
+Data/Maps Total Jobs, 2018
 Data/factsheets_trade
 Data/factsheets_pdfs
 Data/District_shapes

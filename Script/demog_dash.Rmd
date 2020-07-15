@@ -75,12 +75,12 @@ Row
 
 ###
 ```{r}
-knitr::include_graphics(sprintf("../Data/Mexican Population_maps/%s.png", params$district_df$State))
+knitr::include_graphics(sprintf("../Data/Maps Mexican Population/%s.png", params$district_df$State))
 ```
 
 ###
 ```{r}
-knitr::include_graphics(sprintf("../Data/Total Population_maps/%s.png", params$district_df$State))
+knitr::include_graphics(sprintf("../Data/Maps Total Population/%s.png", params$district_df$State))
 ```
 
 

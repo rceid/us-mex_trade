@@ -11,19 +11,21 @@ import matplotlib.pyplot as plt
 import generate_inputs
 plt.rcParams.update({'figure.max_open_warning': 0})
 
-STATS = ["Mexican Population", "Latino Population", "Total Population"]
+STATS = ["Mexican Population", "Total Population",\
+         'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018']
+
 COLS = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 
             'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)',
             'Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
 
 
-def go():
-    delim = select_delim(command_line=True)
+def go(command_line=True):
+    delim = select_delim(command_line)
     all_states(COLS, delim)
         
 
-def select_delim(command_line=True):
+def select_delim(command_line):
     '''
     '''
     if command_line:
@@ -37,11 +39,13 @@ def all_states(cols, delim):
     '''
     tab_df = generate_inputs.prepare_df(COLS, delim)
     for idx, stat in enumerate(STATS):
-        path = '..'+ delim + 'Data' + delim + stat + '_maps'
+        print("Generating maps for the following stat: {}".format(stat))
+        path = '..'+ delim + 'Data' + delim + 'Maps ' + stat
         if not os.path.exists(path):
             os.mkdir(path)
         for State in tab_df['Name'].unique():
-            state_df = plot_state(tab_df, State, stat, path, delim)
+            plot_state(tab_df, State, stat, path, delim)
+            
             # if idx == 0:
             #     for dist in state_df['District'].unique():
             #         p = '..' + delim + 'Data'+ delim + 'District_shapes'
@@ -58,7 +62,10 @@ def plot_state(df, state, stat, path, delim):
     
     fig, ax = plt.subplots(1,1, figsize=(15,7))
     state_df = df[df['Name'] == state]
-    state_df[stat] = state_df[stat]
+    if len(state_df[state_df[stat].isna()]) >= 1:
+        print("{} has a NA value in the '{}' column;".format(state, stat),\
+              "no plot will be generated")
+        return
     if len(state_df) > 1:
         state_df.plot(column=stat, linewidth=0.05, edgecolor='black', cmap='Greens', 
                   legend=True, legend_kwds={'orientation': 'horizontal',
@@ -77,7 +84,6 @@ def plot_state(df, state, stat, path, delim):
     plt.savefig(path + delim + file_name)
     plt.close(fig)
     
-    return state_df
     
 def plot_district(state_df, district, path, delim):
     '''
@@ -91,10 +97,9 @@ def plot_district(state_df, district, path, delim):
     plt.savefig(path + delim + file_name)
     plt.close(fig)
     
-
                     
-if __name__ == '__main__':
-    go()
+#if __name__ == '__main__':
+    #go()
                 
                 
                 

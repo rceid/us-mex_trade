@@ -11,9 +11,9 @@ import matplotlib.pyplot as plt
 import generate_inputs
 plt.rcParams.update({'figure.max_open_warning': 0})
 
-STATS = ["Mexican Pop", "Latino Pop", "Total Pop"]
-COLS = ['Name', 'Namelsad', 'geometry', 'Mexican Pop', 
-            'Latino Pop', 'Total Pop', 'Exports to Mexico, 2018 (USD Million)',
+STATS = ["Mexican Population", "Latino Population", "Total Population"]
+COLS = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 
+            'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)',
             'Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
 
@@ -42,12 +42,12 @@ def all_states(cols, delim):
             os.mkdir(path)
         for State in tab_df['Name'].unique():
             state_df = plot_state(tab_df, State, stat, path, delim)
-            if idx == 0:
-                for dist in state_df['Namelsad'].unique():
-                    p = '..' + delim + 'Data'+ delim + 'District_shapes'
-                    if not os.path.exists(p):
-                        os.mkdir(p)
-                    plot_district(state_df, dist, p, delim)
+            # if idx == 0:
+            #     for dist in state_df['District'].unique():
+            #         p = '..' + delim + 'Data'+ delim + 'District_shapes'
+            #         if not os.path.exists(p):
+            #             os.mkdir(p)
+            #         plot_district(state_df, dist, p, delim)
                     
 def plot_state(df, state, stat, path, delim):
     '''
@@ -58,13 +58,20 @@ def plot_state(df, state, stat, path, delim):
     
     fig, ax = plt.subplots(1,1, figsize=(15,7))
     state_df = df[df['Name'] == state]
-    state_df[stat] = state_df[stat] / 1000
-    state_df.plot(column=stat, linewidth=0.05, edgecolor='black', cmap='Blues', 
+    state_df[stat] = state_df[stat]
+    if len(state_df) > 1:
+        state_df.plot(column=stat, linewidth=0.05, edgecolor='black', cmap='Greens', 
+                  legend=True, legend_kwds={'orientation': 'horizontal',
+                                            'fraction':.1, 'pad':0, 
+                                            'shrink':.4})
+    else:
+        state_df.plot(column=stat, linewidth=0.2, edgecolor='black', cmap='Greens', 
                   legend=True, legend_kwds={'orientation': 'horizontal',
                                             'fraction':.1, 'pad':0, 
                                             'shrink':.4})
     
-    plt.title(stat + " by Congressional District", fontsize=10)
+    plt.figtext(.5, .95, state, fontsize=16, ha='center')
+    plt.figtext(.5, .90, stat, fontsize=10, ha='center')
     plt.axis('off')
     file_name = state + '.png'
     plt.savefig(path + delim + file_name)
@@ -77,10 +84,10 @@ def plot_district(state_df, district, path, delim):
     Creates a plot of the shape of a congressional district
     '''
     fig, ax = plt.subplots(1,1, figsize=(15,7))
-    district_plot = state_df.loc[state_df["Namelsad"] == district]
+    district_plot = state_df.loc[state_df["District"] == district]
     district_plot.plot(edgecolor='black', cmap='Blues_r')
     plt.axis('off')
-    file_name = district_plot['Namelsad'].item()
+    file_name = district_plot['District'].item()
     plt.savefig(path + delim + file_name)
     plt.close(fig)
     

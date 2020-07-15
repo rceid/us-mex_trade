@@ -19,7 +19,7 @@ import os
 #from us import states as st
 
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
-#cols = ['Name', 'Namelsad', 'geometry', 'Mexican Pop', 'Latino Pop', 'Total Pop', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
+#cols = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
 def prepare_df(cols, delim):
     
@@ -38,7 +38,7 @@ def merge_clean(delim):
     '''
     state, shape, census, export = clean_dfs(delim)
     main_df = merge_dfs(state, shape, census, export)
-    main_df['Namelsad'] = main_df['Name'] + \
+    main_df['District'] = main_df['Name'] + \
         main_df['Namelsad'].apply(lambda row: format_district(row, True))
 
     return main_df
@@ -56,11 +56,11 @@ def clean_dfs(delim):
                  inplace=True)
     shape = shape[shape['Namelsad'] != 'Congressional Districts not defined']
     shape['State (FIPS)'] = shape['State (FIPS)'].astype(int)
-    exports = clean_exports(exports)
+    exports = clean_exports(exports, delim)
 
     return states, shape, census, exports
 
-def clean_exports(exports_df):
+def clean_exports(exports_df, delim):
     exports_df.rename(columns={
         'Exportaciones (millones de dolares)': 
             'Exports to Mexico, 2018 (USD Million)', 'Estado':"Name", 
@@ -80,6 +80,9 @@ def clean_exports(exports_df):
     #function was imperfect so I added non matches by hand. Results are
     #stored directly in the Mexico_exports.csv file and were loaded directly
     #exports_df = get_party(exports_df)
+    
+    exports_df['Rep and Party'] = exports_df['Representative'] +\
+         ' (' + exports_df['Party Affiliation'].apply(lambda P: str(P)[0]) + ')'
     
     return exports_df
 

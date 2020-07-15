@@ -7,6 +7,9 @@ output:
 params:
   demography_table: NULL
   district_df: NULL
+#classoption: 
+  #landscape
+  #a3paper
 ---
 
 <style>
@@ -28,12 +31,11 @@ body {
 </style>
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE)#, fig.align="center")
 ```
 
 
 ```{r}
-
 party <- paste("(", substr(params$district_df$"Party Affiliation", 1, 1), ")", sep = "")
 rep <- params$district_df$"Representative"
 rep <- paste(rep, party, sep= " ")
@@ -45,7 +47,7 @@ Row
 ###
 
 ```{r}
-valueBox(sprintf('%s Demographic Info', params$district_df$District), color = 'maroon') 
+valueBox(sprintf('Demographic Info: %s', params$district_df$District), color = 'maroon') 
 ```
 
 Row
@@ -53,7 +55,7 @@ Row
 ### 
 ```{r}
 #valid colors can be found at https://www.rdocumentation.org/packages/shinydashboard/versions/0.7.1/topics/validColors
-valueBox(params$district_df$'Mexican Population', caption = "Mexican Population", icon="fa-male", color='maroon')
+valueBox(params$district_df$'Mexican Population', caption = "Mexican-American Population", icon="fa-male", color='maroon')
 
 ```
 
@@ -64,27 +66,44 @@ valueBox(rep, caption = "Representative", color='maroon')#, icon='fa-republican'
 
 ### 
 ```{r}
-valueBox("Additional info", caption = "demographic info", color='maroon')
+valueBox(paste(params$district_df$'Percent Mexican', '%'), caption = "Share of Population, Mexican-American", color='maroon')
 ```
     
 
-Row {data-width=20, data-length=1000}
+Row
 -------------------------------------
-  
-### Demographic Map 
-```{r, out.width=100}
-knitr::include_graphics(sprintf("../Data/Mexican Pop_maps/%s.png", params$district_df$State))
+
+###
+```{r}
+knitr::include_graphics(sprintf("../Data/Mexican Population_maps/%s.png", params$district_df$State))
 ```
 
-Row {data-width=20, data-length=2000}
+###
+```{r}
+knitr::include_graphics(sprintf("../Data/Total Population_maps/%s.png", params$district_df$State))
+```
+
+
+Row
 -------------------------------------
   
 ### Demographic Stats
     
 ```{r}
-rows <- nrow(params$demography_table )
+rows <- nrow(params$demography_table)
 table_size <- paste(toString(39 * rows), 'px', sep='')
-datatable(
+
+if (rows == 1) {datatable(
+  params$demography_table, options = list(dom = 't',
+                              scrollY = table_size,
+                              columnDefs = list(list(className = 'dt-center', targets = "_all")),
+                              initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'background-color': '#8B0000', 'color': '#fff'});",
+    "}")
+)
+  )
+} else {datatable(
   params$demography_table, options = list(dom = 't',
                               scrollY = table_size,
                               pageLength = 53,
@@ -102,6 +121,7 @@ datatable(
   backgroundColor = styleEqual(
     c(toString(params$district_df$District)), c('lightgray'))
   )
+}
 
 ```
 

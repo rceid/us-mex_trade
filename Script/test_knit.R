@@ -14,6 +14,9 @@ clean_df <- function(df) {
   return(df)
 }
 
+
+#setwd(paste(getwd(), '/wsl/git/us-mex_trade',sep=''))
+
 subset_state <- function(country_df, state) {
   #country_df$Pctmex <- round(country_df[['Mexican.Pop']] / country_df[['Total.Pop']] * 100, digits=0)
   state_df <- country_df %>% dplyr::filter(State == state)
@@ -28,23 +31,13 @@ subset_state <- function(country_df, state) {
 district_info <- function(state_df, district) {
   return (state_df %>% dplyr::filter(District == district))
 }
+library(dplyr)
 
-
-
-state = 'Vermont'
-district = 'Vermont Congressional District (at Large)'
-state_df <- state_df <- subset_state(df, state)
+data_folder  = '../Data/factsheets_demography'
+state = 'Connecticut'
+district = 'Connecticut 5th'
+state_df <- subset_state(df, state)
 demog_table <- state_df[, c('District', 'Representative', 'Party Affiliation', 'Mexican Population', 'Total Population')] 
 district_stats <- district_info(state_df, district)
-print(nrow(demog_table))
-if (nrow(demog_table) <= 6) {
-  print('here11111111111')
-  rmarkdown::render('demog_dash6.Rmd', output_file = district, output_dir = data_folder, 
+rmarkdown::render('demog_dash.Rmd', output_file = district, output_dir = data_folder, 
                     params = list(demography_table = demog_table, district_df=district_stats))
-}
-if (nrow(demog_table > 6)) {
-  print(nrow(demog_table))
-  print('here')
-  rmarkdown::render('demog_dash.Rmd', output_file = district, output_dir = data_folder, 
-                    params = list(demography_table = demog_table, district_df=district_stats))
-}

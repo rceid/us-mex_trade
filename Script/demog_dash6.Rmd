@@ -95,7 +95,7 @@ if (rows == 1) {datatable(
   )
 } else {datatable(
   params$demography_table, options = list(dom = 't',
-                              scrollY = '350px',
+                              scrollY = table_size,
                               columnDefs = list(list(className = 'dt-center', targets = "_all")),
                               initComplete = JS(
     "function(settings, json) {",
@@ -116,6 +116,6 @@ if (rows == 1) {datatable(
   
 ### Demographic Map 
 ```{r, out.width=400}
-knitr::include_graphics(sprintf("../Data/Mexican Pop_maps/%s.png", params$district_df$State))
+knitr::include_graphics(sprintf("../Data/Mexican Population_maps/%s.png", params$district_df$State))
 ```
 

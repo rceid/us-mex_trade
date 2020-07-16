@@ -1,8 +1,7 @@
 # us-mex_trade
 This repository contains the code to generate factsheets for 436 congressional districts.
 
-#### To generate the PDF factsheets, from the root directory run the following:  $ sh Script/run_scripts.sh <username> <key>
-####  where <username> and <key> are your username and API key from pdfcrowd, the application which converts html documents to pdf. In run_scripts.sh, the following scripts are #### run in sequence:
+#### To generate the PDF factsheets, from the root directory run the following:  $ sh Script/run_scripts.sh <username> <key> where <username> and <key> are your username and API key from pdfcrowd, the application which converts html documents to pdf. In run_scripts.sh, the following scripts are run in sequence:
   
 * gen_plots.py: Creates choropleth maps for all demographic and trade statistics, specified at the top of the file, for all 436 districts, and saves the files as png image files. Also saves the dataframe containing the relevant statistics by district to the Data folder
 * gen_reports.R: Retreieves the dataframe from the Datafodler and uses the information, along with the png files created in the previous python script to knit factsheets for every relevant statistic for every district, saved as html files in the Data folder.

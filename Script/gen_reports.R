@@ -1,13 +1,8 @@
 # from command line, run:$ Rscript gen_reports.R
 # 
 
-#install.packages("dplyr")
-#install.packages("stringr")
-#install.packages("flexdashboard")
-#install.packages("remotes")
 #remotes::install_github("rstudio/fontawesome")
 #install.packages("DT")
-#
 
 
 list.of.packages <- c("fontawesome", "dplyr", "stringr", "flexdashboard", "DT")
@@ -27,6 +22,9 @@ COL_NAMES <-c("State", 'District', "Representative", "Party Affiliation", "Mexic
 
 
 clean_df <- function(df) {
+  '
+  Renames the columns from the dataframe
+  '
   df = df[, COLS]
   #for-loop takes subset of columns and cleans their names
   for (col in colnames(df)) {
@@ -38,6 +36,9 @@ clean_df <- function(df) {
 }
 
 subset_state <- function(country_df, state) {
+  '
+  Creates a dataframe subset for a given US state given the dataframe containing all 50 states and Washington, D.C.
+  '
   country_df$'Percent Mexican' <- round(country_df[['Mexican Population']] / country_df[['Total Population']] * 100, digits=1)
   state_df <- country_df %>% dplyr::filter(State == state)
   #code below orders districts in ascending order
@@ -57,6 +58,16 @@ district_info <- function(state_df, district) {
 
 
 go <- function(){
+  '
+  In sequence, this function does the following:
+  1. Loads the dataset containing all data on all states and their districts
+  2. creates folders for the html files that will be knitted
+  3. Iteratively subsets each state from the larger dataframe, creates a table on that state s trade and demographic information
+  4. Iterates through each district contained in the state dataframe and knits a flexdashboard file for both trade and 
+  demographic stats using inputs generated in the loops
+  5. Saves the Files as html in their respective folders
+  *This function is called in the line of code below it, allowing it to be called from the command line
+  '
   df <- clean_df(COUNTRY_DF)
   states <- dplyr::distinct(df, State)
   demog_folder = '../Data/factsheets_demography'
@@ -69,15 +80,16 @@ go <- function(){
     state <- states[i,]
     state_df <- subset_state(df, state)
     demog_table <- state_df[, c('District', 'Representative', 'Party Affiliation', 'Mexican Population', 'Total Population')] 
-    trade_table <- state_df[, c('District', "Representative", 'Party Affiliation',  "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018" )]
+    t_table <- state_df[, c('District', "Representative", 'Party Affiliation',  "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018" )]
     districts <- state_df$District
     for (n in 1:length(districts)) {
       district <- toString(districts[[n]])
-      out_file <-  paste(state, state_df[which(state_df$District == district),][['File Names']], "Demography")
+      out_file <-  paste(state, state_df[which(state_df$District == district),][['File Names']])
       district_stats <- district_info(state_df, district)
       rmarkdown::render('demog_dash.Rmd', output_file = out_file, output_dir = demog_folder, 
                         params = list(demography_table = demog_table, district_df=district_stats))
-        #rmarkdown::render('trade')
+      rmarkdown::render('trade_dash.Rmd', output_file = out_file, output_dir = trade_folder, 
+                        params = list(trade_table = t_table, district_df=district_stats))
       }
     }
   }

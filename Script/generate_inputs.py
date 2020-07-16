@@ -22,7 +22,9 @@ SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip
 #cols = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
 def prepare_df(cols, delim):
-    
+    '''
+    Cleans and merges all dataframes before writing them to a csv file
+    '''
     all_data = merge_clean(delim)
     all_data = trim_alaska(all_data)
     data_file = all_data.drop(['geometry', 'Region', 'Division', 'State (FIPS)',\
@@ -35,6 +37,7 @@ def prepare_df(cols, delim):
 
 def merge_clean(delim):
     '''
+    Handles the data cleaning and merging process of imported dataframes
     '''
     state, shape, census, export = clean_dfs(delim)
     main_df = merge_dfs(state, shape, census, export)
@@ -45,6 +48,7 @@ def merge_clean(delim):
 
 def clean_dfs(delim):
     '''
+    Cleans data so the different data sets can be merged
     '''
     exports = pd.read_excel('..' + delim + 'Data' + delim + \
                             'Mexico_exports.csv')
@@ -61,6 +65,10 @@ def clean_dfs(delim):
     return states, shape, census, exports
 
 def clean_exports(exports_df, delim):
+    '''
+    Cleans congressional district names to the desired format and assigns 
+    parties to representatives.
+    '''
     exports_df.rename(columns={
         'Exportaciones (millones de dolares)': 
             'Exports to Mexico, 2018 (USD Million)', 'Estado':"Name", 
@@ -116,6 +124,9 @@ def format_district(row, to_state=False):
             return num + 'th'
         
 def merge_dfs(state_df, shape_df, census_df, export_df):
+    '''
+    Merges all dataframes, which are now clean
+    '''
     shape_df = pd.merge(state_df, shape_df,
         on='State (FIPS)', how='inner')
     all_data = pd.merge(shape_df, census_df, on=['Name', 'Namelsad'], how='inner')
@@ -125,6 +136,9 @@ def merge_dfs(state_df, shape_df, census_df, export_df):
     
 def get_districts(delim):
     '''
+    Imports the shape file containing the geometry of every US congressional 
+    district and creates a GeoPandas dataframe. The shape file is called from 
+    ts URL and is not saved locally due to the file size
     '''
     r = requests.get(SHAPE_URL)
     z = zipfile.ZipFile(io.BytesIO(r.content))
@@ -138,7 +152,9 @@ def get_districts(delim):
     
 def trim_alaska(all_data):
     '''
-    removes the Aleutian Islands as it distorts Alaska state plot
+    removes the Aleutian Islands as it distorts Alaska state plot.
+    Code obtained from the following article:
+    https://towardsdatascience.com/how-to-split-shapefiles-e8a8ac494189?gi=a2a29fdbde28
     '''
     alaska_gdf = all_data.loc[all_data['Name'] == 'Alaska']
     alaska_mp = alaska_gdf['geometry'].values[0]
@@ -159,7 +175,8 @@ def trim_alaska(all_data):
 
 # def get_party(exports_df):
 #    '''
-#    string cleaning function, partially used then went in by hand:
+#    string cleaning and record linkage function, partially used then went in
+#    by hand and fixed unmatches
 #    '''
 #     similarity = lambda s1, s2: jellyfish.jaro_winkler(s1, s2)
 #     party_df = \

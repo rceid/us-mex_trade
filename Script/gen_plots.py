@@ -21,12 +21,19 @@ COLS = ['Name', 'Namelsad', 'geometry', 'Mexican Population',
 
 
 def go(command_line=True):
+    '''
+    Creates choropleth maps for each statistic defined above for each US state,
+    as well as creating a dataframe that merges census data with export data as
+    well as Congress data for 436 US Congressional Districts
+    '''
     delim = select_delim(command_line)
     all_states(COLS, delim)
         
 
 def select_delim(command_line):
     '''
+    This function allows the user to define from where they are calling the
+    go function.
     '''
     if command_line:
         return '/'
@@ -72,6 +79,7 @@ def plot_state(df, state, stat, path, delim):
                                             'fraction':.1, 'pad':0, 
                                             'shrink':.4})
     else:
+        #darker map contours for states with only one district
         state_df.plot(column=stat, linewidth=0.2, edgecolor='black', cmap='Greens', 
                   legend=True, legend_kwds={'orientation': 'horizontal',
                                             'fraction':.1, 'pad':0, 
@@ -98,11 +106,7 @@ def plot_district(state_df, district, path, delim):
     plt.close(fig)
     
                     
-#if __name__ == '__main__':
-    #go()
-                
-                
-                
-                
+if __name__ == '__main__':
+    go()
                 
                 

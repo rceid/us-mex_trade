@@ -4,28 +4,41 @@ Created on Mon Jul 13 11:48:55 2020
 
 @author: Ray
 """
+#!/usr/bin/python3
+
 import sys
 import os
 import pdfcrowd
 import pandas as pd
+import gen_plots
 
-pdf_folder = './/..//Data//factsheet_pdfs'
-html_path = './/..//Data//factsheets_demography'
-username = 'reid7793'
-key = 'dfeb31856304d11bbea4795706341d3e'
 
-if not os.path.exists(pdf_folder):
-    os.mkdir(pdf_folder)
+#username = Mexemb
+#key = 	51b096adbc95e065cef128b556f16d20
 
-districts = pd.read_csv('.//..//Data//factsheet_data.csv')['Namelsad']
-    
-def go():
+
+
+def go(username, key, command_line=True):
+    '''
+    Establishes a connection to the pdfcrowd server and iteratively converts
+    all html factsheet documents into static PDFs
+    '''
+    delim = gen_plots.select_delim(command_line)
+    districts, pdf_folders, html_folders = create_folders_districts(delim)
     try:
         # create the API client instance
         client = pdfcrowd.HtmlToPdfClient(username, key)
-        for district in districts:
-            client.convertFileToFile(html_path + '\\' + district + '.html', \
-                                 pdf_folder + '\\' + district + '.pdf')
+        print('Username and password valid, connected to pdfcrowd client')
+        for html_path, pdf_folder in zip(html_folders, pdf_folders):
+            if pdf_folder[-10:] == 'Demography':
+                continue
+                print('Converting demographic factsheets...')
+            else:
+                print('Converting trade factsheets...')
+            for district in districts:
+                print('html file', html_path + delim + district + '.html')
+                client.convertFileToFile(html_path + delim + district + '.html', \
+                                         pdf_folder + delim + district + '.pdf')
     except pdfcrowd.Error as why:
         # report the error
         sys.stderr.write('Pdfcrowd Error: {}\n'.format(why))
@@ -33,6 +46,21 @@ def go():
         # rethrow or handle the exception
         raise
     
+def create_folders_districts(delim):
+    pdf_folders = ['.' + delim + '..'+ delim + 'Data'+ delim + 'PDFs_Demography', 
+                   '.'+ delim + '..'+ delim + 'Data'+ delim + 'PDFs_Trade']
+    html_folders = ['.'+ delim + '..'+ delim + 'Data'+ delim + 'factsheets_demography',
+                    '.'+ delim + '..'+ delim + 'Data'+ delim + 'factsheets_trade']
+    for folder in pdf_folders:
+        if not os.path.exists(folder):
+            os.mkdir(folder)
+    
+    df = pd.read_csv('.' + delim + '..' + delim + 'Data' + delim + 'factsheet_data.csv')
+    districts = df['Name'] + ' ' + df['Namelsad']
+    del df
+    return districts, pdf_folders, html_folders
+
 
 #if __name__ == '__main__':
-    #go()
+    #_, username, key = sys.argv
+    #

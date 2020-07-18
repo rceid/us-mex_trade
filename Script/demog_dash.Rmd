@@ -1,5 +1,5 @@
 ---
-title: "Demoggraphic Factsheet"
+title: "Demographic Factsheet"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows

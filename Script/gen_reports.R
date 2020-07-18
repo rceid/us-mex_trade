@@ -78,6 +78,7 @@ go <- function(){
   }
   for (i in 1:nrow(states)) {
     state <- states[i,]
+    if(state != 'District of Columbia') next
     state_df <- subset_state(df, state)
     demog_table <- state_df[, c('District', 'Representative', 'Party Affiliation', 'Mexican Population', 'Total Population')] 
     t_table <- state_df[, c('District', "Representative", 'Party Affiliation',  "Exports to Mexico 2018 (USD Million)", "Total Jobs 2018" )]

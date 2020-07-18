@@ -9,16 +9,16 @@ Created on Tue Jun 30 14:32:07 2020
 import os
 import matplotlib.pyplot as plt
 import generate_inputs
+import pandas as pd
 plt.rcParams.update({'figure.max_open_warning': 0})
 
-STATS = ["Mexican Population", "Total Population",\
-         'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018']
+STATS = ["Mexican Population", 'Exports to Mexico, 2018 (USD Million)']
 
 COLS = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 
             'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)',
             'Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
-
+QUANTILE = 5
 
 def go(command_line=True):
     '''
@@ -27,7 +27,8 @@ def go(command_line=True):
     well as Congress data for 436 US Congressional Districts
     '''
     delim = select_delim(command_line)
-    all_states(COLS, delim)
+    data_path = '..'+ delim + 'Data' + delim
+    all_states(COLS, data_path, delim)
         
 
 def select_delim(command_line):
@@ -40,71 +41,92 @@ def select_delim(command_line):
     else:
         return '\\' 
 
-def all_states(cols, delim):
+def all_states(cols, data_path, delim):
     '''
     iteratively creates plots for all states for all stats
     '''
-    tab_df = generate_inputs.prepare_df(COLS, delim)
-    for idx, stat in enumerate(STATS):
+    print("Initializing dataframe...")
+    tab_df = generate_inputs.prepare_df(cols, data_path, delim)
+    usa_maps = data_path + 'USA_maps'
+    print("Dataframe loaded, now plotting maps")
+    if not os.path.exists(usa_maps):
+        os.mkdir(usa_maps)
+    for stat in STATS:
         print("Generating maps for the following stat: {}".format(stat))
-        path = '..'+ delim + 'Data' + delim + 'Maps ' + stat
+        plot_country(tab_df, stat, usa_maps + delim)
+        path = data_path + 'Maps ' + stat
         if not os.path.exists(path):
             os.mkdir(path)
+        min_max = get_min_max(tab_df, stat)
+        tab_df[stat + ' Quantiles'] = \
+            pd.qcut(tab_df[stat], q=QUANTILE, labels=False) + 1   
         for State in tab_df['Name'].unique():
-            plot_state(tab_df, State, stat, path, delim)
-            
-            # if idx == 0:
-            #     for dist in state_df['District'].unique():
-            #         p = '..' + delim + 'Data'+ delim + 'District_shapes'
-            #         if not os.path.exists(p):
-            #             os.mkdir(p)
-            #         plot_district(state_df, dist, p, delim)
+            plot_state(tab_df, State, stat + ' Quantiles', path + delim, min_max)
                     
-def plot_state(df, state, stat, path, delim):
+def plot_state(df, state, stat, path, min_max):
     '''
     creates a plot by state of a given statistic and saves the image into
     its respective folder
     '''
-    assert stat in df.columns
-    
+    #assert stat in df.columns
     fig, ax = plt.subplots(1,1, figsize=(15,7))
     state_df = df[df['Name'] == state]
     if len(state_df[state_df[stat].isna()]) >= 1:
-        print("{} has a NA value in the '{}' column;".format(state, stat),\
+        print("{} has an NA value in the '{}' column;".format(state, stat),\
               "no plot will be generated")
         return
-    if len(state_df) > 1:
-        state_df.plot(column=stat, linewidth=0.05, edgecolor='black', cmap='Greens', 
-                  legend=True, legend_kwds={'orientation': 'horizontal',
-                                            'fraction':.1, 'pad':0, 
-                                            'shrink':.4})
+    state_df = state_df.append(min_max)
+    if len(state_df) > 3:
+        state_df.plot(column=stat, linewidth=0.05, 
+                      edgecolor='black', cmap='Greens', legend=True,
+                      legend_kwds={'orientation': 'horizontal', 'fraction':.1,
+                                   'pad':0, 'shrink':.4})
     else:
         #darker map contours for states with only one district
-        state_df.plot(column=stat, linewidth=0.2, edgecolor='black', cmap='Greens', 
-                  legend=True, legend_kwds={'orientation': 'horizontal',
-                                            'fraction':.1, 'pad':0, 
-                                            'shrink':.4})
-    
+        state_df.plot(column=stat, linewidth=0.2,
+                      edgecolor='black', cmap='Greens', legend=True, 
+                      legend_kwds={'orientation': 'horizontal','fraction':.1,
+                                   'pad':0,'shrink':.4})
     plt.figtext(.5, .95, state, fontsize=16, ha='center')
     plt.figtext(.5, .90, stat, fontsize=10, ha='center')
     plt.axis('off')
     file_name = state + '.png'
-    plt.savefig(path + delim + file_name)
+    plt.savefig(path + file_name)
     plt.close(fig)
-    
-    
-def plot_district(state_df, district, path, delim):
+    return state_df
+   
+def plot_country(df, stat, path):
     '''
-    Creates a plot of the shape of a congressional district
+    Plots a choropleth map of the entire country for a given metric
     '''
-    fig, ax = plt.subplots(1,1, figsize=(15,7))
-    district_plot = state_df.loc[state_df["District"] == district]
-    district_plot.plot(edgecolor='black', cmap='Blues_r')
+    assert stat in df.columns
+    df = df[~df[stat].isna()]
+    fig, ax = plt.subplots(1,1, figsize=(20,10))
+    df = df.loc[(df['Name'] != 'Alaska') & (df['Name'] != 'Hawaii')]
+    
+    df.plot(column=stat, linewidth=0.05, edgecolor='black', \
+            scheme = 'quantiles', cmap='Greens', legend=True, \
+                legend_kwds={'loc':'lower right', 'bbox_to_anchor':(0,0),\
+                             'fontsize':'x-small'})
+    plt.figtext(.5, .95, 'United States of America', fontsize=16, ha='center')
+    plt.figtext(.5, .90, stat, fontsize=10, ha='center')
     plt.axis('off')
-    file_name = district_plot['District'].item()
-    plt.savefig(path + delim + file_name)
-    plt.close(fig)
+    file_name = 'USA_' + stat + '.png'
+    plt.savefig(path + file_name)
+    plt.close(fig) 
     
+def get_min_max(df, stat):
+    '''
+    Gets the min and max values for the given stat for later standardization of
+    the choropleth map colorbar
+    '''
+    mini = df[df[stat] == df[stat].min()]
+    maxi = df[df[stat] == df[stat].max()]
+    mini['geometry'], mini[stat + ' Quantiles'] = None, 1
+    maxi['geometry'], maxi[stat + ' Quantiles'] = None, QUANTILE
+    
+    return mini.append(maxi)
+     
                     
 if __name__ == '__main__':
     go()

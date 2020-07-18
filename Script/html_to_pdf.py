@@ -11,12 +11,10 @@ import os
 import pdfcrowd
 import pandas as pd
 import gen_plots
-
-
-#username = Mexemb
-#key = 	51b096adbc95e065cef128b556f16d20
-
-
+'''
+username = 'Mexemb'
+key = '51b096adbc95e065cef128b556f16d20'
+'''
 
 def go(username, key, command_line=True):
     '''
@@ -31,14 +29,14 @@ def go(username, key, command_line=True):
         print('Username and password valid, connected to pdfcrowd client')
         for html_path, pdf_folder in zip(html_folders, pdf_folders):
             if pdf_folder[-10:] == 'Demography':
-                continue
                 print('Converting demographic factsheets...')
+                suffix = ' Demography'
             else:
+                suffix = ' Trade'
                 print('Converting trade factsheets...')
             for district in districts:
-                print('html file', html_path + delim + district + '.html')
                 client.convertFileToFile(html_path + delim + district + '.html', \
-                                         pdf_folder + delim + district + '.pdf')
+                                         pdf_folder + delim + district + suffix + '.pdf')
     except pdfcrowd.Error as why:
         # report the error
         sys.stderr.write('Pdfcrowd Error: {}\n'.format(why))
@@ -47,6 +45,9 @@ def go(username, key, command_line=True):
         raise
     
 def create_folders_districts(delim):
+    '''
+    Initializes the fodlers to use and the districts to iterate through
+    '''
     pdf_folders = ['.' + delim + '..'+ delim + 'Data'+ delim + 'PDFs_Demography', 
                    '.'+ delim + '..'+ delim + 'Data'+ delim + 'PDFs_Trade']
     html_folders = ['.'+ delim + '..'+ delim + 'Data'+ delim + 'factsheets_demography',
@@ -63,4 +64,4 @@ def create_folders_districts(delim):
 
 #if __name__ == '__main__':
     #_, username, key = sys.argv
-    #
+    #go(username, key)

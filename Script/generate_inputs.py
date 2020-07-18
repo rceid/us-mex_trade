@@ -18,53 +18,65 @@ import os
 #import jellyfish
 #from us import states as st
 
-SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
-#cols = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
+#mexembdata@gmail.com
+#Summercovid19
+#https://docs.google.com/spreadsheets/d/1VEQQvn8Zc7MWG5SxMrltI6RIiGw7NknbKEQsTnfxYRE/edit?usp=sharing
 
-def prepare_df(cols, delim):
+#cols = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
+#data_path = '.\\..\\Data\\'
+
+SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
+
+STATE_STATS = 'State_trade_politics.xlsx'
+STATE_FIPS = 'state-geocodes-v2016.xls'
+DISTRICT_EXPORTS = 'Mexico_exports.csv'
+OUTPUT_DATA = 'factsheet_data.csv'
+COLS_TO_KEEP = ['Name', 'Namelsad', 'Mexican Population', 'Total Population', 
+                'State Exports to Mexico, 2019', 'State Imports from Mexico, 2019',
+                'Sen1', 'Sen2', 'Exports to Mexico, 2018 (USD Million)', 'Representative',
+                'Party Affiliation', 'Rep and Party', 'Total Jobs, 2018', \
+                    'District', 'State Jobs, 2017']
+
+def prepare_df(cols, data_path, delim):
     '''
     Cleans and merges all dataframes before writing them to a csv file
     '''
-    all_data = merge_clean(delim)
+    all_data = merge_clean(data_path, delim)
     all_data = trim_alaska(all_data)
-    data_file = all_data.drop(['geometry', 'Region', 'Division', 'State (FIPS)',\
-                               'CD116FP', 'GEOID', 'LSAD', 'CDSESSN', 'MTFCC',\
-                                   'FUNCSTAT', 'ALAND', 'AWATER', 'INTPTLAT',\
-                                       'INTPTLON'], axis=1)
-    data_file.to_csv('..' + delim + 'Data' + delim + 'factsheet_data.csv')
+    data_file = all_data[COLS_TO_KEEP]
+    data_file.to_csv(data_path + OUTPUT_DATA)
     
     return all_data
 
-def merge_clean(delim):
+def merge_clean(data_path, delim):
     '''
     Handles the data cleaning and merging process of imported dataframes
     '''
-    state, shape, census, export = clean_dfs(delim)
-    main_df = merge_dfs(state, shape, census, export)
+    state, shape, census, state_info, export = clean_dfs(data_path, delim)
+    main_df = merge_dfs(state, shape, census, state_info, export)
     main_df['District'] = main_df['Name'] + \
         main_df['Namelsad'].apply(lambda row: format_district(row, True))
 
     return main_df
 
-def clean_dfs(delim):
+def clean_dfs(data_path, delim):
     '''
     Cleans data so the different data sets can be merged
     '''
-    exports = pd.read_excel('..' + delim + 'Data' + delim + \
-                            'Mexico_exports.csv')
+    exports = pd.read_excel(data_path + DISTRICT_EXPORTS)
     census = census_scripts.get_census_data()
-    states = pd.read_excel('..' + delim + 'Data' + delim + \
-                           'state-geocodes-v2016.xls', header=5)
-    shape = get_districts(delim)
+    states = pd.read_excel(data_path + STATE_FIPS, header=5)
+    shape = get_districts(data_path, delim)
     shape.rename(columns={"STATEFP": 'State (FIPS)', "NAMELSAD":'Namelsad'}, 
                  inplace=True)
     shape = shape[shape['Namelsad'] != 'Congressional Districts not defined']
     shape['State (FIPS)'] = shape['State (FIPS)'].astype(int)
-    exports = clean_exports(exports, delim)
+    state_info = state_stats(data_path)
+    exports = clean_exports(exports)
 
-    return states, shape, census, exports
+    return states, shape, census, state_info, exports
 
-def clean_exports(exports_df, delim):
+def clean_exports(exports_df):
     '''
     Cleans congressional district names to the desired format and assigns 
     parties to representatives.
@@ -93,6 +105,36 @@ def clean_exports(exports_df, delim):
          ' (' + exports_df['Party Affiliation'].apply(lambda P: str(P)[0]) + ')'
     
     return exports_df
+
+def state_stats(data_path):
+    '''
+    Renders the senators in the correct format for later use in the interactive map
+    '''
+    excel_file = data_path + STATE_STATS
+    
+    senators = pd.read_excel(excel_file, sheet_name='Senators')
+    senators['Sen and Party'] = senators['Senator Name'] + ' '\
+        + senators['Senator Last Name'] + ' (' + senators['Party'] + ')'
+    senators['Name'] = senators['State']    
+    senators = senators[['Sen and Party', 'Name']]
+    senators = senators.pivot(columns='Name', values='Sen and Party')
+    senators = senators.apply(lambda x: pd.Series(x.dropna().values))\
+        .transpose().reset_index()
+    senators.rename(columns={0:'Sen1', 1:'Sen2'}, inplace=True)
+    
+    state_trade = pd.read_excel(excel_file, sheet_name='Trade', header=[0,1])
+    state_trade.columns = [lvl1 + ': ' + lvl2 for lvl1, lvl2 in state_trade.columns]
+    cols = state_trade.columns
+    rename = {cols[1]:'Name', cols[2]:'State Exports to Mexico, 2019',\
+                 cols[8]:'State Imports from Mexico, 2019', cols[23]:\
+                     'State Jobs, 2017'}
+    state_trade.rename(columns=rename, inplace=True)
+    state_trade = state_trade[list(rename.values())]
+    state_trade['Name'] = state_trade['Name'].str.strip('\xa0')
+    
+    return pd.merge(state_trade, senators, on='Name', how='outer')
+    
+    
 
 def format_district(row, to_state=False):
     '''
@@ -123,18 +165,20 @@ def format_district(row, to_state=False):
         else:
             return num + 'th'
         
-def merge_dfs(state_df, shape_df, census_df, export_df):
+def merge_dfs(state_df, shape_df, census_df, state_info, export_df):
     '''
     Merges all dataframes, which are now clean
     '''
     shape_df = pd.merge(state_df, shape_df,
         on='State (FIPS)', how='inner')
     all_data = pd.merge(shape_df, census_df, on=['Name', 'Namelsad'], how='inner')
+    all_data = pd.merge(all_data, state_info, on='Name', how='inner')
     all_data = pd.merge(all_data, export_df, on=['Name', 'Namelsad'], how='inner')
+
     
     return gpd.GeoDataFrame(all_data)
     
-def get_districts(delim):
+def get_districts(data_path, delim):
     '''
     Imports the shape file containing the geometry of every US congressional 
     district and creates a GeoPandas dataframe. The shape file is called from 
@@ -142,7 +186,7 @@ def get_districts(delim):
     '''
     r = requests.get(SHAPE_URL)
     z = zipfile.ZipFile(io.BytesIO(r.content))
-    shape_folder = '..' + delim + 'Data' + delim + 'shapefile'
+    shape_folder = data_path + 'shapefile'
     if not os.path.exists(shape_folder):
         os.mkdir(shape_folder)
     z.extractall(path=shape_folder)

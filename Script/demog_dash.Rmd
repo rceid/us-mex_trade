@@ -61,7 +61,7 @@ valueBox(params$district_df$'Mexican Population', caption = "Mexican-American Po
 
 ###
 ```{r}
-valueBox(rep, caption = "Representative", color='maroon')#, icon='fa-republican')
+valueBox(rep, caption = "Representative", color='maroon')
 ```
 
 ### 
@@ -80,14 +80,12 @@ knitr::include_graphics(sprintf("../Data/Maps Mexican Population/%s.png", params
 
 ###
 ```{r}
-knitr::include_graphics(sprintf("../Data/Maps Total Population/%s.png", params$district_df$State))
+knitr::include_graphics("../Data/USA_maps/USA_Mexican Population.png")
 ```
 
 
 Row
 -------------------------------------
-  
-### Demographic Stats
     
 ```{r}
 rows <- nrow(params$demography_table)

@@ -61,12 +61,12 @@ valueBox(params$district_df$'Exports to Mexico 2018 (USD Million)', caption = "E
 
 ###
 ```{r}
-valueBox(rep, caption = "Representative", color='maroon')#, icon='fa-republican')
+valueBox(rep, caption = "Representative", color='maroon')
 ```
 
 ### 
 ```{r}
-valueBox(params$district_df$'Total Jobs 2018', caption = "Jobs Depedent on Mexican Exports, 2018", color='maroon')
+valueBox(params$district_df$'Total Jobs from exports to Mexico 2018', caption = "Jobs from Exports to Mexico", color='maroon')
 ```
     
 
@@ -76,7 +76,7 @@ Row
 ###
 ```{r}
 if (is.na(params$district_df$'Exports to Mexico 2018 (USD Million)')){
-  valueBox("No Map Available", color='maroon')
+  valueBox("No Map Available", color='#C8C8C8')
 } else {
   knitr::include_graphics(sprintf("../Data/Maps Exports to Mexico, 2018 (USD Million)/%s.png", params$district_df$State))
 }
@@ -85,18 +85,16 @@ if (is.na(params$district_df$'Exports to Mexico 2018 (USD Million)')){
 
 ###
 ```{r}
-if (is.na(params$district_df$'Total Jobs 2018')){
-  valueBox("No Map Available", color='maroon')
+if (is.na(params$district_df$'Total Jobs from exports to Mexico 2018')){
+  valueBox("No Map Available", color='#C8C8C8')
 } else {
-  knitr::include_graphics(sprintf("../Data/Maps Total Jobs, 2018/%s.png", params$district_df$State))
+  knitr::include_graphics("../Data/USA_maps/USA_Exports to Mexico, 2018 (USD Million).png")
 }
 ```
 
 
 Row
 -------------------------------------
-  
-### Trade Stats
     
 ```{r}
 rows <- nrow(params$trade_table)

@@ -15,7 +15,7 @@ import generate_inputs
 #saving API key, opening session, and specifying variables
 KEY = '0bde28441892c9a213ccb5782415c27f88130a35'
 C = Census(KEY, year=2018)
-CODES = {'B03001_004E': "Mexican Population", 'B03001_003E': 'Latino Population',
+CODES = {'B03001_004E': "Mexican-American Population", 'B03001_003E': 'Latino Population',
          'B02001_001E' : 'Total Population'}
 
 def get_census_data():
@@ -33,7 +33,7 @@ def get_census_data():
     cong['Namelsad'] = \
         cong['congressional district'].apply(generate_inputs.format_district)    
     cong.sort_values(by=['Name', 'congressional district'], inplace=True)
-    df = cong[['Mexican Population', 'Latino Population', 'Total Population',
+    df = cong[['Mexican-American Population', 'Latino Population', 'Total Population',
                'Name', 'Namelsad']]
     
     return df

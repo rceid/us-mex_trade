@@ -14,15 +14,12 @@ import census_scripts
 import requests
 import zipfile
 import io
-import os 
+import os
 #import jellyfish
 #from us import states as st
 
-#mexembdata@gmail.com
-#Summercovid19
-#https://docs.google.com/spreadsheets/d/1VEQQvn8Zc7MWG5SxMrltI6RIiGw7NknbKEQsTnfxYRE/edit?usp=sharing
 
-#cols = ['Name', 'Namelsad', 'geometry', 'Mexican Population', 'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
+#cols = ['Name', 'Namelsad', 'geometry', 'Mexican-American Population', 'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
 #data_path = '.\\..\\Data\\'
 
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
@@ -31,7 +28,7 @@ STATE_STATS = 'State_trade_politics.xlsx'
 STATE_FIPS = 'state-geocodes-v2016.xls'
 DISTRICT_EXPORTS = 'Mexico_exports.csv'
 OUTPUT_DATA = 'factsheet_data.csv'
-COLS_TO_KEEP = ['Name', 'Namelsad', 'Mexican Population', 'Total Population', 
+COLS_TO_KEEP = ['Name', 'Namelsad', 'Mexican-American Population', 'Total Population', 
                 'State Exports to Mexico, 2019', 'State Imports from Mexico, 2019',
                 'Sen1', 'Sen2', 'Exports to Mexico, 2018 (USD Million)', 'Representative',
                 'Party Affiliation', 'Rep and Party', 'Total Jobs, 2018', \

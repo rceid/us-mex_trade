@@ -28,11 +28,12 @@ STATE_STATS = 'State_trade_politics.xlsx'
 STATE_FIPS = 'state-geocodes-v2016.xls'
 DISTRICT_EXPORTS = 'Mexico_exports.csv'
 OUTPUT_DATA = 'factsheet_data.csv'
-COLS_TO_KEEP = ['Name', 'Namelsad', 'Mexican-American Population', 'Total Population', 
+COLS_TO_KEEP = ['Name', 'Namelsad', 'AWATER',
+                'Mexican-American Population', 'Total Population', 
                 'State Exports to Mexico, 2019', 'State Imports from Mexico, 2019',
-                'Sen1', 'Sen2', 'Exports to Mexico, 2018 (USD Million)', 'Representative',
-                'Party Affiliation', 'Rep and Party', 'Total Jobs, 2018', \
-                    'District', 'State Jobs, 2017']
+                'Sen1', 'Sen2', 'Exports to Mexico, 2018 (USD Million)',
+                'Representative', 'Party Affiliation', 'Rep and Party', 
+                'Total Jobs, 2018', 'District', 'State Jobs, 2017']
 
 def prepare_df(cols, data_path, delim):
     '''
@@ -41,6 +42,7 @@ def prepare_df(cols, data_path, delim):
     all_data = merge_clean(data_path, delim)
     all_data = trim_alaska(all_data)
     data_file = all_data[COLS_TO_KEEP]
+    print('Writing dataframe to file')
     data_file.to_csv(data_path + OUTPUT_DATA)
     
     return all_data
@@ -53,7 +55,8 @@ def merge_clean(data_path, delim):
     main_df = merge_dfs(state, shape, census, state_info, export)
     main_df['District'] = main_df['Name'] + \
         main_df['Namelsad'].apply(lambda row: format_district(row, True))
-
+    #State (FIPS) column is needed for tableau merge:
+    main_df['State (FIPS)'] = main_df['State (FIPS)'].astype(str)
     return main_df
 
 def clean_dfs(data_path, delim):

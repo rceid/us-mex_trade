@@ -11,6 +11,7 @@ import os
 import pdfcrowd
 import pandas as pd
 import gen_plots
+import time
 '''
 username = 'Mexemb'
 key = '51b096adbc95e065cef128b556f16d20'
@@ -35,8 +36,14 @@ def go(username, key, command_line=True):
                 suffix = ' Trade'
                 print('Converting trade factsheets...')
             for district in districts:
-                client.convertFileToFile(html_path + delim + district + '.html', \
-                                         pdf_folder + delim + district + suffix + '.pdf')
+                html = html_path + delim + district + suffix + '.html'
+                pdf = pdf_folder + delim + district + suffix + '.pdf'
+                if not os.path.exists(pdf):
+                    print(district)
+                    client.convertFileToFile(html, pdf)
+                    #sleep is used to not surpass the pdfcrowd request rate limit
+                    time.sleep(10)
+        print('Finished coverting files, script closing')
     except pdfcrowd.Error as why:
         # report the error
         sys.stderr.write('Pdfcrowd Error: {}\n'.format(why))
@@ -59,9 +66,10 @@ def create_folders_districts(delim):
     df = pd.read_csv('.' + delim + '..' + delim + 'Data' + delim + 'factsheet_data.csv')
     districts = df['Name'] + ' ' + df['Namelsad']
     del df
+    
     return districts, pdf_folders, html_folders
 
 
-#if __name__ == '__main__':
-    #_, username, key = sys.argv
-    #go(username, key)
+if __name__ == '__main__':
+    _, username, key = sys.argv
+    go(username, key)

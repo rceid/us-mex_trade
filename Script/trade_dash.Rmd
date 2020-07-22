@@ -35,13 +35,6 @@ knitr::opts_chunk$set(echo = FALSE)#, fig.align="center")
 ```
 
 
-```{r}
-party <- paste("(", substr(params$district_df$"Party Affiliation", 1, 1), ")", sep = "")
-rep <- params$district_df$"Representative"
-rep <- paste(rep, party, sep= " ")
-```
-
-
 Row
 -------------------------------------
 ###
@@ -61,12 +54,12 @@ valueBox(params$district_df$'Exports to Mexico 2018 (USD Million)', caption = "E
 
 ###
 ```{r}
-valueBox(rep, caption = "Representative", color='maroon')
+valueBox(params$district_df$Representative, caption = "Representative", color='maroon')
 ```
 
 ### 
 ```{r}
-valueBox(params$district_df$'Total Jobs from exports to Mexico 2018', caption = "Jobs from Exports to Mexico", color='maroon')
+valueBox(params$district_df$'Total Jobs from Exports to Mexico 2018', caption = "Jobs from Exports to Mexico", color='maroon')
 ```
     
 
@@ -85,7 +78,7 @@ if (is.na(params$district_df$'Exports to Mexico 2018 (USD Million)')){
 
 ###
 ```{r}
-if (is.na(params$district_df$'Total Jobs from exports to Mexico 2018')){
+if (is.na(params$district_df$'Total Jobs from Exports to Mexico 2018')){
   valueBox("No Map Available", color='#C8C8C8')
 } else {
   knitr::include_graphics("../Data/USA_maps/USA_Exports to Mexico, 2018 (USD Million).png")
@@ -95,13 +88,16 @@ if (is.na(params$district_df$'Total Jobs from exports to Mexico 2018')){
 
 Row
 -------------------------------------
-    
+
+### Source: Secretaría de Economía with data from The Trade Partnership, Washington DC (from the U.S. Bureau of the Census and the U.S. Department of Agriculture)
 ```{r}
 rows <- nrow(params$trade_table)
-table_size <- paste(toString(39 * rows), 'px', sep='')
+table_size <- paste(toString(38.7 * rows), 'px', sep='')
+cut_tail <- paste(toString(38.7 * 18), 'px', sep='')
+cut_head <- paste(toString(37.7 * (rows - 16)), 'px', sep='')
 
 if (rows == 1) {datatable(
-  params$trade_table, options = list(dom = 't',
+  params$trade_table, rownames = FALSE, options = list(dom = 't',
                               scrollY = '80px',
                               columnDefs = list(list(className = 'dt-center', targets = "_all")),
                               initComplete = JS(
@@ -110,9 +106,27 @@ if (rows == 1) {datatable(
     "}")
 )
   )
-} else {datatable(
-  params$trade_table, options = list(dom = 't',
+} else if (rows <= 17) {datatable(
+  params$trade_table, rownames = FALSE, options = list(dom = 't',
                               scrollY = table_size,
+                              pageLength = 53,
+                              autoLength= FALSE,
+                              columnDefs = list(list(className = 'dt-center', targets = "_all")),
+                              initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'background-color': '#8B0000', 'color': '#fff'});",
+    "}")
+)
+  )  %>%
+  formatStyle(
+  'District',
+  target = 'row', 
+  backgroundColor = styleEqual(
+    c(toString(params$district_df$District)), c('lightgray'))
+  ) #datatable that cuts two pages on pdf
+} else {datatable(
+  params$trade_table[1:17,], rownames = FALSE, options = list(dom = 't',
+                              scrollY = cut_tail,
                               pageLength = 53,
                               autoLength= FALSE,
                               columnDefs = list(list(className = 'dt-center', targets = "_all")),
@@ -129,7 +143,25 @@ if (rows == 1) {datatable(
     c(toString(params$district_df$District)), c('lightgray'))
   )
 }
-
+if (rows > 17){datatable(
+  params$trade_table[18:rows,], rownames = FALSE, options = list(dom = 't',
+                              scrollY = cut_head,
+                              pageLength = 53,
+                              autoLength= FALSE,
+                              columnDefs = list(list(className = 'dt-center', targets = "_all")),
+                              initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'background-color': '#8B0000', 'color': '#fff'});",
+    "}")
+)
+  )  %>%
+  formatStyle(
+  'District',
+  target = 'row', 
+  backgroundColor = styleEqual(
+    c(toString(params$district_df$District)), c('lightgray'))
+  )
+}
 ```
 
 

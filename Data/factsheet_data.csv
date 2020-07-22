@@ -1,437 +1,437 @@
-,Name,Namelsad,Mexican-American Population,Total Population,"State Exports to Mexico, 2019","State Imports from Mexico, 2019",Sen1,Sen2,"Exports to Mexico, 2018 (USD Million)",Representative,Party Affiliation,Rep and Party,"Total Jobs, 2018",District,"State Jobs, 2017"
-0,Connecticut,Congressional District 1,6803.0,713076.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),172.0,John Larson,Democrat,John Larson (D),954.0,Connecticut 1st,59100
-1,Connecticut,Congressional District 3,14011.0,715728.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),182.0,Rosa DeLauro,Democrat,Rosa DeLauro (D),976.0,Connecticut 3rd,59100
-2,Connecticut,Congressional District 4,21072.0,735915.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),161.0,Jim Himes,Democrat,Jim Himes (D),746.0,Connecticut 4th,59100
-3,Connecticut,Congressional District 5,8570.0,711761.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),195.0,Jahana Hayes,Democrat,Jahana Hayes (D),1035.0,Connecticut 5th,59100
-4,Connecticut,Congressional District 2,6927.0,705024.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),215.0,Joe Courtney,Democrat,Joe Courtney (D),1128.0,Connecticut 2nd,59100
-5,Maine,Congressional District 1,3309.0,679024.0,50617837,89645116,Susan Collins (R),Angus King (I),21.0,Chellie Pingree,Democrat,Chellie Pingree (D),109.0,Maine 1st,22200
-6,Maine,Congressional District 2,2942.0,653789.0,50617837,89645116,Susan Collins (R),Angus King (I),29.0,Jared Golden,Democrat,Jared Golden (D),140.0,Maine 2nd,22200
-7,Massachusetts,Congressional District 1,5018.0,730959.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),242.0,Richie Neal,Democrat,Richie Neal (D),1370.0,Massachusetts 1st,118900
-8,Massachusetts,Congressional District 3,5592.0,763936.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),536.0,Lori Trahan,Democrat,Lori Trahan (D),2549.0,Massachusetts 3rd,118900
-9,Massachusetts,Congressional District 5,7283.0,766241.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),269.0,Katherine Clark,Democrat,Katherine Clark (D),1251.0,Massachusetts 5th,118900
-10,Massachusetts,Congressional District 4,4030.0,754622.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),287.0,Joe Kennedy,Democrat,Joe Kennedy (D),1511.0,Massachusetts 4th,118900
-11,Massachusetts,Congressional District 7,9544.0,795850.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),45.0,Ayanna Pressley,Democrat,Ayanna Pressley (D),229.0,Massachusetts 7th,118900
-12,Massachusetts,Congressional District 2,5049.0,747493.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),386.0,Jim McGovern,Democrat,Jim McGovern (D),2050.0,Massachusetts 2nd,118900
-13,Massachusetts,Congressional District 9,3087.0,738604.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),148.0,Bill Keating,Democrat,Bill Keating (D),821.0,Massachusetts 9th,118900
-14,Massachusetts,Congressional District 6,4596.0,767907.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),509.0,Seth Moulton,Democrat,Seth Moulton (D),2464.0,Massachusetts 6th,118900
-15,Massachusetts,Congressional District 8,3712.0,764581.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),86.0,Stephen Lynch,Democrat,Stephen Lynch (D),476.0,Massachusetts 8th,118900
-16,New Hampshire,Congressional District 1,3875.0,677001.0,408575980,358428941,Maggie Hassan (D),Jeanne Shaheen (D),218.0,Chris Pappas,Democrat,Chris Pappas (D),972.0,New Hampshire 1st,20600
-17,New Hampshire,Congressional District 2,4811.0,666621.0,408575980,358428941,Maggie Hassan (D),Jeanne Shaheen (D),201.0,Annie Kuster,Democrat,Annie Kuster (D),1037.0,New Hampshire 2nd,20600
-18,Rhode Island,Congressional District 1,6402.0,532760.0,187998466,2932712465,Jack Reed (D),Sheldon Whitehouse (D),85.0,David Cicilline,Democrat,David Cicilline (D),438.0,Rhode Island 1st,16500
-19,Rhode Island,Congressional District 2,4721.0,523851.0,187998466,2932712465,Jack Reed (D),Sheldon Whitehouse (D),114.0,Jim Langevin,Democrat,Jim Langevin (D),615.0,Rhode Island 2nd,16500
-20,Vermont,Congressional District (at Large),3335.0,624977.0,46894202,63269944,Patrick Leahy (D),Bernie Sanders (I),45.0,Peter Welch,Democrat,Peter Welch (D),270.0,Vermont Congressional District (at Large),10900
-21,New Jersey,Congressional District 1,13351.0,726200.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),163.0,Donald Norcross,Democrat,Donald Norcross (D),816.0,New Jersey 1st,141200
-22,New Jersey,Congressional District 3,10252.0,735635.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),198.0,Andy Kim,Democrat,Andy Kim (D),1068.0,New Jersey 3rd,141200
-23,New Jersey,Congressional District 10,10808.0,749828.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),158.0,Donald Payne,Democrat,Donald Payne (D),766.0,New Jersey 10th,141200
-24,New Jersey,Congressional District 4,23894.0,739922.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),106.0,Chris Smith,Republican,Chris Smith (R),519.0,New Jersey 4th,141200
-25,New Jersey,Congressional District 5,7885.0,737642.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),278.0,Josh Gottheimer,Democrat,Josh Gottheimer (D),1306.0,New Jersey 5th,141200
-26,New Jersey,Congressional District 7,9261.0,739893.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),378.0,Tom Malinowski,Democrat,Tom Malinowski (D),1722.0,New Jersey 7th,141200
-27,New Jersey,Congressional District 2,33542.0,719651.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),248.0,Jeff Van Drew,Republican,Jeff Van Drew (R),1238.0,New Jersey 2nd,141200
-28,New Jersey,Congressional District 9,40399.0,751755.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),270.0,Bill Pascrell,Democrat,Bill Pascrell (D),1333.0,New Jersey 9th,141200
-29,New Jersey,Congressional District 11,7443.0,735773.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),329.0,Mikie Sherrill,Democrat,Mikie Sherrill (D),1570.0,New Jersey 11th,141200
-30,New Jersey,Congressional District 6,29688.0,736045.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),332.0,Frank Pallone,Democrat,Frank Pallone (D),1433.0,New Jersey 6th,141200
-31,New Jersey,Congressional District 12,18479.0,748549.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),355.0,Bonnie Watson Coleman,Democrat,Bonnie Watson Coleman (D),1536.0,New Jersey 12th,141200
-32,New Jersey,Congressional District 8,25873.0,760952.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),132.0,Albio Sires,Democrat,Albio Sires (D),607.0,New Jersey 8th,141200
-33,New York,Congressional District 1,7720.0,717383.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),92.0,Lee Zeldin,Republican,Lee Zeldin (R),511.0,New York 1st,323500
-34,New York,Congressional District 7,53484.0,734208.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),26.0,Nydia Velázquez,Democrat,Nydia Velázquez (D),180.0,New York 7th,323500
-35,New York,Congressional District 27,5218.0,715792.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),271.0,Chris Jacobs,Republican,Chris Jacobs (R),1441.0,New York 27th,323500
-36,New York,Congressional District 17,19211.0,738481.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),77.0,Nita Lowey,Democrat,Nita Lowey (D),418.0,New York 17th,323500
-37,New York,Congressional District 14,61948.0,705681.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),15.0,Alexandria Ocasio-Cortez,Democrat,Alexandria Ocasio-Cortez (D),97.0,New York 14th,323500
-38,New York,Congressional District 6,14441.0,732433.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),12.0,Grace Meng,Democrat,Grace Meng (D),78.0,New York 6th,323500
-39,New York,Congressional District 5,8273.0,772342.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),13.0,Gregory Meeks,Democrat,Gregory Meeks (D),80.0,New York 5th,323500
-40,New York,Congressional District 24,4046.0,707425.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),298.0,John Katko,Republican,John Katko (R),1628.0,New York 24th,323500
-41,New York,Congressional District 16,29378.0,741586.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),42.0,Eliot Engel,Democrat,Eliot Engel (D),264.0,New York 16th,323500
-42,New York,Congressional District 11,27413.0,730634.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),5.0,Max Rose,Democrat,Max Rose (D),32.0,New York 11th,323500
-43,New York,Congressional District 15,50573.0,744647.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),8.0,José Serrano,Democrat,José Serrano (D),52.0,New York 15th,323500
-44,New York,Congressional District 23,5084.0,699965.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),416.0,Tom Reed,Republican,Tom Reed (R),2349.0,New York 23rd,323500
-45,New York,Congressional District 8,14669.0,771343.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),9.0,Hakeem Jeffries,Democrat,Hakeem Jeffries (D),66.0,New York 8th,323500
-46,New York,Congressional District 12,14951.0,719072.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),72.0,Carolyn Maloney,Democrat,Carolyn Maloney (D),477.0,New York 12th,323500
-47,New York,Congressional District 18,22667.0,721629.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),159.0,Sean Patrick Maloney,Democrat,Sean Patrick Maloney (D),813.0,New York 18th,323500
-48,New York,Congressional District 2,7819.0,715030.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),138.0,Pete King,Republican,Pete King (R),765.0,New York 2nd,323500
-49,New York,Congressional District 20,5026.0,725925.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),606.0,Paul Tonko,Democrat,Paul Tonko (D),3134.0,New York 20th,323500
-50,New York,Congressional District 25,3689.0,717362.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),230.0,Joe Morelle,Democrat,Joe Morelle (D),1222.0,New York 25th,323500
-51,New York,Congressional District 3,5008.0,727480.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),61.0,Tom Suozzi,Democrat,Tom Suozzi (D),342.0,New York 3rd,323500
-52,New York,Congressional District 21,5688.0,706791.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),151.0,Elise Stefanik,Republican,Elise Stefanik (R),887.0,New York 21st,323500
-53,New York,Congressional District 10,22888.0,730760.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),26.0,Jerry Nadler,Democrat,Jerry Nadler (D),147.0,New York 10th,323500
-54,New York,Congressional District 4,6231.0,722626.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),27.0,Kathleen Rice,Democrat,Kathleen Rice (D),154.0,New York 4th,323500
-55,New York,Congressional District 13,48959.0,774528.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),1.0,Adriano Espaillat,Democrat,Adriano Espaillat (D),10.0,New York 13th,323500
-56,New York,Congressional District 26,3453.0,711502.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),255.0,Brian Higgins,Democrat,Brian Higgins (D),1392.0,New York 26th,323500
-57,New York,Congressional District 22,3159.0,699564.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),321.0,Anthony Brindisi,Democrat,Anthony Brindisi (D),1649.0,New York 22nd,323500
-58,New York,Congressional District 9,17021.0,733271.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),6.0,Yvette Clarke,Democrat,Yvette Clarke (D),46.0,New York 9th,323500
-59,New York,Congressional District 19,9177.0,700993.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),96.0,Antonio Delgado,Democrat,Antonio Delgado (D),547.0,New York 19th,323500
-60,Pennsylvania,Congressional District 1,8593.0,709207.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),279.0,Brian Fitzpatrick,Republican,Brian Fitzpatrick (R),1333.0,Pennsylvania 1st,195700
-61,Pennsylvania,Congressional District 18,5291.0,699856.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),171.0,Mike Doyle,Democrat,Mike Doyle (D),858.0,Pennsylvania 18th,195700
-62,Pennsylvania,Congressional District 7,9642.0,722048.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),364.0,Susan Wild,Democrat,Susan Wild (D),1829.0,Pennsylvania 7th,195700
-63,Pennsylvania,Congressional District 2,8711.0,734861.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),27.0,Brendan Boyle,Democrat,Brendan Boyle (D),134.0,Pennsylvania 2nd,195700
-64,Pennsylvania,Congressional District 17,3398.0,711725.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),295.0,Conor Lamb,Democrat,Conor Lamb (D),1387.0,Pennsylvania 17th,195700
-65,Pennsylvania,Congressional District 14,2795.0,691459.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),318.0,Guy Reschenthaler,Republican,Guy Reschenthaler (R),1633.0,Pennsylvania 14th,195700
-66,Pennsylvania,Congressional District 6,32613.0,725593.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),339.0,Chrissy Houlahan,Democrat,Chrissy Houlahan (D),1706.0,Pennsylvania 6th,195700
-67,Pennsylvania,Congressional District 3,6911.0,722979.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),35.0,Dwight Evans,Democrat,Dwight Evans (D),166.0,Pennsylvania 3rd,195700
-68,Pennsylvania,Congressional District 10,10338.0,727144.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),129.0,Scott Perry,Republican,Scott Perry (R),754.0,Pennsylvania 10th,195700
-69,Pennsylvania,Congressional District 4,11587.0,724647.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),172.0,Madeleine Dean,Democrat,Madeleine Dean (D),772.0,Pennsylvania 4th,195700
-70,Pennsylvania,Congressional District 5,6406.0,714120.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),186.0,Mary Gay Scanlon,Democrat,Mary Gay Scanlon (D),787.0,Pennsylvania 5th,195700
-71,Pennsylvania,Congressional District 16,3827.0,692426.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),310.0,Mike Kelly,Republican,Mike Kelly (R),1855.0,Pennsylvania 16th,195700
-72,Pennsylvania,Congressional District 13,10421.0,698730.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),329.0,John Joyce,Republican,John Joyce (R),1834.0,Pennsylvania 13th,195700
-73,Pennsylvania,Congressional District 11,7594.0,728820.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),243.0,Lloyd Smucker,Republican,Lloyd Smucker (R),1437.0,Pennsylvania 11th,195700
-74,Pennsylvania,Congressional District 9,6377.0,705114.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),436.0,Dan Meuser,Republican,Dan Meuser (R),2256.0,Pennsylvania 9th,195700
-75,Pennsylvania,Congressional District 15,3191.0,685714.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),216.0,Glenn Thompson,Republican,Glenn Thompson (R),1278.0,Pennsylvania 15th,195700
-76,Pennsylvania,Congressional District 12,4765.0,701191.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),219.0,Fred Keller,Republican,Fred Keller (R),1227.0,Pennsylvania 12th,195700
-77,Pennsylvania,Congressional District 8,10077.0,695547.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),163.0,Matt Cartwright,Democrat,Matt Cartwright (D),861.0,Pennsylvania 8th,195700
-78,Illinois,Congressional District 1,61989.0,708118.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),160.0,Bobby Rush,Democrat,Bobby Rush (D),924.0,Illinois 1st,198000
-79,Illinois,Congressional District 18,13050.0,707835.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),783.0,Darin LaHood,Republican,Darin LaHood (R),5075.0,Illinois 18th,198000
-80,Illinois,Congressional District 7,77837.0,724652.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),243.0,Danny Davis,Republican,Danny Davis (R),1444.0,Illinois 7th,198000
-81,Illinois,Congressional District 2,86226.0,703782.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),328.0,Robin Kelly,Democrat,Robin Kelly (D),1830.0,Illinois 2nd,198000
-82,Illinois,Congressional District 14,70427.0,735045.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),699.0,Lauren Underwood,Democrat,Lauren Underwood (D),3956.0,Illinois 14th,198000
-83,Illinois,Congressional District 5,84146.0,740075.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),381.0,Mike Quigley,Democrat,Mike Quigley (D),2218.0,Illinois 5th,198000
-84,Illinois,Congressional District 16,56684.0,695502.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),1239.0,Adam Kinzinger,Republican,Adam Kinzinger (R),7860.0,Illinois 16th,198000
-85,Illinois,Congressional District 13,16010.0,704851.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),563.0,Rodney Davis,Republican,Rodney Davis (R),3817.0,Illinois 13th,198000
-86,Illinois,Congressional District 17,52540.0,688356.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),858.0,Cheri Bustos,Democrat,Cheri Bustos (D),5382.0,Illinois 17th,198000
-87,Illinois,Congressional District 6,56651.0,727847.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),520.0,Sean Casten,Democrat,Sean Casten (D),2947.0,Illinois 6th,198000
-88,Illinois,Congressional District 3,201255.0,717897.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),239.0,Dan Lipinski,Democrat,Dan Lipinski (D),1358.0,Illinois 3rd,198000
-89,Illinois,Congressional District 10,133888.0,712819.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),684.0,Brad Schneider,Democrat,Brad Schneider (D),3379.0,Illinois 10th,198000
-90,Illinois,Congressional District 4,379136.0,699621.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),242.0,Chuy Garcia,Democrat,Chuy Garcia (D),1439.0,Illinois 4th,198000
-91,Illinois,Congressional District 11,170213.0,722593.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),492.0,Bill Foster,Democrat,Bill Foster (D),2536.0,Illinois 11th,198000
-92,Illinois,Congressional District 9,53349.0,723507.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),216.0,Jan Schakowsky,Democrat,Jan Schakowsky (D),1262.0,Illinois 9th,198000
-93,Illinois,Congressional District 15,14576.0,696632.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),1253.0,John Shimkus,Republican,John Shimkus (R),8157.0,Illinois 15th,198000
-94,Illinois,Congressional District 12,17687.0,697270.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),614.0,Mike Bost,Republican,Mike Bost (R),3464.0,Illinois 12th,198000
-95,Illinois,Congressional District 8,170167.0,715095.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),834.0,Raja Krishnamoorthi,Democrat,Raja Krishnamoorthi (D),4764.0,Illinois 8th,198000
-96,Indiana,Congressional District 2,54926.0,722805.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),750.0,Jackie Walorski,Republican,Jackie Walorski (R),4587.0,Indiana 2nd,89200
-97,Indiana,Congressional District 9,17263.0,747995.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),460.0,Trey Hollingsworth,Republican,Trey Hollingsworth (R),2670.0,Indiana 9th,89200
-98,Indiana,Congressional District 6,14501.0,718706.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),1547.0,Greg Pence,Republican,Greg Pence (R),8875.0,Indiana 6th,89200
-99,Indiana,Congressional District 8,11860.0,719671.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),536.0,Larry Bucshon,Republican,Larry Bucshon (R),3121.0,Indiana 8th,89200
-100,Indiana,Congressional District 1,84969.0,715348.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),275.0,Pete Visclosky,Democrat,Pete Visclosky (D),1327.0,Indiana 1st,89200
-101,Indiana,Congressional District 3,35601.0,739773.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),768.0,Jim Banks,Republican,Jim Banks (R),4623.0,Indiana 3rd,89200
-102,Indiana,Congressional District 5,21923.0,767053.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),236.0,Susan Brooks,Republican,Susan Brooks (R),1327.0,Indiana 5th,89200
-103,Indiana,Congressional District 4,33408.0,750717.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),802.0,Jim Baird,Republican,Jim Baird (R),4712.0,Indiana 4th,89200
-104,Indiana,Congressional District 7,58768.0,755358.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),169.0,André Carson,Democrat,André Carson (D),750.0,Indiana 7th,89200
-105,Michigan,Congressional District 1,9696.0,699432.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),417.0,Jack Bergman,Republican,Jack Bergman (R),2560.0,Michigan 1st,128600
-106,Michigan,Congressional District 7,22883.0,705518.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),844.0,Tim Walberg,Republican,Tim Walberg (R),5000.0,Michigan 7th,128600
-107,Michigan,Congressional District 2,55477.0,735626.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1690.0,Bill Huizenga,Republican,Bill Huizenga (R),10165.0,Michigan 2nd,128600
-108,Michigan,Congressional District 6,34346.0,716503.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1249.0,Fred Upton,Republican,Fred Upton (R),7460.0,Michigan 6th,128600
-109,Michigan,Congressional District 14,24047.0,691955.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),462.0,Brenda Lawrence,Democrat,Brenda Lawrence (D),2627.0,Michigan 14th,128600
-110,Michigan,Congressional District 3,35061.0,737911.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1392.0,Justin Amash,Libertarian,Justin Amash (L),8750.0,Michigan 3rd,128600
-111,Michigan,Congressional District 10,18086.0,717176.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),899.0,Paul Mitchell,Republican,Paul Mitchell (R),5656.0,Michigan 10th,128600
-112,Michigan,Congressional District 5,27684.0,679543.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),504.0,Dan Kildee,Democrat,Dan Kildee (D),3110.0,Michigan 5th,128600
-113,Michigan,Congressional District 4,17047.0,701141.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),873.0,John Moolenaar,Republican,John Moolenaar (R),4884.0,Michigan 4th,128600
-114,Michigan,Congressional District 13,38536.0,679044.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),685.0,Rashida Tlaib,Democrat,Rashida Tlaib (D),3546.0,Michigan 13th,128600
-115,Michigan,Congressional District 11,15719.0,727670.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1310.0,Haley Stevens,Democrat,Haley Stevens (D),7509.0,Michigan 11th,128600
-116,Michigan,Congressional District 9,10206.0,718682.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1101.0,Andy Levin,Democrat,Andy Levin (D),6766.0,Michigan 9th,128600
-117,Michigan,Congressional District 12,28307.0,711209.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),412.0,Debbie Dingell,Democrat,Debbie Dingell (D),2389.0,Michigan 12th,128600
-118,Michigan,Congressional District 8,26326.0,736078.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),475.0,Elissa Slotkin,Democrat,Elissa Slotkin (D),2878.0,Michigan 8th,128600
-119,Ohio,Congressional District 1,8702.0,737765.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),286.0,Steve Chabot,Republican,Steve Chabot (R),1459.0,Ohio 1st,170900
-120,Ohio,Congressional District 7,6821.0,726547.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),586.0,Bob Gibbs,Republican,Bob Gibbs (R),3495.0,Ohio 7th,170900
-121,Ohio,Congressional District 2,7444.0,728702.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),298.0,Brad Wenstrup,Republican,Brad Wenstrup (R),1564.0,Ohio 2nd,170900
-122,Ohio,Congressional District 14,10284.0,717865.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),572.0,David Joyce,Republican,David Joyce (R),3091.0,Ohio 14th,170900
-123,Ohio,Congressional District 6,4278.0,700099.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),228.0,Bill Johnson,Republican,Bill Johnson (R),1274.0,Ohio 6th,170900
-124,Ohio,Congressional District 3,28849.0,785158.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),72.0,Joyce Beatty,Democrat,Joyce Beatty (D),416.0,Ohio 3rd,170900
-125,Ohio,Congressional District 10,11618.0,721945.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),262.0,Mike Turner,Republican,Mike Turner (R),1590.0,Ohio 10th,170900
-126,Ohio,Congressional District 4,15769.0,711251.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),1021.0,Jim Jordan,Republican,Jim Jordan (R),5755.0,Ohio 4th,170900
-127,Ohio,Congressional District 5,27991.0,722734.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),701.0,Bob Latta,Republican,Bob Latta (R),4206.0,Ohio 5th,170900
-128,Ohio,Congressional District 16,6307.0,722281.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),338.0,Anthony Gonzalez,Republican,Anthony Gonzalez (R),2003.0,Ohio 16th,170900
-129,Ohio,Congressional District 13,6605.0,710422.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),373.0,Tim Ryan,Democrat,Tim Ryan (D),2090.0,Ohio 13th,170900
-130,Ohio,Congressional District 15,8530.0,754510.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),247.0,Steve Stivers,Republican,Steve Stivers (R),1417.0,Ohio 15th,170900
-131,Ohio,Congressional District 11,6102.0,693817.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),393.0,Marcia Fudge,Democrat,Marcia Fudge (D),2085.0,Ohio 11th,170900
-132,Ohio,Congressional District 9,27523.0,709760.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),454.0,Marcy Kaptur,Democrat,Marcy Kaptur (D),2375.0,Ohio 9th,170900
-133,Ohio,Congressional District 8,14405.0,728116.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),541.0,Warren Davidson,Republican,Warren Davidson (R),3024.0,Ohio 8th,170900
-134,Ohio,Congressional District 12,8832.0,770907.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),215.0,Troy Balderson,Republican,Troy Balderson (R),1221.0,Ohio 12th,170900
-135,Wisconsin,Congressional District 1,53621.0,717432.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),552.0,Bryan Steil,Republican,Bryan Steil (R),2839.0,Wisconsin 1st,92500
-136,Wisconsin,Congressional District 3,13499.0,719855.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),274.0,Ron Kind,Democrat,Ron Kind (D),1522.0,Wisconsin 3rd,92500
-137,Wisconsin,Congressional District 4,83572.0,713066.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),293.0,Gwen Moore,Democrat,Gwen Moore (D),1573.0,Wisconsin 4th,92500
-138,Wisconsin,Congressional District 5,28707.0,723040.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),541.0,Jim Sensenbrenner,Republican,Jim Sensenbrenner (R),3021.0,Wisconsin 5th,92500
-139,Wisconsin,Congressional District 7,11466.0,708307.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),366.0,Tom Tiffany,Republican,Tom Tiffany (R),2184.0,Wisconsin 7th,92500
-140,Wisconsin,Congressional District 2,33411.0,754999.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),296.0,Mark Pocan,Democrat,Mark Pocan (D),1205.0,Wisconsin 2nd,92500
-141,Wisconsin,Congressional District 6,25470.0,713439.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),720.0,Glenn Grothman,Republican,Glenn Grothman (R),4185.0,Wisconsin 6th,92500
-142,Wisconsin,Congressional District 8,29043.0,728256.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),460.0,Mike Gallagher,Republican,Mike Gallagher (R),2724.0,Wisconsin 8th,92500
-143,Iowa,Congressional District 1,24865.0,772171.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),690.0,Abby Finkenauer,Democrat,Abby Finkenauer (D),5175.0,Iowa 1st,52100
-144,Iowa,Congressional District 4,40777.0,757452.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),744.0,Steve King,Republican,Steve King (R),6279.0,Iowa 4th,52100
-145,Iowa,Congressional District 2,33535.0,780050.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),532.0,Dave Loebsack,Democrat,Dave Loebsack (D),3831.0,Iowa 2nd,52100
-146,Iowa,Congressional District 3,44191.0,822826.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),249.0,Cindy Axne,Democrat,Cindy Axne (D),1984.0,Iowa 3rd,52100
-147,Kansas,Congressional District 1,93458.0,708511.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),1037.0,Roger Marshall,Republican,Roger Marshall (R),9262.0,Kansas 1st,47200
-148,Kansas,Congressional District 3,72931.0,762091.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),184.0,Sharice Davids,Democrat,Sharice Davids (D),969.0,Kansas 3rd,47200
-149,Kansas,Congressional District 4,74705.0,723182.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),568.0,Ron Estes,Republican,Ron Estes (R),3399.0,Kansas 4th,47200
-150,Kansas,Congressional District 2,37119.0,714992.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),386.0,Steve Watkins,Republican,Steve Watkins (R),3121.0,Kansas 2nd,47200
-151,Minnesota,Congressional District 7,24104.0,664941.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),540.0,Collin Peterson,Democrat,Collin Peterson (D),3968.0,Minnesota 7th,91000
-152,Minnesota,Congressional District 2,29257.0,698522.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),207.0,Angie Craig,Democrat,Angie Craig (D),1249.0,Minnesota 2nd,91000
-153,Minnesota,Congressional District 6,13103.0,702583.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),296.0,Tom Emmer,Republican,Tom Emmer (R),1856.0,Minnesota 6th,91000
-154,Minnesota,Congressional District 8,7865.0,664674.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),167.0,Pete Stauber,Republican,Pete Stauber (R),1029.0,Minnesota 8th,91000
-155,Minnesota,Congressional District 1,31870.0,672649.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),692.0,Jim Hagedorn,Republican,Jim Hagedorn (R),4526.0,Minnesota 1st,91000
-156,Minnesota,Congressional District 3,20814.0,710378.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),248.0,Dean Phillips,Democrat,Dean Phillips (D),1395.0,Minnesota 3rd,91000
-157,Minnesota,Congressional District 4,32375.0,706259.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),201.0,Betty McCollum,Democrat,Betty McCollum (D),1021.0,Minnesota 4th,91000
-158,Minnesota,Congressional District 5,42192.0,707352.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),165.0,Ilhan Omar,Democrat,Ilhan Omar (D),956.0,Minnesota 5th,91000
-159,Missouri,Congressional District 1,15863.0,732537.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),290.0,Lacy Clay,Democrat,Lacy Clay (D),1505.0,Missouri 1st,95300
-160,Missouri,Congressional District 3,12857.0,782693.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),314.0,Blaine Luetkemeyer,Republican,Blaine Luetkemeyer (R),2015.0,Missouri 3rd,95300
-161,Missouri,Congressional District 5,51266.0,764511.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),270.0,Emanuel Cleaver,Democrat,Emanuel Cleaver (D),1684.0,Missouri 5th,95300
-162,Missouri,Congressional District 4,20526.0,765070.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),398.0,Vicky Hartzler,Republican,Vicky Hartzler (R),2743.0,Missouri 4th,95300
-163,Missouri,Congressional District 7,26658.0,773182.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),342.0,Billy Long,Republican,Billy Long (R),2093.0,Missouri 7th,95300
-164,Missouri,Congressional District 2,11944.0,763266.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),120.0,Ann Wagner,Republican,Ann Wagner (R),667.0,Missouri 2nd,95300
-165,Missouri,Congressional District 6,21778.0,768533.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),605.0,Sam Graves,Republican,Sam Graves (R),4429.0,Missouri 6th,95300
-166,Missouri,Congressional District 8,11163.0,740270.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),367.0,Jason Smith,Republican,Jason Smith (R),2401.0,Missouri 8th,95300
-167,Nebraska,Congressional District 1,39937.0,641533.0,1733851230,395298066,Deb Fischer (R),Ben Sasse (R),564.0,Jeff Fortenberry,Republican,Jeff Fortenberry (R),4727.0,Nebraska 1st,33900
-168,Nebraska,Congressional District 3,53200.0,603432.0,1733851230,395298066,Deb Fischer (R),Ben Sasse (R),1133.0,Adrian Smith,Republican,Adrian Smith (R),10516.0,Nebraska 3rd,33900
-169,Nebraska,Congressional District 2,57287.0,659795.0,1733851230,395298066,Deb Fischer (R),Ben Sasse (R),248.0,Don Bacon,Republican,Don Bacon (R),1585.0,Nebraska 2nd,33900
-170,North Dakota,Congressional District (at Large),17915.0,752201.0,228410431,162430130,Kevin Cramer (R),John Hoeven (R),310.0,Kelly Armstrong,Republican,Kelly Armstrong (R),2592.0,North Dakota Congressional District (at Large),13500
-171,South Dakota,Congressional District (at Large),21229.0,864289.0,312059517,57853596,Mike Rounds (R),John Thune (R),437.0,Dusty Johnson,Republican,Dusty Johnson (R),3581.0,South Dakota Congressional District (at Large),15300
-172,Delaware,Congressional District (at Large),34244.0,949495.0,163810717,332078116,Thomas Carper (D),Chris Coons (D),160.0,Lisa Blunt Rochester,Democrat,Lisa Blunt Rochester (D),794.0,Delaware Congressional District (at Large),15200
-173,District of Columbia,Delegate District (at Large),14156.0,684498.0,10223405,4376923,,,,Eleanor Holmes Norton,Democrat,Eleanor Holmes Norton (D),,District of Columbia Delegate District (at Large),24900
-174,Florida,Congressional District 13,18632.0,723658.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),259.0,Charlie Crist,Democrat,Charlie Crist (D),1401.0,Florida 13th,304100
-175,Florida,Congressional District 26,36043.0,774375.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),30.0,Debbie Mucarsel-Powell,Democrat,Debbie Mucarsel-Powell (D),178.0,Florida 26th,304100
-176,Florida,Congressional District 22,15146.0,750149.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),127.0,Ted Deutch,Democrat,Ted Deutch (D),695.0,Florida 22nd,304100
-177,Florida,Congressional District 9,41142.0,837026.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),125.0,Darren Soto,Democrat,Darren Soto (D),665.0,Florida 9th,304100
-178,Florida,Congressional District 19,51008.0,797066.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),36.0,Francis Rooney,Republican,Francis Rooney (R),213.0,Florida 19th,304100
-179,Florida,Congressional District 1,20044.0,759701.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),219.0,Matt Gaetz,Republican,Matt Gaetz (R),1101.0,Florida 1st,304100
-180,Florida,Congressional District 7,13507.0,757809.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),134.0,Stephanie Murphy,Democrat,Stephanie Murphy (D),764.0,Florida 7th,304100
-181,Florida,Congressional District 27,14046.0,751996.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),56.0,Donna Shalala,Democrat,Donna Shalala (D),333.0,Florida 27th,304100
-182,Florida,Congressional District 17,58202.0,756549.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),78.0,Greg Steube,Republican,Greg Steube (R),400.0,Florida 17th,304100
-183,Florida,Congressional District 6,19763.0,753500.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),161.0,Michael Waltz,Republican,Michael Waltz (R),939.0,Florida 6th,304100
-184,Florida,Congressional District 14,22671.0,763832.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),94.0,Kathy Castor,Democrat,Kathy Castor (D),539.0,Florida 14th,304100
-185,Florida,Congressional District 5,13825.0,729038.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),154.0,Al Lawson,Democrat,Al Lawson (D),839.0,Florida 5th,304100
-186,Florida,Congressional District 24,8554.0,750906.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),99.0,Frederica Wilson,Democrat,Frederica Wilson (D),556.0,Florida 24th,304100
-187,Florida,Congressional District 16,61020.0,804662.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),109.0,Vern Buchanan,Republican,Vern Buchanan (R),656.0,Florida 16th,304100
-188,Florida,Congressional District 11,15950.0,754649.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),55.0,Daniel Webster,Republican,Daniel Webster (R),329.0,Florida 11th,304100
-189,Florida,Congressional District 15,45184.0,777638.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),129.0,Ross Spano,Republican,Ross Spano (R),615.0,Florida 15th,304100
-190,Florida,Congressional District 23,10798.0,756127.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),56.0,Debbie Wasserman Schultz,Democrat,Debbie Wasserman Schultz (D),306.0,Florida 23rd,304100
-191,Florida,Congressional District 8,17417.0,742230.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),290.0,Bill Posey,Republican,Bill Posey (R),1423.0,Florida 8th,304100
-192,Florida,Congressional District 12,17275.0,757719.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),91.0,Gus Bilirakis,Republican,Gus Bilirakis (R),513.0,Florida 12th,304100
-193,Florida,Congressional District 18,30184.0,757228.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),88.0,Brian Mast,Republican,Brian Mast (R),519.0,Florida 18th,304100
-194,Florida,Congressional District 2,16105.0,719213.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),185.0,Neal Dunn,Republican,Neal Dunn (R),1154.0,Florida 2nd,304100
-195,Florida,Congressional District 20,27376.0,778060.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),88.0,Alcee Hastings,Democrat,Alcee Hastings (D),460.0,Florida 20th,304100
-196,Florida,Congressional District 25,48121.0,763720.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),162.0,Mario Diaz-Balart,Republican,Mario Diaz-Balart (R),915.0,Florida 25th,304100
-197,Florida,Congressional District 21,29812.0,762765.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),45.0,Lois Frankel,Democrat,Lois Frankel (D),248.0,Florida 21st,304100
-198,Florida,Congressional District 3,15777.0,728979.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),93.0,Ted Yoho,Republican,Ted Yoho (R),530.0,Florida 3rd,304100
-199,Florida,Congressional District 10,32591.0,808969.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),132.0,Val Demings,Democrat,Val Demings (D),680.0,Florida 10th,304100
-200,Florida,Congressional District 4,13325.0,780575.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),161.0,John Rutherford,Republican,John Rutherford (R),857.0,Florida 4th,304100
-201,Georgia,Congressional District 3,18402.0,728046.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),707.0,Drew Ferguson,Republican,Drew Ferguson (R),3810.0,Georgia 3rd,158200
-202,Georgia,Congressional District 10,22224.0,740458.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),181.0,Jody Hice,Republican,Jody Hice (R),1134.0,Georgia 10th,158200
-203,Georgia,Congressional District 4,40204.0,748744.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),161.0,Hank Johnson,Democrat,Hank Johnson (D),879.0,Georgia 4th,158200
-204,Georgia,Congressional District 5,29860.0,759756.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),52.0,John Lewis,Democrat,John Lewis (D),290.0,Georgia 5th,158200
-205,Georgia,Congressional District 13,51811.0,749389.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),104.0,David Scott,Democrat,David Scott (D),584.0,Georgia 13th,158200
-206,Georgia,Congressional District 9,68711.0,735832.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),461.0,Doug Collins,Republican,Doug Collins (R),2823.0,Georgia 9th,158200
-207,Georgia,Congressional District 7,73871.0,793740.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),320.0,Rob Woodall,Republican,Rob Woodall (R),1631.0,Georgia 7th,158200
-208,Georgia,Congressional District 2,21392.0,675246.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),336.0,Sanford Bishop,Democrat,Sanford Bishop (D),1947.0,Georgia 2nd,158200
-209,Georgia,Congressional District 6,54415.0,744905.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),82.0,Lucy McBath,Democrat,Lucy McBath (D),469.0,Georgia 6th,158200
-210,Georgia,Congressional District 14,56643.0,709918.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),420.0,Tom Graves,Republican,Tom Graves (R),2520.0,Georgia 14th,158200
-211,Georgia,Congressional District 1,24101.0,731698.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),356.0,Buddy Carter,Republican,Buddy Carter (R),1764.0,Georgia 1st,158200
-212,Georgia,Congressional District 11,44244.0,756192.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),203.0,Barry Loudermilk,Republican,Barry Loudermilk (R),1154.0,Georgia 11th,158200
-213,Georgia,Congressional District 12,26215.0,718746.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),277.0,Rick Allen,Republican,Rick Allen (R),1606.0,Georgia 12th,158200
-214,Georgia,Congressional District 8,29617.0,704814.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),235.0,Austin Scott,Democrat,Austin Scott (D),1425.0,Georgia 8th,158200
-215,Maryland,Congressional District 1,8783.0,730442.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),111.0,Andy Harris,Republican,Andy Harris (R),665.0,Maryland 1st,96100
-216,Maryland,Congressional District 3,15466.0,756296.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),54.0,John Sarbanes,Democrat,John Sarbanes (D),277.0,Maryland 3rd,96100
-217,Maryland,Congressional District 4,16796.0,749033.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),35.0,Anthony Brown,Democrat,Anthony Brown (D),197.0,Maryland 4th,96100
-218,Maryland,Congressional District 5,14070.0,760819.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),37.0,Steny Hoyer,Democrat,Steny Hoyer (D),150.0,Maryland 5th,96100
-219,Maryland,Congressional District 7,5922.0,719951.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),38.0,Kweisi Mfume,Democrat,Kweisi Mfume (D),201.0,Maryland 7th,96100
-220,Maryland,Congressional District 2,13837.0,762351.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),71.0,Dutch Ruppersberger,Democrat,Dutch Ruppersberger (D),373.0,Maryland 2nd,96100
-221,Maryland,Congressional District 6,11174.0,765910.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),63.0,David Trone,Democrat,David Trone (D),342.0,Maryland 6th,96100
-222,Maryland,Congressional District 8,11183.0,758633.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),23.0,Jamie Raskin,Democrat,Jamie Raskin (D),119.0,Maryland 8th,96100
-223,North Carolina,Congressional District 1,38967.0,753591.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),336.0,G.K. Butterfield,Democrat,G.K. Butterfield (D),1911.0,North Carolina 1st,150600
-224,North Carolina,Congressional District 7,44688.0,787034.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),262.0,David Rouzer,Republican,David Rouzer (R),1483.0,North Carolina 7th,150600
-225,North Carolina,Congressional District 2,47542.0,822252.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),268.0,George Holding,Republican,George Holding (R),1568.0,North Carolina 2nd,150600
-226,North Carolina,Congressional District 6,54031.0,762671.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),308.0,Mark Walker,Republican,Mark Walker (R),1814.0,North Carolina 6th,150600
-227,North Carolina,Congressional District 3,34788.0,754824.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),136.0,Greg Murphy,Republican,Greg Murphy (R),683.0,North Carolina 3rd,150600
-228,North Carolina,Congressional District 10,27434.0,753325.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),503.0,Patrick McHenry,Republican,Patrick McHenry (R),3001.0,North Carolina 10th,150600
-229,North Carolina,Congressional District 4,45443.0,840168.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),205.0,David Price,Democrat,David Price (D),1090.0,North Carolina 4th,150600
-230,North Carolina,Congressional District 5,48148.0,752439.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),293.0,Virginia Foxx,Republican,Virginia Foxx (R),1861.0,North Carolina 5th,150600
-231,North Carolina,Congressional District 13,39480.0,771529.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),116.0,Ted Budd,Republican,Ted Budd (R),647.0,North Carolina 13th,150600
-232,North Carolina,Congressional District 11,30271.0,752316.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),357.0,Mark Meadows (resigned),Republican,Mark Meadows (resigned) (R),2146.0,North Carolina 11th,150600
-233,North Carolina,Congressional District 9,35814.0,779186.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),212.0,Dan Bishop,Republican,Dan Bishop (R),1254.0,North Carolina 9th,150600
-234,North Carolina,Congressional District 8,42047.0,779035.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),368.0,Richard Hudson,Republican,Richard Hudson (R),2222.0,North Carolina 8th,150600
-235,North Carolina,Congressional District 12,49852.0,847254.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),426.0,Alma Adams,Democrat,Alma Adams (D),2283.0,North Carolina 12th,150600
-236,South Carolina,Congressional District 1,24518.0,766664.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),103.0,Joe Cunningham,Democrat,Joe Cunningham (D),579.0,South Carolina 1st,69900
-237,South Carolina,Congressional District 3,20032.0,684952.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),588.0,Jeff Duncan,Republican,Jeff Duncan (R),3500.0,South Carolina 3rd,69900
-238,South Carolina,Congressional District 4,31531.0,718032.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),817.0,William Timmons,Republican,William Timmons (R),4526.0,South Carolina 4th,69900
-239,South Carolina,Congressional District 5,16214.0,706085.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),412.0,Ralph Norman,Republican,Ralph Norman (R),2333.0,South Carolina 5th,69900
-240,South Carolina,Congressional District 7,16861.0,709479.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),225.0,Tom Rice,Republican,Tom Rice (R),1286.0,South Carolina 7th,69900
-241,South Carolina,Congressional District 2,22060.0,707819.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),232.0,Joe Wilson,Republican,Joe Wilson (R),1341.0,South Carolina 2nd,69900
-242,South Carolina,Congressional District 6,19366.0,662894.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),387.0,Jim Clyburn,Democrat,Jim Clyburn (D),1929.0,South Carolina 6th,69900
-243,Virginia,Congressional District 1,18902.0,785774.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),30.0,Rob Wittman,Republican,Rob Wittman (R),165.0,Virginia 1st,135300
-244,Virginia,Congressional District 3,14743.0,738833.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),124.0,Bobby Scott,Democrat,Bobby Scott (D),711.0,Virginia 3rd,135300
-245,Virginia,Congressional District 10,23324.0,826914.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),69.0,Jennifer Wexton,Democrat,Jennifer Wexton (D),379.0,Virginia 10th,135300
-246,Virginia,Congressional District 5,13745.0,734216.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),89.0,Denver Riggleman,Republican,Denver Riggleman (R),526.0,Virginia 5th,135300
-247,Virginia,Congressional District 4,11771.0,765419.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),114.0,Donald McEachin,Democrat,Donald McEachin (D),575.0,Virginia 4th,135300
-248,Virginia,Congressional District 7,14355.0,777354.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),104.0,Abigail Spanberger,Democrat,Abigail Spanberger (D),579.0,Virginia 7th,135300
-249,Virginia,Congressional District 2,20625.0,738568.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),76.0,Elaine Luria,Democrat,Elaine Luria (D),463.0,Virginia 2nd,135300
-250,Virginia,Congressional District 11,16879.0,791509.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),24.0,Gerry Connolly,Democrat,Gerry Connolly (D),126.0,Virginia 11th,135300
-251,Virginia,Congressional District 9,7637.0,711468.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),248.0,Morgan Griffith,Republican,Morgan Griffith (R),1337.0,Virginia 9th,135300
-252,Virginia,Congressional District 6,14391.0,750774.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),230.0,Ben Cline,Republican,Ben Cline (R),1413.0,Virginia 6th,135300
-253,Virginia,Congressional District 8,16674.0,792945.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),6.0,Don Beyer,Democrat,Don Beyer (D),33.0,Virginia 8th,135300
-254,West Virginia,Congressional District 1,3628.0,614325.0,119981942,116640231,Shelley Capito (R),Joe Manchin (D),125.0,David McKinley,Republican,David McKinley (R),521.0,West Virginia 1st,21700
-255,West Virginia,Congressional District 3,2745.0,591379.0,119981942,116640231,Shelley Capito (R),Joe Manchin (D),69.0,Carol Miller,Republican,Carol Miller (R),290.0,West Virginia 3rd,21700
-256,West Virginia,Congressional District 2,4609.0,623350.0,119981942,116640231,Shelley Capito (R),Joe Manchin (D),40.0,Alex Mooney,Republican,Alex Mooney (R),187.0,West Virginia 2nd,21700
-257,Alabama,Congressional District 1,10765.0,706503.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),512.0,Bradley Byrne,Republican,Bradley Byrne (R),2404.0,Alabama 1st,64800
-258,Alabama,Congressional District 3,11489.0,706705.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),315.0,Mike Rogers,Republican,Mike Rogers (R),1623.0,Alabama 3rd,64800
-259,Alabama,Congressional District 5,23798.0,714145.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),343.0,Mo Brooks,Republican,Mo Brooks (R),1775.0,Alabama 5th,64800
-260,Alabama,Congressional District 4,26727.0,683391.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),424.0,Robert Aderholt,Republican,Robert Aderholt (R),2326.0,Alabama 4th,64800
-261,Alabama,Congressional District 7,12171.0,669646.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),654.0,Terri Sewell,Democrat,Terri Sewell (D),3119.0,Alabama 7th,64800
-262,Alabama,Congressional District 2,13675.0,680575.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),251.0,Martha Roby,Republican,Martha Roby (R),1299.0,Alabama 2nd,64800
-263,Alabama,Congressional District 6,25585.0,703715.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),107.0,Gary Palmer,Republican,Gary Palmer (R),538.0,Alabama 6th,64800
-264,Kentucky,Congressional District 2,13434.0,753608.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),514.0,Brett Guthrie,Republican,Brett Guthrie (R),3064.0,Kentucky 2nd,60000
-265,Kentucky,Congressional District 6,24718.0,765842.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),552.0,Andy Barr,Republican,Andy Barr (R),3079.0,Kentucky 6th,60000
-266,Kentucky,Congressional District 1,15371.0,720226.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),485.0,James Comer,Republican,James Comer (R),2856.0,Kentucky 1st,60000
-267,Kentucky,Congressional District 3,15704.0,745082.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),299.0,John Yarmuth,Democrat,John Yarmuth (D),1521.0,Kentucky 3rd,60000
-268,Kentucky,Congressional District 5,5411.0,702070.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),92.0,Hal Rogers,Republican,Hal Rogers (R),547.0,Kentucky 5th,60000
-269,Kentucky,Congressional District 4,14579.0,753376.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),361.0,Thomas Massie,Republican,Thomas Massie (R),2180.0,Kentucky 4th,60000
-270,Mississippi,Congressional District 1,19717.0,760715.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),485.0,Trent Kelly,Republican,Trent Kelly (R),2394.0,Mississippi 1st,40100
-271,Mississippi,Congressional District 3,10152.0,749199.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),218.0,Michael Guest,Republican,Michael Guest (R),1067.0,Mississippi 3rd,40100
-272,Mississippi,Congressional District 4,16072.0,767132.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),331.0,Steven Palazzo,Republican,Steven Palazzo (R),1272.0,Mississippi 4th,40100
-273,Mississippi,Congressional District 2,10341.0,711716.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),170.0,Bennie Thompson,Democrat,Bennie Thompson (D),886.0,Mississippi 2nd,40100
-274,Tennessee,Congressional District 1,15576.0,713768.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),631.0,Phil Roe,Republican,Phil Roe (R),3315.0,Tennessee 1st,99000
-275,Tennessee,Congressional District 3,15421.0,726454.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),664.0,Chuck Fleischmann,Republican,Chuck Fleischmann (R),3715.0,Tennessee 3rd,99000
-276,Tennessee,Congressional District 5,43238.0,765122.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),192.0,Jim Cooper,Democrat,Jim Cooper (D),1168.0,Tennessee 5th,99000
-277,Tennessee,Congressional District 4,31616.0,769786.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),936.0,Scott DesJarlais,Republican,Scott DesJarlais (R),5279.0,Tennessee 4th,99000
-278,Tennessee,Congressional District 7,20899.0,764797.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),382.0,Mark Green,Republican,Mark Green (R),2159.0,Tennessee 7th,99000
-279,Tennessee,Congressional District 2,18004.0,738722.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),462.0,Tim Burchett,Republican,Tim Burchett (R),2359.0,Tennessee 2nd,99000
-280,Tennessee,Congressional District 8,15125.0,708031.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),602.0,David Kustoff,Republican,David Kustoff (R),3384.0,Tennessee 8th,99000
-281,Tennessee,Congressional District 9,35996.0,705233.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),563.0,Steve Cohen,Democrat,Steve Cohen (D),2733.0,Tennessee 9th,99000
-282,Tennessee,Congressional District 6,21682.0,759176.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),453.0,John Rose,Republican,John Rose (R),2696.0,Tennessee 6th,99000
-283,Arkansas,Congressional District 1,18373.0,722915.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),400.0,Rick Crawford,Republican,Rick Crawford (R),2894.0,Arkansas 1st,42000
-284,Arkansas,Congressional District 3,77964.0,795817.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),189.0,Steve Womack,Republican,Steve Womack (R),1376.0,Arkansas 3rd,42000
-285,Arkansas,Congressional District 4,35167.0,711335.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),288.0,Bruce Westerman,Republican,Bruce Westerman (R),1930.0,Arkansas 4th,42000
-286,Arkansas,Congressional District 2,27769.0,760604.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),86.0,French Hill,Republican,French Hill (R),474.0,Arkansas 2nd,42000
-287,Louisiana,Congressional District 4,19192.0,753519.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),571.0,Mike Johnson,Republican,Mike Johnson (R),1632.0,Louisiana 4th,68500
-288,Louisiana,Congressional District 2,11712.0,789120.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),1868.0,Cedric Richmond,Democrat,Cedric Richmond (D),4039.0,Louisiana 2nd,68500
-289,Louisiana,Congressional District 6,15831.0,789153.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),2577.0,Garret Graves,Republican,Garret Graves (R),5179.0,Louisiana 6th,68500
-290,Louisiana,Congressional District 1,17508.0,801089.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),880.0,Steve Scalise,Republican,Steve Scalise (R),2071.0,Louisiana 1st,68500
-291,Louisiana,Congressional District 3,18144.0,783013.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),1763.0,Clay Higgins,Republican,Clay Higgins (R),4233.0,Louisiana 3rd,68500
-292,Louisiana,Congressional District 5,11363.0,747722.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),331.0,Ralph Abraham,Republican,Ralph Abraham (R),1654.0,Louisiana 5th,68500
-293,Oklahoma,Congressional District 1,71310.0,797151.0,820171537,695985104,James Inhofe (R),James Lankford (R),117.0,Kevin Hern,Republican,Kevin Hern (R),602.0,Oklahoma 1st,51000
-294,Oklahoma,Congressional District 3,66633.0,776845.0,820171537,695985104,James Inhofe (R),James Lankford (R),231.0,Frank Lucas,Republican,Frank Lucas (R),1493.0,Oklahoma 3rd,51000
-295,Oklahoma,Congressional District 5,111629.0,811988.0,820171537,695985104,James Inhofe (R),James Lankford (R),77.0,Kendra Horn,Democrat,Kendra Horn (D),456.0,Oklahoma 5th,51000
-296,Oklahoma,Congressional District 4,51191.0,783867.0,820171537,695985104,James Inhofe (R),James Lankford (R),92.0,Tom Cole,Republican,Tom Cole (R),526.0,Oklahoma 4th,51000
-297,Oklahoma,Congressional District 2,32403.0,748286.0,820171537,695985104,James Inhofe (R),James Lankford (R),272.0,Markwayne Mullin,Republican,Markwayne Mullin (R),1440.0,Oklahoma 2nd,51000
-298,Texas,Congressional District 28,547983.0,750331.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),477.0,Henry Cuellar,Democrat,Henry Cuellar (D),2827.0,Texas 28th,399500
-299,Texas,Congressional District 1,113745.0,718215.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2653.0,Louie Gohmert,Republican,Louie Gohmert (R),14697.0,Texas 1st,399500
-300,Texas,Congressional District 29,504000.0,745389.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3649.0,Sylvia Garcia,Democrat,Sylvia Garcia (D),15867.0,Texas 29th,399500
-301,Texas,Congressional District 7,141116.0,785024.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),5392.0,Lizzie Fletcher,Democrat,Lizzie Fletcher (D),16039.0,Texas 7th,399500
-302,Texas,Congressional District 27,358756.0,737102.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3988.0,Michael Cloud,Republican,Michael Cloud (R),12025.0,Texas 27th,399500
-303,Texas,Congressional District 6,150817.0,773108.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3515.0,Ron Wright,Republican,Ron Wright (R),19054.0,Texas 6th,399500
-304,Texas,Congressional District 17,170960.0,764593.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2243.0,Bill Flores,Republican,Bill Flores (R),13231.0,Texas 17th,399500
-305,Texas,Congressional District 14,158877.0,747166.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),11176.0,Randy Weber,Republican,Randy Weber (R),27289.0,Texas 14th,399500
-306,Texas,Congressional District 36,161293.0,736668.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4043.0,Brian Babin,Republican,Brian Babin (R),15948.0,Texas 36th,399500
-307,Texas,Congressional District 5,186045.0,744338.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2557.0,Lance Gooden,Republican,Lance Gooden (R),14102.0,Texas 5th,399500
-308,Texas,Congressional District 16,560013.0,737368.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2290.0,Veronica Escobar,Democrat,Veronica Escobar (D),11763.0,Texas 16th,399500
-309,Texas,Congressional District 24,139665.0,789219.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4059.0,Kenny Marchant,Republican,Kenny Marchant (R),21704.0,Texas 24th,399500
-310,Texas,Congressional District 33,427589.0,736783.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2912.0,Marc Veasey,Democrat,Marc Veasey (D),16533.0,Texas 33rd,399500
-311,Texas,Congressional District 11,272061.0,764038.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2610.0,Mike Conaway,Republican,Mike Conaway (R),11619.0,Texas 11th,399500
-312,Texas,Congressional District 15,607546.0,776971.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1304.0,Vicente González,Democrat,Vicente González (D),8171.0,Texas 15th,399500
-313,Texas,Congressional District 23,492112.0,760106.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1004.0,Will Hurd,Republican,Will Hurd (R),4859.0,Texas 23rd,399500
-314,Texas,Congressional District 12,154980.0,793259.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2552.0,Kay Granger,Republican,Kay Granger (R),14868.0,Texas 12th,399500
-315,Texas,Congressional District 8,141996.0,832589.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1282.0,Kevin Brady,Republican,Kevin Brady (R),6920.0,Texas 8th,399500
-316,Texas,Congressional District 34,584860.0,722603.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),855.0,Filemon Vela,Democrat,Filemon Vela (D),5175.0,Texas 34th,399500
-317,Texas,Congressional District 30,271364.0,776026.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1346.0,Eddie Bernice Johnson,Democrat,Eddie Bernice Johnson (D),7300.0,Texas 30th,399500
-318,Texas,Congressional District 18,247501.0,776383.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),5437.0,Shelia Jackson Lee,Democrat,Shelia Jackson Lee (D),21312.0,Texas 18th,399500
-319,Texas,Congressional District 2,176154.0,785386.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3961.0,Dan Crenshaw,Republican,Dan Crenshaw (R),17615.0,Texas 2nd,399500
-320,Texas,Congressional District 20,498309.0,798543.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1147.0,Joaquin Castro,Democrat,Joaquin Castro (D),6409.0,Texas 20th,399500
-321,Texas,Congressional District 31,159643.0,829808.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2585.0,John Carter,Republican,John Carter (R),13319.0,Texas 31st,399500
-322,Texas,Congressional District 25,115639.0,768407.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1838.0,Roger Williams,Republican,Roger Williams (R),10316.0,Texas 25th,399500
-323,Texas,Congressional District 32,159134.0,764700.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3764.0,Colin Allred,Democrat,Colin Allred (D),19276.0,Texas 32nd,399500
-324,Texas,Congressional District 21,198023.0,795908.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1791.0,Chip Roy,Republican,Chip Roy (R),10042.0,Texas 21st,399500
-325,Texas,Congressional District 3,92870.0,842866.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4953.0,Van Taylor,Republican,Van Taylor (R),22551.0,Texas 3rd,399500
-326,Texas,Congressional District 10,183352.0,839780.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),5828.0,Michael McCaul,Republican,Michael McCaul (R),31882.0,Texas 10th,399500
-327,Texas,Congressional District 4,89178.0,738929.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3372.0,John Ratcliffe (resigned),Republican,John Ratcliffe (resigned) (R),19958.0,Texas 4th,399500
-328,Texas,Congressional District 35,439711.0,806895.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2082.0,Lloyd Doggett,Democrat,Lloyd Doggett (D),11789.0,Texas 35th,399500
-329,Texas,Congressional District 13,172815.0,710847.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4360.0,Mac Thornberry,Republican,Mac Thornberry (R),23141.0,Texas 13th,399500
-330,Texas,Congressional District 26,117778.0,848154.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1611.0,Michael Burgess,Republican,Michael Burgess (R),9058.0,Texas 26th,399500
-331,Texas,Congressional District 22,170591.0,880197.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1798.0,Pete Olson,Republican,Pete Olson (R),8114.0,Texas 22nd,399500
-332,Texas,Congressional District 9,186926.0,781992.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3424.0,Al Green,Democrat,Al Green (D),17143.0,Texas 9th,399500
-333,Texas,Congressional District 19,241104.0,725504.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1519.0,Jodey Arrington,Republican,Jodey Arrington (R),7953.0,Texas 19th,399500
-334,Arizona,Congressional District 1,150464.0,753580.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1000.0,Tom O'Halleran,Democrat,Tom O'Halleran (D),4410.0,Arizona 1st,91100
-335,Arizona,Congressional District 3,450997.0,771436.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1066.0,Raúl Grijalva,Democrat,Raúl Grijalva (D),4919.0,Arizona 3rd,91100
-336,Arizona,Congressional District 5,118848.0,803186.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),381.0,Andy Biggs,Republican,Andy Biggs (R),1911.0,Arizona 5th,91100
-337,Arizona,Congressional District 4,130043.0,768077.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),912.0,Paul Gosar,Republican,Paul Gosar (R),4217.0,Arizona 4th,91100
-338,Arizona,Congressional District 7,476683.0,801173.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1225.0,Ruben Gallego,Democrat,Ruben Gallego (D),6814.0,Arizona 7th,91100
-339,Arizona,Congressional District 2,178545.0,719924.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),672.0,Ann Kirkpatrick,Democrat,Ann Kirkpatrick (D),3752.0,Arizona 2nd,91100
-340,Arizona,Congressional District 9,184719.0,774776.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1462.0,Greg Stanton,Democrat,Greg Stanton (D),7482.0,Arizona 9th,91100
-341,Arizona,Congressional District 6,109095.0,776729.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),740.0,David Schweikert,Republican,David Schweikert (R),3944.0,Arizona 6th,91100
-342,Arizona,Congressional District 8,126880.0,777804.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),139.0,Debbie Lesko,Republican,Debbie Lesko (R),795.0,Arizona 8th,91100
-343,Colorado,Congressional District 1,177378.0,818722.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),124.0,Diana DeGette,Democrat,Diana DeGette (D),817.0,Colorado 1st,91100
-344,Colorado,Congressional District 3,119034.0,739107.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),139.0,Scott Tipton,Republican,Scott Tipton (R),870.0,Colorado 3rd,91100
-345,Colorado,Congressional District 5,77179.0,786912.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),45.0,Doug Lamborn,Republican,Doug Lamborn (R),269.0,Colorado 5th,91100
-346,Colorado,Congressional District 4,138960.0,799390.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),559.0,Ken Buck,Republican,Ken Buck (R),4111.0,Colorado 4th,91100
-347,Colorado,Congressional District 7,181238.0,784728.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),185.0,Ed Perlmutter,Democrat,Ed Perlmutter (D),1111.0,Colorado 7th,91100
-348,Colorado,Congressional District 2,60501.0,796438.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),184.0,Joe Neguse,Democrat,Joe Neguse (D),1061.0,Colorado 2nd,91100
-349,Colorado,Congressional District 6,114859.0,805844.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),28.0,Jason Crow,Democrat,Jason Crow (D),167.0,Colorado 6th,91100
-350,Idaho,Congressional District 1,80132.0,869560.0,257514726,225432607,Michael Crapo (R),Jim Risch (R),86.0,Russ Fulcher,Republican,Russ Fulcher (R),641.0,Idaho 1st,24000
-351,Idaho,Congressional District 2,101053.0,818249.0,257514726,225432607,Michael Crapo (R),Jim Risch (R),156.0,Mike Simpson,Republican,Mike Simpson (R),1182.0,Idaho 2nd,24000
-352,Montana,Congressional District (at Large),27510.0,1041732.0,53879742,110700327,Steve Daines (R),Jon Tester (D),61.0,Greg Gianforte,Republican,Greg Gianforte (R),506.0,Montana Congressional District (at Large),17000
-353,Nevada,Congressional District 1,238283.0,689384.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),56.0,Dina Titus,Democrat,Dina Titus (D),352.0,Nevada 1st,44100
-354,Nevada,Congressional District 3,93495.0,785285.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),41.0,Susie Lee,Democrat,Susie Lee (D),274.0,Nevada 3rd,44100
-355,Nevada,Congressional District 4,170206.0,739823.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),34.0,Steven Horsford,Democrat,Steven Horsford (D),188.0,Nevada 4th,44100
-356,Nevada,Congressional District 2,127485.0,708357.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),454.0,Mark Amodei,Republican,Mark Amodei (R),2272.0,Nevada 2nd,44100
-357,New Mexico,Congressional District 1,206272.0,695519.0,2387497076,1385280661,Martin Heinrich (D),Tom Udall (D),815.0,Deb Haaland,Democrat,Deb Haaland (D),4570.0,New Mexico 1st,26800
-358,New Mexico,Congressional District 3,130129.0,696738.0,2387497076,1385280661,Martin Heinrich (D),Tom Udall (D),235.0,Ben Ray Luján,Democrat,Ben Ray Luján (D),1211.0,New Mexico 3rd,26800
-359,New Mexico,Congressional District 2,322115.0,700177.0,2387497076,1385280661,Martin Heinrich (D),Tom Udall (D),365.0,Xochitl Torres Small,Democrat,Xochitl Torres Small (D),2002.0,New Mexico 2nd,26800
-360,Utah,Congressional District 1,72262.0,751772.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),322.0,Rob Bishop,Republican,Rob Bishop (R),1930.0,Utah 1st,48800
-361,Utah,Congressional District 3,52783.0,749828.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),107.0,John Curtis,Republican,John Curtis (R),535.0,Utah 3rd,48800
-362,Utah,Congressional District 4,93750.0,790994.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),137.0,Ben McAdams,Democrat,Ben McAdams (D),708.0,Utah 4th,48800
-363,Utah,Congressional District 2,87580.0,752756.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),159.0,Chris Stewart,Republican,Chris Stewart (R),788.0,Utah 2nd,48800
-364,Wyoming,Congressional District (at Large),44704.0,581836.0,45754750,29317376,John Barrasso (R),Michael Enzi (R),36.0,Liz Cheney,Republican,Liz Cheney (R),154.0,Wyoming Congressional District (at Large),9000
-365,Alaska,Congressional District (at Large),28049.0,738516.0,23147822,58890104,Lisa Murkowski (R),Dan Sullivan (R),33.0,Don Young,Republican,Don Young (R),167.0,Alaska Congressional District (at Large),11500
-366,California,Congressional District 36,330744.0,743337.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),290.0,Raul Ruiz,Democrat,Raul Ruiz (D),1887.0,California 36th,572200
-367,California,Congressional District 16,420252.0,728535.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),507.0,Jim Costa,Democrat,Jim Costa (D),3393.0,California 16th,572200
-368,California,Congressional District 46,437811.0,728906.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),874.0,Lou Correa,Democrat,Lou Correa (D),4967.0,California 46th,572200
-369,California,Congressional District 37,166633.0,724002.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),282.0,Karen Bass,Democrat,Karen Bass (D),1803.0,California 37th,572200
-370,California,Congressional District 33,59639.0,713727.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),461.0,Ted Lieu,Democrat,Ted Lieu (D),2433.0,California 33rd,572200
-371,California,Congressional District 15,134942.0,773841.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),558.0,Eric Swalwell,Democrat,Eric Swalwell (D),2913.0,California 15th,572200
-372,California,Congressional District 53,229602.0,769137.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),264.0,Susan Davis,Democrat,Susan Davis (D),1390.0,California 53rd,572200
-373,California,Congressional District 47,207886.0,714812.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),543.0,Alan Lowenthal,Democrat,Alan Lowenthal (D),3047.0,California 47th,572200
-374,California,Congressional District 31,334774.0,744628.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),468.0,Pete Aguilar,Democrat,Pete Aguilar (D),2851.0,California 31st,572200
-375,California,Congressional District 3,189209.0,736039.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),480.0,John Garamendi,Democrat,John Garamendi (D),3277.0,California 3rd,572200
-376,California,Congressional District 21,506639.0,712857.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),507.0,T.J. Cox,Democrat,T.J. Cox (D),3364.0,California 21st,572200
-377,California,Congressional District 48,125394.0,726516.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),682.0,Harley Rouda,Democrat,Harley Rouda (D),3933.0,California 48th,572200
-378,California,Congressional District 10,293829.0,744389.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),520.0,Josh Harder,Democrat,Josh Harder (D),3603.0,California 10th,572200
-379,California,Congressional District 34,313330.0,729285.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),804.0,Jimmy Gomez,Democrat,Jimmy Gomez (D),5468.0,California 34th,572200
-380,California,Congressional District 52,83958.0,765158.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),821.0,Scott Peters,Democrat,Scott Peters (D),3971.0,California 52nd,572200
-381,California,Congressional District 30,131099.0,764572.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),338.0,Brad Sherman,Democrat,Brad Sherman (D),2000.0,California 30th,572200
-382,California,Congressional District 18,87749.0,740932.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),1057.0,Anna Eshoo,Democrat,Anna Eshoo (D),5301.0,California 18th,572200
-383,California,Congressional District 20,360021.0,735667.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),299.0,Jimmy Panetta,Democrat,Jimmy Panetta (D),1783.0,California 20th,572200
-384,California,Congressional District 42,263063.0,795401.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),719.0,Ken Calvert,Republican,Ken Calvert (R),4328.0,California 42nd,572200
-385,California,Congressional District 25,210985.0,718950.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),480.0,Mike Garcia,Republican,Mike Garcia (R),2511.0,California 25th,572200
-386,California,Congressional District 32,387825.0,719643.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),606.0,Grace Napolitano,Democrat,Grace Napolitano (D),3243.0,California 32nd,572200
-387,California,Congressional District 43,246038.0,727621.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),529.0,Maxine Waters,Democrat,Maxine Waters (D),2962.0,California 43rd,572200
-388,California,Congressional District 35,455910.0,741990.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),1062.0,Norma Torres,Democrat,Norma Torres (D),6155.0,California 35th,572200
-389,California,Congressional District 13,114320.0,754861.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),394.0,Barbara Lee,Democrat,Barbara Lee (D),2237.0,California 13th,572200
-390,California,Congressional District 26,297653.0,725953.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),697.0,Julia Brownley,Democrat,Julia Brownley (D),3842.0,California 26th,572200
-391,California,Congressional District 44,425439.0,723072.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),755.0,Nanette Barragan,Democrat,Nanette Barragan (D),3696.0,California 44th,572200
-392,California,Congressional District 19,269165.0,759866.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),636.0,Zoe Lofgren,Democrat,Zoe Lofgren (D),3088.0,California 19th,572200
-393,California,Congressional District 49,165989.0,737614.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),654.0,Mike Levin,Democrat,Mike Levin (D),3353.0,California 49th,572200
-394,California,Congressional District 5,167464.0,728000.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),476.0,Mike Thompson,Democrat,Mike Thompson (D),2488.0,California 5th,572200
-395,California,Congressional District 24,239120.0,734027.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),521.0,Salud Carbajal,Democrat,Salud Carbajal (D),3013.0,California 24th,572200
-396,California,Congressional District 29,345280.0,721304.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),478.0,Tony Cardenas,Democrat,Tony Cardenas (D),2756.0,California 29th,572200
-397,California,Congressional District 7,103703.0,747097.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),247.0,Ami Bera,Democrat,Ami Bera (D),1500.0,California 7th,572200
-398,California,Congressional District 6,179977.0,751475.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),252.0,Doris Matsui,Democrat,Doris Matsui (D),1459.0,California 6th,572200
-399,California,Congressional District 39,211550.0,727834.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),647.0,Gil Cisneros,Democrat,Gil Cisneros (D),3713.0,California 39th,572200
-400,California,Congressional District 11,135845.0,754654.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),392.0,Mark DeSaulnier,Democrat,Mark DeSaulnier (D),1049.0,California 11th,572200
-401,California,Congressional District 50,213962.0,747793.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),471.0,Duncan Hunter (Resigned),Republican,Duncan Hunter (Resigned) (R),2632.0,California 50th,572200
-402,California,Congressional District 23,257539.0,740768.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),345.0,Kevin McCarthy,Republican,Kevin McCarthy (R),1664.0,California 23rd,572200
-403,California,Congressional District 8,248334.0,721709.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),238.0,Paul Cook,Republican,Paul Cook (R),1449.0,California 8th,572200
-404,California,Congressional District 51,489529.0,729654.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),368.0,Juan Vargas,Democrat,Juan Vargas (D),1959.0,California 51st,572200
-405,California,Congressional District 28,98153.0,715011.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),416.0,Adam Schiff,Democrat,Adam Schiff (D),2587.0,California 28th,572200
-406,California,Congressional District 1,79847.0,706822.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),434.0,Doug LaMalfa,Republican,Doug LaMalfa (R),2892.0,California 1st,572200
-407,California,Congressional District 40,517043.0,711793.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),815.0,Lucille Roybal-Allard,Democrat,Lucille Roybal-Allard (D),4698.0,California 40th,572200
-408,California,Congressional District 12,57826.0,756773.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),84.0,Nancy Pelosi,Democrat,Nancy Pelosi (D),334.0,California 12th,572200
-409,California,Congressional District 45,110407.0,772341.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),1054.0,Katie Porter,Democrat,Katie Porter (D),5850.0,California 45th,572200
-410,California,Congressional District 4,77392.0,734899.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),300.0,Tom McClintock,Republican,Tom McClintock (R),2056.0,California 4th,572200
-411,California,Congressional District 22,338607.0,755464.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),478.0,Devin Nunes,Republican,Devin Nunes (R),3193.0,California 22nd,572200
-412,California,Congressional District 9,255878.0,758327.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),388.0,Jerry McNerney,Democrat,Jerry McNerney (D),2502.0,California 9th,572200
-413,California,Congressional District 41,407587.0,754152.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),580.0,Mark Takano,Democrat,Mark Takano (D),3438.0,California 41st,572200
-414,California,Congressional District 27,162633.0,717944.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),388.0,Judy Chu,Democrat,Judy Chu (D),2247.0,California 27th,572200
-415,California,Congressional District 17,98372.0,771459.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),3329.0,Ro Khanna,Democrat,Ro Khanna (D),16311.0,California 17th,572200
-416,California,Congressional District 14,102391.0,753548.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),346.0,Jackie Speier,Democrat,Jackie Speier (D),1723.0,California 14th,572200
-417,California,Congressional District 2,87599.0,717732.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),385.0,Jared Huffman,Democrat,Jared Huffman (D),2715.0,California 2nd,572200
-418,California,Congressional District 38,385908.0,716869.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),917.0,Linda Sánchez,Democrat,Linda Sánchez (D),5134.0,California 38th,572200
-419,Hawaii,Congressional District 1,17083.0,710707.0,917181,14381143,Mazie Hirono (D),Brian Schatz (D),1.0,Ed Case,Democrat,Ed Case (D),3.0,Hawaii 1st,24800
-420,Hawaii,Congressional District 2,28749.0,711322.0,917181,14381143,Mazie Hirono (D),Brian Schatz (D),0.0,Tulsi Gabbard,Democrat,Tulsi Gabbard (D),2.0,Hawaii 2nd,24800
-421,Oregon,Congressional District 1,98352.0,832139.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),97.0,Suzanne Bonamici,Democrat,Suzanne Bonamici (D),555.0,Oregon 1st,58900
-422,Oregon,Congressional District 3,70878.0,830995.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),79.0,Earl Blumenauer,Democrat,Earl Blumenauer (D),443.0,Oregon 3rd,58900
-423,Oregon,Congressional District 5,117605.0,818296.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),109.0,Kurt Schrader,Democrat,Kurt Schrader (D),700.0,Oregon 5th,58900
-424,Oregon,Congressional District 4,49000.0,794776.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),92.0,Peter DeFazio,Democrat,Peter DeFazio (D),575.0,Oregon 4th,58900
-425,Oregon,Congressional District 2,95334.0,805737.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),91.0,Greg Walden,Republican,Greg Walden (R),618.0,Oregon 2nd,58900
-426,Washington,Congressional District 1,50506.0,742135.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),275.0,Suzan DelBene,Democrat,Suzan DelBene (D),990.0,Washington 1st,113800
-427,Washington,Congressional District 3,55727.0,719101.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),143.0,Jaime Herrera Beutler,Republican,Jaime Herrera Beutler (R),942.0,Washington 3rd,113800
-428,Washington,Congressional District 10,60036.0,735240.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),29.0,Denny Heck,Democrat,Denny Heck (D),195.0,Washington 10th,113800
-429,Washington,Congressional District 5,34799.0,705266.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),160.0,Cathy McMorris Rodgers,Republican,Cathy McMorris Rodgers (R),932.0,Washington 5th,113800
-430,Washington,Congressional District 4,265175.0,719814.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),241.0,Dan Newhouse,Republican,Dan Newhouse (R),1889.0,Washington 4th,113800
-431,Washington,Congressional District 7,35483.0,768042.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),109.0,Pramila Jayapal,Democrat,Pramila Jayapal (D),624.0,Washington 7th,113800
-432,Washington,Congressional District 2,58274.0,730430.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),779.0,Rick Larsen,Democrat,Rick Larsen (D),2467.0,Washington 2nd,113800
-433,Washington,Congressional District 9,65381.0,738464.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),308.0,Adam Smith,Democrat,Adam Smith (D),1181.0,Washington 9th,113800
-434,Washington,Congressional District 6,35069.0,698764.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),118.0,Derek Kilmer,Democrat,Derek Kilmer (D),529.0,Washington 6th,113800
-435,Washington,Congressional District 8,67758.0,737080.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),83.0,Kim Schrier,Democrat,Kim Schrier (D),596.0,Washington 8th,113800
+,Name,Namelsad,AWATER,Mexican-American Population,Total Population,"State Exports to Mexico, 2019","State Imports from Mexico, 2019",Sen1,Sen2,"Exports to Mexico, 2018 (USD Million)",Representative,Party Affiliation,Rep and Party,"Total Jobs, 2018",District,"State Jobs, 2017"
+0,Connecticut,Congressional District 1,51291912,6803.0,713076.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),172.0,John Larson,Democrat,John Larson (D),954.0,Connecticut 1st,59100
+1,Connecticut,Congressional District 3,68693984,14011.0,715728.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),182.0,Rosa DeLauro,Democrat,Rosa DeLauro (D),976.0,Connecticut 3rd,59100
+2,Connecticut,Congressional District 4,214325604,21072.0,735915.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),161.0,Jim Himes,Democrat,Jim Himes (D),746.0,Connecticut 4th,59100
+3,Connecticut,Congressional District 5,88053659,8570.0,711761.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),195.0,Jahana Hayes,Democrat,Jahana Hayes (D),1035.0,Connecticut 5th,59100
+4,Connecticut,Congressional District 2,297591677,6927.0,705024.0,831941757,2952945201,Richard Blumenthal (D),Christopher Murphy (D),215.0,Joe Courtney,Democrat,Joe Courtney (D),1128.0,Connecticut 2nd,59100
+5,Maine,Congressional District 1,4733548431,3309.0,679024.0,50617837,89645116,Susan Collins (R),Angus King (I),21.0,Chellie Pingree,Democrat,Chellie Pingree (D),109.0,Maine 1st,22200
+6,Maine,Congressional District 2,7013001333,2942.0,653789.0,50617837,89645116,Susan Collins (R),Angus King (I),29.0,Jared Golden,Democrat,Jared Golden (D),140.0,Maine 2nd,22200
+7,Massachusetts,Congressional District 1,129713573,5018.0,730959.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),242.0,Richie Neal,Democrat,Richie Neal (D),1370.0,Massachusetts 1st,118900
+8,Massachusetts,Congressional District 3,76095039,5592.0,763936.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),536.0,Lori Trahan,Democrat,Lori Trahan (D),2549.0,Massachusetts 3rd,118900
+9,Massachusetts,Congressional District 5,58468410,7283.0,766241.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),269.0,Katherine Clark,Democrat,Katherine Clark (D),1251.0,Massachusetts 5th,118900
+10,Massachusetts,Congressional District 4,86329577,4030.0,754622.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),287.0,Joe Kennedy,Democrat,Joe Kennedy (D),1511.0,Massachusetts 4th,118900
+11,Massachusetts,Congressional District 7,97438634,9544.0,795850.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),45.0,Ayanna Pressley,Democrat,Ayanna Pressley (D),229.0,Massachusetts 7th,118900
+12,Massachusetts,Congressional District 2,221866012,5049.0,747493.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),386.0,Jim McGovern,Democrat,Jim McGovern (D),2050.0,Massachusetts 2nd,118900
+13,Massachusetts,Congressional District 9,5148464984,3087.0,738604.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),148.0,Bill Keating,Democrat,Bill Keating (D),821.0,Massachusetts 9th,118900
+14,Massachusetts,Congressional District 6,864189658,4596.0,767907.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),509.0,Seth Moulton,Democrat,Seth Moulton (D),2464.0,Massachusetts 6th,118900
+15,Massachusetts,Congressional District 8,447359599,3712.0,764581.0,1944130429,3064933315,Edward Markey (D),Elizabeth Warren (D),86.0,Stephen Lynch,Democrat,Stephen Lynch (D),476.0,Massachusetts 8th,118900
+16,New Hampshire,Congressional District 1,625111184,3875.0,677001.0,408575980,358428941,Maggie Hassan (D),Jeanne Shaheen (D),218.0,Chris Pappas,Democrat,Chris Pappas (D),972.0,New Hampshire 1st,20600
+17,New Hampshire,Congressional District 2,401564064,4811.0,666621.0,408575980,358428941,Maggie Hassan (D),Jeanne Shaheen (D),201.0,Annie Kuster,Democrat,Annie Kuster (D),1037.0,New Hampshire 2nd,20600
+18,Rhode Island,Congressional District 1,628693637,6402.0,532760.0,187998466,2932712465,Jack Reed (D),Sheldon Whitehouse (D),85.0,David Cicilline,Democrat,David Cicilline (D),438.0,Rhode Island 1st,16500
+19,Rhode Island,Congressional District 2,694976850,4721.0,523851.0,187998466,2932712465,Jack Reed (D),Sheldon Whitehouse (D),114.0,Jim Langevin,Democrat,Jim Langevin (D),615.0,Rhode Island 2nd,16500
+20,Vermont,Congressional District (at Large),1030416650,3335.0,624977.0,46894202,63269944,Patrick Leahy (D),Bernie Sanders (I),45.0,Peter Welch,Democrat,Peter Welch (D),270.0,Vermont Congressional District (at Large),10900
+21,New Jersey,Congressional District 1,51162830,13351.0,726200.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),163.0,Donald Norcross,Democrat,Donald Norcross (D),816.0,New Jersey 1st,141200
+22,New Jersey,Congressional District 3,618205570,10252.0,735635.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),198.0,Andy Kim,Democrat,Andy Kim (D),1068.0,New Jersey 3rd,141200
+23,New Jersey,Congressional District 10,12474852,10808.0,749828.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),158.0,Donald Payne,Democrat,Donald Payne (D),766.0,New Jersey 10th,141200
+24,New Jersey,Congressional District 4,49701555,23894.0,739922.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),106.0,Chris Smith,Republican,Chris Smith (R),519.0,New Jersey 4th,141200
+25,New Jersey,Congressional District 5,83673745,7885.0,737642.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),278.0,Josh Gottheimer,Democrat,Josh Gottheimer (D),1306.0,New Jersey 5th,141200
+26,New Jersey,Congressional District 7,47085986,9261.0,739893.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),378.0,Tom Malinowski,Democrat,Tom Malinowski (D),1722.0,New Jersey 7th,141200
+27,New Jersey,Congressional District 2,2034703850,33542.0,719651.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),248.0,Jeff Van Drew,Republican,Jeff Van Drew (R),1238.0,New Jersey 2nd,141200
+28,New Jersey,Congressional District 9,19480622,40399.0,751755.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),270.0,Bill Pascrell,Democrat,Bill Pascrell (D),1333.0,New Jersey 9th,141200
+29,New Jersey,Congressional District 11,67984687,7443.0,735773.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),329.0,Mikie Sherrill,Democrat,Mikie Sherrill (D),1570.0,New Jersey 11th,141200
+30,New Jersey,Congressional District 6,503799396,29688.0,736045.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),332.0,Frank Pallone,Democrat,Frank Pallone (D),1433.0,New Jersey 6th,141200
+31,New Jersey,Congressional District 12,18504392,18479.0,748549.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),355.0,Bonnie Watson Coleman,Democrat,Bonnie Watson Coleman (D),1536.0,New Jersey 12th,141200
+32,New Jersey,Congressional District 8,38082761,25873.0,760952.0,2891217307,4783204142,Cory Booker (D),Bob Menendez (D),132.0,Albio Sires,Democrat,Albio Sires (D),607.0,New Jersey 8th,141200
+33,New York,Congressional District 1,3359339217,7720.0,717383.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),92.0,Lee Zeldin,Republican,Lee Zeldin (R),511.0,New York 1st,323500
+34,New York,Congressional District 7,2679582,53484.0,734208.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),26.0,Nydia Velázquez,Democrat,Nydia Velázquez (D),180.0,New York 7th,323500
+35,New York,Congressional District 27,3223422579,5218.0,715792.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),271.0,Chris Jacobs,Republican,Chris Jacobs (R),1441.0,New York 27th,323500
+36,New York,Congressional District 17,149861991,19211.0,738481.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),77.0,Nita Lowey,Democrat,Nita Lowey (D),418.0,New York 17th,323500
+37,New York,Congressional District 14,39239213,61948.0,705681.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),15.0,Alexandria Ocasio-Cortez,Democrat,Alexandria Ocasio-Cortez (D),97.0,New York 14th,323500
+38,New York,Congressional District 6,711425,14441.0,732433.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),12.0,Grace Meng,Democrat,Grace Meng (D),78.0,New York 6th,323500
+39,New York,Congressional District 5,184506173,8273.0,772342.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),13.0,Gregory Meeks,Democrat,Gregory Meeks (D),80.0,New York 5th,323500
+40,New York,Congressional District 24,3271968550,4046.0,707425.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),298.0,John Katko,Republican,John Katko (R),1628.0,New York 24th,323500
+41,New York,Congressional District 16,76413628,29378.0,741586.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),42.0,Eliot Engel,Democrat,Eliot Engel (D),264.0,New York 16th,323500
+42,New York,Congressional District 11,128599122,27413.0,730634.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),5.0,Max Rose,Democrat,Max Rose (D),32.0,New York 11th,323500
+43,New York,Congressional District 15,6263939,50573.0,744647.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),8.0,José Serrano,Democrat,José Serrano (D),52.0,New York 15th,323500
+44,New York,Congressional District 23,1602345774,5084.0,699965.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),416.0,Tom Reed,Republican,Tom Reed (R),2349.0,New York 23rd,323500
+45,New York,Congressional District 8,48115635,14669.0,771343.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),9.0,Hakeem Jeffries,Democrat,Hakeem Jeffries (D),66.0,New York 8th,323500
+46,New York,Congressional District 12,7282924,14951.0,719072.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),72.0,Carolyn Maloney,Democrat,Carolyn Maloney (D),477.0,New York 12th,323500
+47,New York,Congressional District 18,160314432,22667.0,721629.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),159.0,Sean Patrick Maloney,Democrat,Sean Patrick Maloney (D),813.0,New York 18th,323500
+48,New York,Congressional District 2,375364727,7819.0,715030.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),138.0,Pete King,Republican,Pete King (R),765.0,New York 2nd,323500
+49,New York,Congressional District 20,81932864,5026.0,725925.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),606.0,Paul Tonko,Democrat,Paul Tonko (D),3134.0,New York 20th,323500
+50,New York,Congressional District 25,1831993802,3689.0,717362.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),230.0,Joe Morelle,Democrat,Joe Morelle (D),1222.0,New York 25th,323500
+51,New York,Congressional District 3,301922153,5008.0,727480.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),61.0,Tom Suozzi,Democrat,Tom Suozzi (D),342.0,New York 3rd,323500
+52,New York,Congressional District 21,3341979801,5688.0,706791.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),151.0,Elise Stefanik,Republican,Elise Stefanik (R),887.0,New York 21st,323500
+53,New York,Congressional District 10,23227075,22888.0,730760.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),26.0,Jerry Nadler,Democrat,Jerry Nadler (D),147.0,New York 10th,323500
+54,New York,Congressional District 4,168713321,6231.0,722626.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),27.0,Kathleen Rice,Democrat,Kathleen Rice (D),154.0,New York 4th,323500
+55,New York,Congressional District 13,7203018,48959.0,774528.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),1.0,Adriano Espaillat,Democrat,Adriano Espaillat (D),10.0,New York 13th,323500
+56,New York,Congressional District 26,35592405,3453.0,711502.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),255.0,Brian Higgins,Democrat,Brian Higgins (D),1392.0,New York 26th,323500
+57,New York,Congressional District 22,386868974,3159.0,699564.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),321.0,Anthony Brindisi,Democrat,Anthony Brindisi (D),1649.0,New York 22nd,323500
+58,New York,Congressional District 9,499820,17021.0,733271.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),6.0,Yvette Clarke,Democrat,Yvette Clarke (D),46.0,New York 9th,323500
+59,New York,Congressional District 19,430632551,9177.0,700993.0,3110245179,3632211584,Kirsten Gillibrand (D),Charles Schumer (D),96.0,Antonio Delgado,Democrat,Antonio Delgado (D),547.0,New York 19th,323500
+60,Pennsylvania,Congressional District 1,45137458,8593.0,709207.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),279.0,Brian Fitzpatrick,Republican,Brian Fitzpatrick (R),1333.0,Pennsylvania 1st,195700
+61,Pennsylvania,Congressional District 18,19898044,5291.0,699856.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),171.0,Mike Doyle,Democrat,Mike Doyle (D),858.0,Pennsylvania 18th,195700
+62,Pennsylvania,Congressional District 7,30474030,9642.0,722048.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),364.0,Susan Wild,Democrat,Susan Wild (D),1829.0,Pennsylvania 7th,195700
+63,Pennsylvania,Congressional District 2,8537703,8711.0,734861.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),27.0,Brendan Boyle,Democrat,Brendan Boyle (D),134.0,Pennsylvania 2nd,195700
+64,Pennsylvania,Congressional District 17,41571090,3398.0,711725.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),295.0,Conor Lamb,Democrat,Conor Lamb (D),1387.0,Pennsylvania 17th,195700
+65,Pennsylvania,Congressional District 14,52399122,2795.0,691459.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),318.0,Guy Reschenthaler,Republican,Guy Reschenthaler (R),1633.0,Pennsylvania 14th,195700
+66,Pennsylvania,Congressional District 6,27871337,32613.0,725593.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),339.0,Chrissy Houlahan,Democrat,Chrissy Houlahan (D),1706.0,Pennsylvania 6th,195700
+67,Pennsylvania,Congressional District 3,4710201,6911.0,722979.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),35.0,Dwight Evans,Democrat,Dwight Evans (D),166.0,Pennsylvania 3rd,195700
+68,Pennsylvania,Congressional District 10,100518003,10338.0,727144.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),129.0,Scott Perry,Republican,Scott Perry (R),754.0,Pennsylvania 10th,195700
+69,Pennsylvania,Congressional District 4,11540873,11587.0,724647.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),172.0,Madeleine Dean,Democrat,Madeleine Dean (D),772.0,Pennsylvania 4th,195700
+70,Pennsylvania,Congressional District 5,26310378,6406.0,714120.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),186.0,Mary Gay Scanlon,Democrat,Mary Gay Scanlon (D),787.0,Pennsylvania 5th,195700
+71,Pennsylvania,Congressional District 16,2083865765,3827.0,692426.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),310.0,Mike Kelly,Republican,Mike Kelly (R),1855.0,Pennsylvania 16th,195700
+72,Pennsylvania,Congressional District 13,92403236,10421.0,698730.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),329.0,John Joyce,Republican,John Joyce (R),1834.0,Pennsylvania 13th,195700
+73,Pennsylvania,Congressional District 11,113349199,7594.0,728820.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),243.0,Lloyd Smucker,Republican,Lloyd Smucker (R),1437.0,Pennsylvania 11th,195700
+74,Pennsylvania,Congressional District 9,92317194,6377.0,705114.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),436.0,Dan Meuser,Republican,Dan Meuser (R),2256.0,Pennsylvania 9th,195700
+75,Pennsylvania,Congressional District 15,223499582,3191.0,685714.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),216.0,Glenn Thompson,Republican,Glenn Thompson (R),1278.0,Pennsylvania 15th,195700
+76,Pennsylvania,Congressional District 12,242921113,4765.0,701191.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),219.0,Fred Keller,Republican,Fred Keller (R),1227.0,Pennsylvania 12th,195700
+77,Pennsylvania,Congressional District 8,177265662,10077.0,695547.0,4232143854,7098251987,Bob Casey (D),Patrick Toomey (R),163.0,Matt Cartwright,Democrat,Matt Cartwright (D),861.0,Pennsylvania 8th,195700
+78,Illinois,Congressional District 1,2067510,61989.0,708118.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),160.0,Bobby Rush,Democrat,Bobby Rush (D),924.0,Illinois 1st,198000
+79,Illinois,Congressional District 18,383133624,13050.0,707835.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),783.0,Darin LaHood,Republican,Darin LaHood (R),5075.0,Illinois 18th,198000
+80,Illinois,Congressional District 7,5341167,77837.0,724652.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),243.0,Danny Davis,Republican,Danny Davis (R),1444.0,Illinois 7th,198000
+81,Illinois,Congressional District 2,25389182,86226.0,703782.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),328.0,Robin Kelly,Democrat,Robin Kelly (D),1830.0,Illinois 2nd,198000
+82,Illinois,Congressional District 14,63294101,70427.0,735045.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),699.0,Lauren Underwood,Democrat,Lauren Underwood (D),3956.0,Illinois 14th,198000
+83,Illinois,Congressional District 5,1850633,84146.0,740075.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),381.0,Mike Quigley,Democrat,Mike Quigley (D),2218.0,Illinois 5th,198000
+84,Illinois,Congressional District 16,183129836,56684.0,695502.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),1239.0,Adam Kinzinger,Republican,Adam Kinzinger (R),7860.0,Illinois 16th,198000
+85,Illinois,Congressional District 13,216308900,16010.0,704851.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),563.0,Rodney Davis,Republican,Rodney Davis (R),3817.0,Illinois 13th,198000
+86,Illinois,Congressional District 17,346793272,52540.0,688356.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),858.0,Cheri Bustos,Democrat,Cheri Bustos (D),5382.0,Illinois 17th,198000
+87,Illinois,Congressional District 6,27754091,56651.0,727847.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),520.0,Sean Casten,Democrat,Sean Casten (D),2947.0,Illinois 6th,198000
+88,Illinois,Congressional District 3,13496849,201255.0,717897.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),239.0,Dan Lipinski,Democrat,Dan Lipinski (D),1358.0,Illinois 3rd,198000
+89,Illinois,Congressional District 10,31605644,133888.0,712819.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),684.0,Brad Schneider,Democrat,Brad Schneider (D),3379.0,Illinois 10th,198000
+90,Illinois,Congressional District 4,966145,379136.0,699621.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),242.0,Chuy Garcia,Democrat,Chuy Garcia (D),1439.0,Illinois 4th,198000
+91,Illinois,Congressional District 11,16218367,170213.0,722593.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),492.0,Bill Foster,Democrat,Bill Foster (D),2536.0,Illinois 11th,198000
+92,Illinois,Congressional District 9,1558240,53349.0,723507.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),216.0,Jan Schakowsky,Democrat,Jan Schakowsky (D),1262.0,Illinois 9th,198000
+93,Illinois,Congressional District 15,353131952,14576.0,696632.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),1253.0,John Shimkus,Republican,John Shimkus (R),8157.0,Illinois 15th,198000
+94,Illinois,Congressional District 12,462200658,17687.0,697270.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),614.0,Mike Bost,Republican,Mike Bost (R),3464.0,Illinois 12th,198000
+95,Illinois,Congressional District 8,10394846,170167.0,715095.0,9315360723,12837641357,Tammy Duckworth (D),Richard Durbin (D),834.0,Raja Krishnamoorthi,Democrat,Raja Krishnamoorthi (D),4764.0,Illinois 8th,198000
+96,Indiana,Congressional District 2,131728583,54926.0,722805.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),750.0,Jackie Walorski,Republican,Jackie Walorski (R),4587.0,Indiana 2nd,89200
+97,Indiana,Congressional District 9,144580780,17263.0,747995.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),460.0,Trey Hollingsworth,Republican,Trey Hollingsworth (R),2670.0,Indiana 9th,89200
+98,Indiana,Congressional District 6,106706879,14501.0,718706.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),1547.0,Greg Pence,Republican,Greg Pence (R),8875.0,Indiana 6th,89200
+99,Indiana,Congressional District 8,278478325,11860.0,719671.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),536.0,Larry Bucshon,Republican,Larry Bucshon (R),3121.0,Indiana 8th,89200
+100,Indiana,Congressional District 1,625462306,84969.0,715348.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),275.0,Pete Visclosky,Democrat,Pete Visclosky (D),1327.0,Indiana 1st,89200
+101,Indiana,Congressional District 3,135299678,35601.0,739773.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),768.0,Jim Banks,Republican,Jim Banks (R),4623.0,Indiana 3rd,89200
+102,Indiana,Congressional District 5,40864910,21923.0,767053.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),236.0,Susan Brooks,Republican,Susan Brooks (R),1327.0,Indiana 5th,89200
+103,Indiana,Congressional District 4,70295098,33408.0,750717.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),802.0,Jim Baird,Republican,Jim Baird (R),4712.0,Indiana 4th,89200
+104,Indiana,Congressional District 7,4586270,58768.0,755358.0,5671913251,5205707176,Mike Braun (R),Todd Young (R),169.0,André Carson,Democrat,André Carson (D),750.0,Indiana 7th,89200
+105,Michigan,Congressional District 1,75782056342,9696.0,699432.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),417.0,Jack Bergman,Republican,Jack Bergman (R),2560.0,Michigan 1st,128600
+106,Michigan,Congressional District 7,526028591,22883.0,705518.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),844.0,Tim Walberg,Republican,Tim Walberg (R),5000.0,Michigan 7th,128600
+107,Michigan,Congressional District 2,7325050525,55477.0,735626.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1690.0,Bill Huizenga,Republican,Bill Huizenga (R),10165.0,Michigan 2nd,128600
+108,Michigan,Congressional District 6,4065852264,34346.0,716503.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1249.0,Fred Upton,Republican,Fred Upton (R),7460.0,Michigan 6th,128600
+109,Michigan,Congressional District 14,97940449,24047.0,691955.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),462.0,Brenda Lawrence,Democrat,Brenda Lawrence (D),2627.0,Michigan 14th,128600
+110,Michigan,Congressional District 3,176750939,35061.0,737911.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1392.0,Justin Amash,Libertarian,Justin Amash (L),8750.0,Michigan 3rd,128600
+111,Michigan,Congressional District 10,5435442796,18086.0,717176.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),899.0,Paul Mitchell,Republican,Paul Mitchell (R),5656.0,Michigan 10th,128600
+112,Michigan,Congressional District 5,4835570030,27684.0,679543.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),504.0,Dan Kildee,Democrat,Dan Kildee (D),3110.0,Michigan 5th,128600
+113,Michigan,Congressional District 4,520053991,17047.0,701141.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),873.0,John Moolenaar,Republican,John Moolenaar (R),4884.0,Michigan 4th,128600
+114,Michigan,Congressional District 13,5374636,38536.0,679044.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),685.0,Rashida Tlaib,Democrat,Rashida Tlaib (D),3546.0,Michigan 13th,128600
+115,Michigan,Congressional District 11,55726229,15719.0,727670.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1310.0,Haley Stevens,Democrat,Haley Stevens (D),7509.0,Michigan 11th,128600
+116,Michigan,Congressional District 9,13240065,10206.0,718682.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),1101.0,Andy Levin,Democrat,Andy Levin (D),6766.0,Michigan 9th,128600
+117,Michigan,Congressional District 12,71968024,28307.0,711209.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),412.0,Debbie Dingell,Democrat,Debbie Dingell (D),2389.0,Michigan 12th,128600
+118,Michigan,Congressional District 8,99556198,26326.0,736078.0,11163559039,58227002161,Gary Peters (D),Debbie Stabenow (D),475.0,Elissa Slotkin,Democrat,Elissa Slotkin (D),2878.0,Michigan 8th,128600
+119,Ohio,Congressional District 1,26793491,8702.0,737765.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),286.0,Steve Chabot,Republican,Steve Chabot (R),1459.0,Ohio 1st,170900
+120,Ohio,Congressional District 7,64567382,6821.0,726547.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),586.0,Bob Gibbs,Republican,Bob Gibbs (R),3495.0,Ohio 7th,170900
+121,Ohio,Congressional District 2,77170483,7444.0,728702.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),298.0,Brad Wenstrup,Republican,Brad Wenstrup (R),1564.0,Ohio 2nd,170900
+122,Ohio,Congressional District 14,3730283485,10284.0,717865.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),572.0,David Joyce,Republican,David Joyce (R),3091.0,Ohio 14th,170900
+123,Ohio,Congressional District 6,202816758,4278.0,700099.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),228.0,Bill Johnson,Republican,Bill Johnson (R),1274.0,Ohio 6th,170900
+124,Ohio,Congressional District 3,11274048,28849.0,785158.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),72.0,Joyce Beatty,Democrat,Joyce Beatty (D),416.0,Ohio 3rd,170900
+125,Ohio,Congressional District 10,15947647,11618.0,721945.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),262.0,Mike Turner,Republican,Mike Turner (R),1590.0,Ohio 10th,170900
+126,Ohio,Congressional District 4,121559316,15769.0,711251.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),1021.0,Jim Jordan,Republican,Jim Jordan (R),5755.0,Ohio 4th,170900
+127,Ohio,Congressional District 5,73249833,27991.0,722734.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),701.0,Bob Latta,Republican,Bob Latta (R),4206.0,Ohio 5th,170900
+128,Ohio,Congressional District 16,31141190,6307.0,722281.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),338.0,Anthony Gonzalez,Republican,Anthony Gonzalez (R),2003.0,Ohio 16th,170900
+129,Ohio,Congressional District 13,70792303,6605.0,710422.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),373.0,Tim Ryan,Democrat,Tim Ryan (D),2090.0,Ohio 13th,170900
+130,Ohio,Congressional District 15,99789977,8530.0,754510.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),247.0,Steve Stivers,Republican,Steve Stivers (R),1417.0,Ohio 15th,170900
+131,Ohio,Congressional District 11,1310812208,6102.0,693817.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),393.0,Marcia Fudge,Democrat,Marcia Fudge (D),2085.0,Ohio 11th,170900
+132,Ohio,Congressional District 9,4313138940,27523.0,709760.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),454.0,Marcy Kaptur,Democrat,Marcy Kaptur (D),2375.0,Ohio 9th,170900
+133,Ohio,Congressional District 8,42726671,14405.0,728116.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),541.0,Warren Davidson,Republican,Warren Davidson (R),3024.0,Ohio 8th,170900
+134,Ohio,Congressional District 12,76786970,8832.0,770907.0,6882555712,8867915474,Sherrod Brown (D),Rob Portman (R),215.0,Troy Balderson,Republican,Troy Balderson (R),1221.0,Ohio 12th,170900
+135,Wisconsin,Congressional District 1,2523692436,53621.0,717432.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),552.0,Bryan Steil,Republican,Bryan Steil (R),2839.0,Wisconsin 1st,92500
+136,Wisconsin,Congressional District 3,815152730,13499.0,719855.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),274.0,Ron Kind,Democrat,Ron Kind (D),1522.0,Wisconsin 3rd,92500
+137,Wisconsin,Congressional District 4,2454549243,83572.0,713066.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),293.0,Gwen Moore,Democrat,Gwen Moore (D),1573.0,Wisconsin 4th,92500
+138,Wisconsin,Congressional District 5,165505624,28707.0,723040.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),541.0,Jim Sensenbrenner,Republican,Jim Sensenbrenner (R),3021.0,Wisconsin 5th,92500
+139,Wisconsin,Congressional District 7,7700520546,11466.0,708307.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),366.0,Tom Tiffany,Republican,Tom Tiffany (R),2184.0,Wisconsin 7th,92500
+140,Wisconsin,Congressional District 2,189001494,33411.0,754999.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),296.0,Mark Pocan,Democrat,Mark Pocan (D),1205.0,Wisconsin 2nd,92500
+141,Wisconsin,Congressional District 6,7315844396,25470.0,713439.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),720.0,Glenn Grothman,Republican,Glenn Grothman (R),4185.0,Wisconsin 6th,92500
+142,Wisconsin,Congressional District 8,8180685289,29043.0,728256.0,3282375756,2846045994,Tammy Baldwin (D),Ron Johnson (R),460.0,Mike Gallagher,Republican,Mike Gallagher (R),2724.0,Wisconsin 8th,92500
+143,Iowa,Congressional District 1,228600914,24865.0,772171.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),690.0,Abby Finkenauer,Democrat,Abby Finkenauer (D),5175.0,Iowa 1st,52100
+144,Iowa,Congressional District 4,264712627,40777.0,757452.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),744.0,Steve King,Republican,Steve King (R),6279.0,Iowa 4th,52100
+145,Iowa,Congressional District 2,434115836,33535.0,780050.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),532.0,Dave Loebsack,Democrat,Dave Loebsack (D),3831.0,Iowa 2nd,52100
+146,Iowa,Congressional District 3,156751435,44191.0,822826.0,2074569741,1961430806,Joni Ernst (R),Charles Grassley (R),249.0,Cindy Axne,Democrat,Cindy Axne (D),1984.0,Iowa 3rd,52100
+147,Kansas,Congressional District 1,594345222,93458.0,708511.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),1037.0,Roger Marshall,Republican,Roger Marshall (R),9262.0,Kansas 1st,47200
+148,Kansas,Congressional District 3,32787799,72931.0,762091.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),184.0,Sharice Davids,Democrat,Sharice Davids (D),969.0,Kansas 3rd,47200
+149,Kansas,Congressional District 4,189253640,74705.0,723182.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),568.0,Ron Estes,Republican,Ron Estes (R),3399.0,Kansas 4th,47200
+150,Kansas,Congressional District 2,527754544,37119.0,714992.0,2189731493,806176742,Jerry Moran (R),Pat Roberts (R),386.0,Steve Watkins,Republican,Steve Watkins (R),3121.0,Kansas 2nd,47200
+151,Minnesota,Congressional District 7,5058381039,24104.0,664941.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),540.0,Collin Peterson,Democrat,Collin Peterson (D),3968.0,Minnesota 7th,91000
+152,Minnesota,Congressional District 2,243358361,29257.0,698522.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),207.0,Angie Craig,Democrat,Angie Craig (D),1249.0,Minnesota 2nd,91000
+153,Minnesota,Congressional District 6,408723230,13103.0,702583.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),296.0,Tom Emmer,Republican,Tom Emmer (R),1856.0,Minnesota 6th,91000
+154,Minnesota,Congressional District 8,12448503736,7865.0,664674.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),167.0,Pete Stauber,Republican,Pete Stauber (R),1029.0,Minnesota 8th,91000
+155,Minnesota,Congressional District 1,540782812,31870.0,672649.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),692.0,Jim Hagedorn,Republican,Jim Hagedorn (R),4526.0,Minnesota 1st,91000
+156,Minnesota,Congressional District 3,144398952,20814.0,710378.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),248.0,Dean Phillips,Democrat,Dean Phillips (D),1395.0,Minnesota 3rd,91000
+157,Minnesota,Congressional District 4,84495478,32375.0,706259.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),201.0,Betty McCollum,Democrat,Betty McCollum (D),1021.0,Minnesota 4th,91000
+158,Minnesota,Congressional District 5,16573581,42192.0,707352.0,2428294131,2363800773,Amy Klobuchar (D),Tina Smith (D),165.0,Ilhan Omar,Democrat,Ilhan Omar (D),956.0,Minnesota 5th,91000
+159,Missouri,Congressional District 1,28225242,15863.0,732537.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),290.0,Lacy Clay,Democrat,Lacy Clay (D),1505.0,Missouri 1st,95300
+160,Missouri,Congressional District 3,368043248,12857.0,782693.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),314.0,Blaine Luetkemeyer,Republican,Blaine Luetkemeyer (R),2015.0,Missouri 3rd,95300
+161,Missouri,Congressional District 5,89873789,51266.0,764511.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),270.0,Emanuel Cleaver,Democrat,Emanuel Cleaver (D),1684.0,Missouri 5th,95300
+162,Missouri,Congressional District 4,744247785,20526.0,765070.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),398.0,Vicky Hartzler,Republican,Vicky Hartzler (R),2743.0,Missouri 4th,95300
+163,Missouri,Congressional District 7,248542030,26658.0,773182.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),342.0,Billy Long,Republican,Billy Long (R),2093.0,Missouri 7th,95300
+164,Missouri,Congressional District 2,37571451,11944.0,763266.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),120.0,Ann Wagner,Republican,Ann Wagner (R),667.0,Missouri 2nd,95300
+165,Missouri,Congressional District 6,528128323,21778.0,768533.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),605.0,Sam Graves,Republican,Sam Graves (R),4429.0,Missouri 6th,95300
+166,Missouri,Congressional District 8,444793592,11163.0,740270.0,2303979678,3415939848,Roy Blunt (R),Josh Hawley (R),367.0,Jason Smith,Republican,Jason Smith (R),2401.0,Missouri 8th,95300
+167,Nebraska,Congressional District 1,249898247,39937.0,641533.0,1733851230,395298066,Deb Fischer (R),Ben Sasse (R),564.0,Jeff Fortenberry,Republican,Jeff Fortenberry (R),4727.0,Nebraska 1st,33900
+168,Nebraska,Congressional District 3,1071218403,53200.0,603432.0,1733851230,395298066,Deb Fischer (R),Ben Sasse (R),1133.0,Adrian Smith,Republican,Adrian Smith (R),10516.0,Nebraska 3rd,33900
+169,Nebraska,Congressional District 2,50712484,57287.0,659795.0,1733851230,395298066,Deb Fischer (R),Ben Sasse (R),248.0,Don Bacon,Republican,Don Bacon (R),1585.0,Nebraska 2nd,33900
+170,North Dakota,Congressional District (at Large),4403267548,17915.0,752201.0,228410431,162430130,Kevin Cramer (R),John Hoeven (R),310.0,Kelly Armstrong,Republican,Kelly Armstrong (R),2592.0,North Dakota Congressional District (at Large),13500
+171,South Dakota,Congressional District (at Large),3382720225,21229.0,864289.0,312059517,57853596,Mike Rounds (R),John Thune (R),437.0,Dusty Johnson,Republican,Dusty Johnson (R),3581.0,South Dakota Congressional District (at Large),15300
+172,Delaware,Congressional District (at Large),1399985648,34244.0,949495.0,163810717,332078116,Thomas Carper (D),Chris Coons (D),160.0,Lisa Blunt Rochester,Democrat,Lisa Blunt Rochester (D),794.0,Delaware Congressional District (at Large),15200
+173,District of Columbia,Delegate District (at Large),18687198,14156.0,684498.0,10223405,4376923,,,,Eleanor Holmes Norton,Democrat,Eleanor Holmes Norton (D),,District of Columbia Delegate District (at Large),24900
+174,Florida,Congressional District 13,640204070,18632.0,723658.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),259.0,Charlie Crist,Democrat,Charlie Crist (D),1401.0,Florida 13th,304100
+175,Florida,Congressional District 26,7734843990,36043.0,774375.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),30.0,Debbie Mucarsel-Powell,Democrat,Debbie Mucarsel-Powell (D),178.0,Florida 26th,304100
+176,Florida,Congressional District 22,254083069,15146.0,750149.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),127.0,Ted Deutch,Democrat,Ted Deutch (D),695.0,Florida 22nd,304100
+177,Florida,Congressional District 9,798928316,41142.0,837026.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),125.0,Darren Soto,Democrat,Darren Soto (D),665.0,Florida 9th,304100
+178,Florida,Congressional District 19,1603487946,51008.0,797066.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),36.0,Francis Rooney,Republican,Francis Rooney (R),213.0,Florida 19th,304100
+179,Florida,Congressional District 1,1919384110,20044.0,759701.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),219.0,Matt Gaetz,Republican,Matt Gaetz (R),1101.0,Florida 1st,304100
+180,Florida,Congressional District 7,110917454,13507.0,757809.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),134.0,Stephanie Murphy,Democrat,Stephanie Murphy (D),764.0,Florida 7th,304100
+181,Florida,Congressional District 27,597416563,14046.0,751996.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),56.0,Donna Shalala,Democrat,Donna Shalala (D),333.0,Florida 27th,304100
+182,Florida,Congressional District 17,1918872575,58202.0,756549.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),78.0,Greg Steube,Republican,Greg Steube (R),400.0,Florida 17th,304100
+183,Florida,Congressional District 6,1318862943,19763.0,753500.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),161.0,Michael Waltz,Republican,Michael Waltz (R),939.0,Florida 6th,304100
+184,Florida,Congressional District 14,233953834,22671.0,763832.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),94.0,Kathy Castor,Democrat,Kathy Castor (D),539.0,Florida 14th,304100
+185,Florida,Congressional District 5,239830493,13825.0,729038.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),154.0,Al Lawson,Democrat,Al Lawson (D),839.0,Florida 5th,304100
+186,Florida,Congressional District 24,33054938,8554.0,750906.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),99.0,Frederica Wilson,Democrat,Frederica Wilson (D),556.0,Florida 24th,304100
+187,Florida,Congressional District 16,954285435,61020.0,804662.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),109.0,Vern Buchanan,Republican,Vern Buchanan (R),656.0,Florida 16th,304100
+188,Florida,Congressional District 11,1243668220,15950.0,754649.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),55.0,Daniel Webster,Republican,Daniel Webster (R),329.0,Florida 11th,304100
+189,Florida,Congressional District 15,214478863,45184.0,777638.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),129.0,Ross Spano,Republican,Ross Spano (R),615.0,Florida 15th,304100
+190,Florida,Congressional District 23,184761814,10798.0,756127.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),56.0,Debbie Wasserman Schultz,Democrat,Debbie Wasserman Schultz (D),306.0,Florida 23rd,304100
+191,Florida,Congressional District 8,1710622089,17417.0,742230.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),290.0,Bill Posey,Republican,Bill Posey (R),1423.0,Florida 8th,304100
+192,Florida,Congressional District 12,545757465,17275.0,757719.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),91.0,Gus Bilirakis,Republican,Gus Bilirakis (R),513.0,Florida 12th,304100
+193,Florida,Congressional District 18,979668133,30184.0,757228.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),88.0,Brian Mast,Republican,Brian Mast (R),519.0,Florida 18th,304100
+194,Florida,Congressional District 2,4835768335,16105.0,719213.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),185.0,Neal Dunn,Republican,Neal Dunn (R),1154.0,Florida 2nd,304100
+195,Florida,Congressional District 20,639142009,27376.0,778060.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),88.0,Alcee Hastings,Democrat,Alcee Hastings (D),460.0,Florida 20th,304100
+196,Florida,Congressional District 25,452925118,48121.0,763720.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),162.0,Mario Diaz-Balart,Republican,Mario Diaz-Balart (R),915.0,Florida 25th,304100
+197,Florida,Congressional District 21,250336902,29812.0,762765.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),45.0,Lois Frankel,Democrat,Lois Frankel (D),248.0,Florida 21st,304100
+198,Florida,Congressional District 3,722972427,15777.0,728979.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),93.0,Ted Yoho,Republican,Ted Yoho (R),530.0,Florida 3rd,304100
+199,Florida,Congressional District 10,206005788,32591.0,808969.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),132.0,Val Demings,Democrat,Val Demings (D),680.0,Florida 10th,304100
+200,Florida,Congressional District 4,1016868324,13325.0,780575.0,3326646675,6926297696,Marco Rubio (R),Rick Scott (R),161.0,John Rutherford,Republican,John Rutherford (R),857.0,Florida 4th,304100
+201,Georgia,Congressional District 3,215086398,18402.0,728046.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),707.0,Drew Ferguson,Republican,Drew Ferguson (R),3810.0,Georgia 3rd,158200
+202,Georgia,Congressional District 10,459100029,22224.0,740458.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),181.0,Jody Hice,Republican,Jody Hice (R),1134.0,Georgia 10th,158200
+203,Georgia,Congressional District 4,21757037,40204.0,748744.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),161.0,Hank Johnson,Democrat,Hank Johnson (D),879.0,Georgia 4th,158200
+204,Georgia,Congressional District 5,5016095,29860.0,759756.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),52.0,John Lewis,Democrat,John Lewis (D),290.0,Georgia 5th,158200
+205,Georgia,Congressional District 13,25795622,51811.0,749389.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),104.0,David Scott,Democrat,David Scott (D),584.0,Georgia 13th,158200
+206,Georgia,Congressional District 9,410740104,68711.0,735832.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),461.0,Doug Collins,Republican,Doug Collins (R),2823.0,Georgia 9th,158200
+207,Georgia,Congressional District 7,25241077,73871.0,793740.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),320.0,Rob Woodall,Republican,Rob Woodall (R),1631.0,Georgia 7th,158200
+208,Georgia,Congressional District 2,438955826,21392.0,675246.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),336.0,Sanford Bishop,Democrat,Sanford Bishop (D),1947.0,Georgia 2nd,158200
+209,Georgia,Congressional District 6,13986249,54415.0,744905.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),82.0,Lucy McBath,Democrat,Lucy McBath (D),469.0,Georgia 6th,158200
+210,Georgia,Congressional District 14,51880746,56643.0,709918.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),420.0,Tom Graves,Republican,Tom Graves (R),2520.0,Georgia 14th,158200
+211,Georgia,Congressional District 1,2075874473,24101.0,731698.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),356.0,Buddy Carter,Republican,Buddy Carter (R),1764.0,Georgia 1st,158200
+212,Georgia,Congressional District 11,70586962,44244.0,756192.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),203.0,Barry Loudermilk,Republican,Barry Loudermilk (R),1154.0,Georgia 11th,158200
+213,Georgia,Congressional District 12,310156061,26215.0,718746.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),277.0,Rick Allen,Republican,Rick Allen (R),1606.0,Georgia 12th,158200
+214,Georgia,Congressional District 8,298759475,29617.0,704814.0,3519429234,7783987631,Kelly Loeffler (R),David Perdue (R),235.0,Austin Scott,Democrat,Austin Scott (D),1425.0,Georgia 8th,158200
+215,Maryland,Congressional District 1,4035802868,8783.0,730442.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),111.0,Andy Harris,Republican,Andy Harris (R),665.0,Maryland 1st,96100
+216,Maryland,Congressional District 3,252344417,15466.0,756296.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),54.0,John Sarbanes,Democrat,John Sarbanes (D),277.0,Maryland 3rd,96100
+217,Maryland,Congressional District 4,48178407,16796.0,749033.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),35.0,Anthony Brown,Democrat,Anthony Brown (D),197.0,Maryland 4th,96100
+218,Maryland,Congressional District 5,2066469028,14070.0,760819.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),37.0,Steny Hoyer,Democrat,Steny Hoyer (D),150.0,Maryland 5th,96100
+219,Maryland,Congressional District 7,14715020,5922.0,719951.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),38.0,Kweisi Mfume,Democrat,Kweisi Mfume (D),201.0,Maryland 7th,96100
+220,Maryland,Congressional District 2,440369386,13837.0,762351.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),71.0,Dutch Ruppersberger,Democrat,Dutch Ruppersberger (D),373.0,Maryland 2nd,96100
+221,Maryland,Congressional District 6,98039271,11174.0,765910.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),63.0,David Trone,Democrat,David Trone (D),342.0,Maryland 6th,96100
+222,Maryland,Congressional District 8,24048561,11183.0,758633.0,404360008,2916445768,Benjamin Cardin (D),Chris Van Hollen (D),23.0,Jamie Raskin,Democrat,Jamie Raskin (D),119.0,Maryland 8th,96100
+223,North Carolina,Congressional District 1,526676361,38967.0,753591.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),336.0,G.K. Butterfield,Democrat,G.K. Butterfield (D),1911.0,North Carolina 1st,150600
+224,North Carolina,Congressional District 7,1127451539,44688.0,787034.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),262.0,David Rouzer,Republican,David Rouzer (R),1483.0,North Carolina 7th,150600
+225,North Carolina,Congressional District 2,95720327,47542.0,822252.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),268.0,George Holding,Republican,George Holding (R),1568.0,North Carolina 2nd,150600
+226,North Carolina,Congressional District 6,209232379,54031.0,762671.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),308.0,Mark Walker,Republican,Mark Walker (R),1814.0,North Carolina 6th,150600
+227,North Carolina,Congressional District 3,10738328614,34788.0,754824.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),136.0,Greg Murphy,Republican,Greg Murphy (R),683.0,North Carolina 3rd,150600
+228,North Carolina,Congressional District 10,107723252,27434.0,753325.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),503.0,Patrick McHenry,Republican,Patrick McHenry (R),3001.0,North Carolina 10th,150600
+229,North Carolina,Congressional District 4,18220198,45443.0,840168.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),205.0,David Price,Democrat,David Price (D),1090.0,North Carolina 4th,150600
+230,North Carolina,Congressional District 5,80959022,48148.0,752439.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),293.0,Virginia Foxx,Republican,Virginia Foxx (R),1861.0,North Carolina 5th,150600
+231,North Carolina,Congressional District 13,105491253,39480.0,771529.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),116.0,Ted Budd,Republican,Ted Budd (R),647.0,North Carolina 13th,150600
+232,North Carolina,Congressional District 11,190956833,30271.0,752316.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),357.0,Mark Meadows (resigned),Republican,Mark Meadows (resigned) (R),2146.0,North Carolina 11th,150600
+233,North Carolina,Congressional District 9,85881092,35814.0,779186.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),212.0,Dan Bishop,Republican,Dan Bishop (R),1254.0,North Carolina 9th,150600
+234,North Carolina,Congressional District 8,123254406,42047.0,779035.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),368.0,Richard Hudson,Republican,Richard Hudson (R),2222.0,North Carolina 8th,150600
+235,North Carolina,Congressional District 12,56176119,49852.0,847254.0,3783221590,7819332094,Richard Burr (R),Thom Tillis (R),426.0,Alma Adams,Democrat,Alma Adams (D),2283.0,North Carolina 12th,150600
+236,South Carolina,Congressional District 1,2196569453,24518.0,766664.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),103.0,Joe Cunningham,Democrat,Joe Cunningham (D),579.0,South Carolina 1st,69900
+237,South Carolina,Congressional District 3,518916989,20032.0,684952.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),588.0,Jeff Duncan,Republican,Jeff Duncan (R),3500.0,South Carolina 3rd,69900
+238,South Carolina,Congressional District 4,44729109,31531.0,718032.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),817.0,William Timmons,Republican,William Timmons (R),4526.0,South Carolina 4th,69900
+239,South Carolina,Congressional District 5,265732852,16214.0,706085.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),412.0,Ralph Norman,Republican,Ralph Norman (R),2333.0,South Carolina 5th,69900
+240,South Carolina,Congressional District 7,958926941,16861.0,709479.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),225.0,Tom Rice,Republican,Tom Rice (R),1286.0,South Carolina 7th,69900
+241,South Carolina,Congressional District 2,225271436,22060.0,707819.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),232.0,Joe Wilson,Republican,Joe Wilson (R),1341.0,South Carolina 2nd,69900
+242,South Carolina,Congressional District 6,865071998,19366.0,662894.0,2198413112,4763893117,Lindsey Graham (R),Tim Scott (R),387.0,Jim Clyburn,Democrat,Jim Clyburn (D),1929.0,South Carolina 6th,69900
+243,Virginia,Congressional District 1,1767438169,18902.0,785774.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),30.0,Rob Wittman,Republican,Rob Wittman (R),165.0,Virginia 1st,135300
+244,Virginia,Congressional District 3,406420212,14743.0,738833.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),124.0,Bobby Scott,Democrat,Bobby Scott (D),711.0,Virginia 3rd,135300
+245,Virginia,Congressional District 10,37324155,23324.0,826914.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),69.0,Jennifer Wexton,Democrat,Jennifer Wexton (D),379.0,Virginia 10th,135300
+246,Virginia,Congressional District 5,391890253,13745.0,734216.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),89.0,Denver Riggleman,Republican,Denver Riggleman (R),526.0,Virginia 5th,135300
+247,Virginia,Congressional District 4,296483280,11771.0,765419.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),114.0,Donald McEachin,Democrat,Donald McEachin (D),575.0,Virginia 4th,135300
+248,Virginia,Congressional District 7,144698517,14355.0,777354.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),104.0,Abigail Spanberger,Democrat,Abigail Spanberger (D),579.0,Virginia 7th,135300
+249,Virginia,Congressional District 2,5175504914,20625.0,738568.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),76.0,Elaine Luria,Democrat,Elaine Luria (D),463.0,Virginia 2nd,135300
+250,Virginia,Congressional District 11,21326058,16879.0,791509.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),24.0,Gerry Connolly,Democrat,Gerry Connolly (D),126.0,Virginia 11th,135300
+251,Virginia,Congressional District 9,153447195,7637.0,711468.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),248.0,Morgan Griffith,Republican,Morgan Griffith (R),1337.0,Virginia 9th,135300
+252,Virginia,Congressional District 6,104993717,14391.0,750774.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),230.0,Ben Cline,Republican,Ben Cline (R),1413.0,Virginia 6th,135300
+253,Virginia,Congressional District 8,29005304,16674.0,792945.0,1042614114,1336016370,Tim Kaine (D),Mark Warner (D),6.0,Don Beyer,Democrat,Don Beyer (D),33.0,Virginia 8th,135300
+254,West Virginia,Congressional District 1,175294958,3628.0,614325.0,119981942,116640231,Shelley Capito (R),Joe Manchin (D),125.0,David McKinley,Republican,David McKinley (R),521.0,West Virginia 1st,21700
+255,West Virginia,Congressional District 3,191079291,2745.0,591379.0,119981942,116640231,Shelley Capito (R),Joe Manchin (D),69.0,Carol Miller,Republican,Carol Miller (R),290.0,West Virginia 3rd,21700
+256,West Virginia,Congressional District 2,122654294,4609.0,623350.0,119981942,116640231,Shelley Capito (R),Joe Manchin (D),40.0,Alex Mooney,Republican,Alex Mooney (R),187.0,West Virginia 2nd,21700
+257,Alabama,Congressional District 1,2275675091,10765.0,706503.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),512.0,Bradley Byrne,Republican,Bradley Byrne (R),2404.0,Alabama 1st,64800
+258,Alabama,Congressional District 3,471223121,11489.0,706705.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),315.0,Mike Rogers,Republican,Mike Rogers (R),1623.0,Alabama 3rd,64800
+259,Alabama,Congressional District 5,459955499,23798.0,714145.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),343.0,Mo Brooks,Republican,Mo Brooks (R),1775.0,Alabama 5th,64800
+260,Alabama,Congressional District 4,573214646,26727.0,683391.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),424.0,Robert Aderholt,Republican,Robert Aderholt (R),2326.0,Alabama 4th,64800
+261,Alabama,Congressional District 7,332882012,12171.0,669646.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),654.0,Terri Sewell,Democrat,Terri Sewell (D),3119.0,Alabama 7th,64800
+262,Alabama,Congressional District 2,303582941,13675.0,680575.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),251.0,Martha Roby,Republican,Martha Roby (R),1299.0,Alabama 2nd,64800
+263,Alabama,Congressional District 6,176793844,25585.0,703715.0,2249803741,5032022009,Doug Jones (D),Richard Shelby (R),107.0,Gary Palmer,Republican,Gary Palmer (R),538.0,Alabama 6th,64800
+264,Kentucky,Congressional District 2,388832054,13434.0,753608.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),514.0,Brett Guthrie,Republican,Brett Guthrie (R),3064.0,Kentucky 2nd,60000
+265,Kentucky,Congressional District 6,115148400,24718.0,765842.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),552.0,Andy Barr,Republican,Andy Barr (R),3079.0,Kentucky 6th,60000
+266,Kentucky,Congressional District 1,1221417588,15371.0,720226.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),485.0,James Comer,Republican,James Comer (R),2856.0,Kentucky 1st,60000
+267,Kentucky,Congressional District 3,40946491,15704.0,745082.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),299.0,John Yarmuth,Democrat,John Yarmuth (D),1521.0,Kentucky 3rd,60000
+268,Kentucky,Congressional District 5,312392707,5411.0,702070.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),92.0,Hal Rogers,Republican,Hal Rogers (R),547.0,Kentucky 5th,60000
+269,Kentucky,Congressional District 4,296600515,14579.0,753376.0,2200720831,7524391013,Mitch McConnell (R),Rand Paul (R),361.0,Thomas Massie,Republican,Thomas Massie (R),2180.0,Kentucky 4th,60000
+270,Mississippi,Congressional District 1,408680692,19717.0,760715.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),485.0,Trent Kelly,Republican,Trent Kelly (R),2394.0,Mississippi 1st,40100
+271,Mississippi,Congressional District 3,341749292,10152.0,749199.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),218.0,Michael Guest,Republican,Michael Guest (R),1067.0,Mississippi 3rd,40100
+272,Mississippi,Congressional District 4,2218315431,16072.0,767132.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),331.0,Steven Palazzo,Republican,Steven Palazzo (R),1272.0,Mississippi 4th,40100
+273,Mississippi,Congressional District 2,958174343,10341.0,711716.0,1442401727,1626407846,Cindy Hyde-Smith (R),Roger Wicker (R),170.0,Bennie Thompson,Democrat,Bennie Thompson (D),886.0,Mississippi 2nd,40100
+274,Tennessee,Congressional District 1,204163863,15576.0,713768.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),631.0,Phil Roe,Republican,Phil Roe (R),3315.0,Tennessee 1st,99000
+275,Tennessee,Congressional District 3,372167533,15421.0,726454.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),664.0,Chuck Fleischmann,Republican,Chuck Fleischmann (R),3715.0,Tennessee 3rd,99000
+276,Tennessee,Congressional District 5,72095867,43238.0,765122.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),192.0,Jim Cooper,Democrat,Jim Cooper (D),1168.0,Tennessee 5th,99000
+277,Tennessee,Congressional District 4,242150169,31616.0,769786.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),936.0,Scott DesJarlais,Republican,Scott DesJarlais (R),5279.0,Tennessee 4th,99000
+278,Tennessee,Congressional District 7,415476120,20899.0,764797.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),382.0,Mark Green,Republican,Mark Green (R),2159.0,Tennessee 7th,99000
+279,Tennessee,Congressional District 2,278544192,18004.0,738722.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),462.0,Tim Burchett,Republican,Tim Burchett (R),2359.0,Tennessee 2nd,99000
+280,Tennessee,Congressional District 8,387103686,15125.0,708031.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),602.0,David Kustoff,Republican,David Kustoff (R),3384.0,Tennessee 8th,99000
+281,Tennessee,Congressional District 9,53745455,35996.0,705233.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),563.0,Steve Cohen,Democrat,Steve Cohen (D),2733.0,Tennessee 9th,99000
+282,Tennessee,Congressional District 6,324676580,21682.0,759176.0,4162736120,10314082493,Lamar Alexander (R),Marsha Blackburn (R),453.0,John Rose,Republican,John Rose (R),2696.0,Tennessee 6th,99000
+283,Arkansas,Congressional District 1,1234692466,18373.0,722915.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),400.0,Rick Crawford,Republican,Rick Crawford (R),2894.0,Arkansas 1st,42000
+284,Arkansas,Congressional District 3,375776742,77964.0,795817.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),189.0,Steve Womack,Republican,Steve Womack (R),1376.0,Arkansas 3rd,42000
+285,Arkansas,Congressional District 4,1049845616,35167.0,711335.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),288.0,Bruce Westerman,Republican,Bruce Westerman (R),1930.0,Arkansas 4th,42000
+286,Arkansas,Congressional District 2,302544768,27769.0,760604.0,744966801,1038266894,John Boozman (R),Tom Cotton (R),86.0,French Hill,Republican,French Hill (R),474.0,Arkansas 2nd,42000
+287,Louisiana,Congressional District 4,1106343072,19192.0,753519.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),571.0,Mike Johnson,Republican,Mike Johnson (R),1632.0,Louisiana 4th,68500
+288,Louisiana,Congressional District 2,522407749,11712.0,789120.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),1868.0,Cedric Richmond,Democrat,Cedric Richmond (D),4039.0,Louisiana 2nd,68500
+289,Louisiana,Congressional District 6,1012577737,15831.0,789153.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),2577.0,Garret Graves,Republican,Garret Graves (R),5179.0,Louisiana 6th,68500
+290,Louisiana,Congressional District 1,14398936017,17508.0,801089.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),880.0,Steve Scalise,Republican,Steve Scalise (R),2071.0,Louisiana 1st,68500
+291,Louisiana,Congressional District 3,5594833099,18144.0,783013.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),1763.0,Clay Higgins,Republican,Clay Higgins (R),4233.0,Louisiana 3rd,68500
+292,Louisiana,Congressional District 5,1118524221,11363.0,747722.0,8354553347,2397795971,Bill Cassidy (R),John Kennedy (R),331.0,Ralph Abraham,Republican,Ralph Abraham (R),1654.0,Louisiana 5th,68500
+293,Oklahoma,Congressional District 1,143292945,71310.0,797151.0,820171537,695985104,James Inhofe (R),James Lankford (R),117.0,Kevin Hern,Republican,Kevin Hern (R),602.0,Oklahoma 1st,51000
+294,Oklahoma,Congressional District 3,814268800,66633.0,776845.0,820171537,695985104,James Inhofe (R),James Lankford (R),231.0,Frank Lucas,Republican,Frank Lucas (R),1493.0,Oklahoma 3rd,51000
+295,Oklahoma,Congressional District 5,59057302,111629.0,811988.0,820171537,695985104,James Inhofe (R),James Lankford (R),77.0,Kendra Horn,Democrat,Kendra Horn (D),456.0,Oklahoma 5th,51000
+296,Oklahoma,Congressional District 4,408016815,51191.0,783867.0,820171537,695985104,James Inhofe (R),James Lankford (R),92.0,Tom Cole,Republican,Tom Cole (R),526.0,Oklahoma 4th,51000
+297,Oklahoma,Congressional District 2,1949952135,32403.0,748286.0,820171537,695985104,James Inhofe (R),James Lankford (R),272.0,Markwayne Mullin,Republican,Markwayne Mullin (R),1440.0,Oklahoma 2nd,51000
+298,Texas,Congressional District 28,299391564,547983.0,750331.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),477.0,Henry Cuellar,Democrat,Henry Cuellar (D),2827.0,Texas 28th,399500
+299,Texas,Congressional District 1,950996579,113745.0,718215.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2653.0,Louie Gohmert,Republican,Louie Gohmert (R),14697.0,Texas 1st,399500
+300,Texas,Congressional District 29,10286993,504000.0,745389.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3649.0,Sylvia Garcia,Democrat,Sylvia Garcia (D),15867.0,Texas 29th,399500
+301,Texas,Congressional District 7,3069802,141116.0,785024.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),5392.0,Lizzie Fletcher,Democrat,Lizzie Fletcher (D),16039.0,Texas 7th,399500
+302,Texas,Congressional District 27,4536985434,358756.0,737102.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3988.0,Michael Cloud,Republican,Michael Cloud (R),12025.0,Texas 27th,399500
+303,Texas,Congressional District 6,255530191,150817.0,773108.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3515.0,Ron Wright,Republican,Ron Wright (R),19054.0,Texas 6th,399500
+304,Texas,Congressional District 17,309171233,170960.0,764593.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2243.0,Bill Flores,Republican,Bill Flores (R),13231.0,Texas 17th,399500
+305,Texas,Congressional District 14,2539468440,158877.0,747166.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),11176.0,Randy Weber,Republican,Randy Weber (R),27289.0,Texas 14th,399500
+306,Texas,Congressional District 36,1242515897,161293.0,736668.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4043.0,Brian Babin,Republican,Brian Babin (R),15948.0,Texas 36th,399500
+307,Texas,Congressional District 5,493918427,186045.0,744338.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2557.0,Lance Gooden,Republican,Lance Gooden (R),14102.0,Texas 5th,399500
+308,Texas,Congressional District 16,3699541,560013.0,737368.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2290.0,Veronica Escobar,Democrat,Veronica Escobar (D),11763.0,Texas 16th,399500
+309,Texas,Congressional District 24,23325673,139665.0,789219.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4059.0,Kenny Marchant,Republican,Kenny Marchant (R),21704.0,Texas 24th,399500
+310,Texas,Congressional District 33,16592268,427589.0,736783.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2912.0,Marc Veasey,Democrat,Marc Veasey (D),16533.0,Texas 33rd,399500
+311,Texas,Congressional District 11,567658850,272061.0,764038.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2610.0,Mike Conaway,Republican,Mike Conaway (R),11619.0,Texas 11th,399500
+312,Texas,Congressional District 15,154866294,607546.0,776971.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1304.0,Vicente González,Democrat,Vicente González (D),8171.0,Texas 15th,399500
+313,Texas,Congressional District 23,448808223,492112.0,760106.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1004.0,Will Hurd,Republican,Will Hurd (R),4859.0,Texas 23rd,399500
+314,Texas,Congressional District 12,86780622,154980.0,793259.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2552.0,Kay Granger,Republican,Kay Granger (R),14868.0,Texas 12th,399500
+315,Texas,Congressional District 8,410338546,141996.0,832589.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1282.0,Kevin Brady,Republican,Kevin Brady (R),6920.0,Texas 8th,399500
+316,Texas,Congressional District 34,3364171422,584860.0,722603.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),855.0,Filemon Vela,Democrat,Filemon Vela (D),5175.0,Texas 34th,399500
+317,Texas,Congressional District 30,32939871,271364.0,776026.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1346.0,Eddie Bernice Johnson,Democrat,Eddie Bernice Johnson (D),7300.0,Texas 30th,399500
+318,Texas,Congressional District 18,4386002,247501.0,776383.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),5437.0,Shelia Jackson Lee,Democrat,Shelia Jackson Lee (D),21312.0,Texas 18th,399500
+319,Texas,Congressional District 2,54815759,176154.0,785386.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3961.0,Dan Crenshaw,Republican,Dan Crenshaw (R),17615.0,Texas 2nd,399500
+320,Texas,Congressional District 20,1036519,498309.0,798543.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1147.0,Joaquin Castro,Democrat,Joaquin Castro (D),6409.0,Texas 20th,399500
+321,Texas,Congressional District 31,136094581,159643.0,829808.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2585.0,John Carter,Republican,John Carter (R),13319.0,Texas 31st,399500
+322,Texas,Congressional District 25,316353052,115639.0,768407.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1838.0,Roger Williams,Republican,Roger Williams (R),10316.0,Texas 25th,399500
+323,Texas,Congressional District 32,34271738,159134.0,764700.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3764.0,Colin Allred,Democrat,Colin Allred (D),19276.0,Texas 32nd,399500
+324,Texas,Congressional District 21,91754552,198023.0,795908.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1791.0,Chip Roy,Republican,Chip Roy (R),10042.0,Texas 21st,399500
+325,Texas,Congressional District 3,98074589,92870.0,842866.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4953.0,Van Taylor,Republican,Van Taylor (R),22551.0,Texas 3rd,399500
+326,Texas,Congressional District 10,185202535,183352.0,839780.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),5828.0,Michael McCaul,Republican,Michael McCaul (R),31882.0,Texas 10th,399500
+327,Texas,Congressional District 4,1009693997,89178.0,738929.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3372.0,John Ratcliffe (resigned),Republican,John Ratcliffe (resigned) (R),19958.0,Texas 4th,399500
+328,Texas,Congressional District 35,19151538,439711.0,806895.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),2082.0,Lloyd Doggett,Democrat,Lloyd Doggett (D),11789.0,Texas 35th,399500
+329,Texas,Congressional District 13,764765962,172815.0,710847.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),4360.0,Mac Thornberry,Republican,Mac Thornberry (R),23141.0,Texas 13th,399500
+330,Texas,Congressional District 26,191353567,117778.0,848154.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1611.0,Michael Burgess,Republican,Michael Burgess (R),9058.0,Texas 26th,399500
+331,Texas,Congressional District 22,61159619,170591.0,880197.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1798.0,Pete Olson,Republican,Pete Olson (R),8114.0,Texas 22nd,399500
+332,Texas,Congressional District 9,5290341,186926.0,781992.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),3424.0,Al Green,Democrat,Al Green (D),17143.0,Texas 9th,399500
+333,Texas,Congressional District 19,282385039,241104.0,725504.0,108583722521,104286717032,John Cornyn (R),Ted Cruz (R),1519.0,Jodey Arrington,Republican,Jodey Arrington (R),7953.0,Texas 19th,399500
+334,Arizona,Congressional District 1,354110880,150464.0,753580.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1000.0,Tom O'Halleran,Democrat,Tom O'Halleran (D),4410.0,Arizona 1st,91100
+335,Arizona,Congressional District 3,8409911,450997.0,771436.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1066.0,Raúl Grijalva,Democrat,Raúl Grijalva (D),4919.0,Arizona 3rd,91100
+336,Arizona,Congressional District 5,2338559,118848.0,803186.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),381.0,Andy Biggs,Republican,Andy Biggs (R),1911.0,Arizona 5th,91100
+337,Arizona,Congressional District 4,504383238,130043.0,768077.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),912.0,Paul Gosar,Republican,Paul Gosar (R),4217.0,Arizona 4th,91100
+338,Arizona,Congressional District 7,1651788,476683.0,801173.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1225.0,Ruben Gallego,Democrat,Ruben Gallego (D),6814.0,Arizona 7th,91100
+339,Arizona,Congressional District 2,138375379,178545.0,719924.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),672.0,Ann Kirkpatrick,Democrat,Ann Kirkpatrick (D),3752.0,Arizona 2nd,91100
+340,Arizona,Congressional District 9,2969348,184719.0,774776.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),1462.0,Greg Stanton,Democrat,Greg Stanton (D),7482.0,Arizona 9th,91100
+341,Arizona,Congressional District 6,11030711,109095.0,776729.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),740.0,David Schweikert,Republican,David Schweikert (R),3944.0,Arizona 6th,91100
+342,Arizona,Congressional District 8,4067789,126880.0,777804.0,8188846476,9318286367,Martha McSally (R),Kyrsten Sinema (D),139.0,Debbie Lesko,Republican,Debbie Lesko (R),795.0,Arizona 8th,91100
+343,Colorado,Congressional District 1,7076638,177378.0,818722.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),124.0,Diana DeGette,Democrat,Diana DeGette (D),817.0,Colorado 1st,91100
+344,Colorado,Congressional District 3,388259104,119034.0,739107.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),139.0,Scott Tipton,Republican,Scott Tipton (R),870.0,Colorado 3rd,91100
+345,Colorado,Congressional District 5,61234902,77179.0,786912.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),45.0,Doug Lamborn,Republican,Doug Lamborn (R),269.0,Colorado 5th,91100
+346,Colorado,Congressional District 4,438848484,138960.0,799390.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),559.0,Ken Buck,Republican,Ken Buck (R),4111.0,Colorado 4th,91100
+347,Colorado,Congressional District 7,27439545,181238.0,784728.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),185.0,Ed Perlmutter,Democrat,Ed Perlmutter (D),1111.0,Colorado 7th,91100
+348,Colorado,Congressional District 2,236595196,60501.0,796438.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),184.0,Joe Neguse,Democrat,Joe Neguse (D),1061.0,Colorado 2nd,91100
+349,Colorado,Congressional District 6,22167724,114859.0,805844.0,1067741841,1519338347,Michael Bennet (D),Cory Gardner (R),28.0,Jason Crow,Democrat,Jason Crow (D),167.0,Colorado 6th,91100
+350,Idaho,Congressional District 1,1310417824,80132.0,869560.0,257514726,225432607,Michael Crapo (R),Jim Risch (R),86.0,Russ Fulcher,Republican,Russ Fulcher (R),641.0,Idaho 1st,24000
+351,Idaho,Congressional District 2,1081304733,101053.0,818249.0,257514726,225432607,Michael Crapo (R),Jim Risch (R),156.0,Mike Simpson,Republican,Mike Simpson (R),1182.0,Idaho 2nd,24000
+352,Montana,Congressional District (at Large),3869208832,27510.0,1041732.0,53879742,110700327,Steve Daines (R),Jon Tester (D),61.0,Greg Gianforte,Republican,Greg Gianforte (R),506.0,Montana Congressional District (at Large),17000
+353,Nevada,Congressional District 1,16683,238283.0,689384.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),56.0,Dina Titus,Democrat,Dina Titus (D),352.0,Nevada 1st,44100
+354,Nevada,Congressional District 3,102791046,93495.0,785285.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),41.0,Susie Lee,Democrat,Susie Lee (D),274.0,Nevada 3rd,44100
+355,Nevada,Congressional District 4,628524268,170206.0,739823.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),34.0,Steven Horsford,Democrat,Steven Horsford (D),188.0,Nevada 4th,44100
+356,Nevada,Congressional District 2,1315874075,127485.0,708357.0,778228961,934696505,Catherine Cortez Masto (D),Jacky Rosen (D),454.0,Mark Amodei,Republican,Mark Amodei (R),2272.0,Nevada 2nd,44100
+357,New Mexico,Congressional District 1,16504856,206272.0,695519.0,2387497076,1385280661,Martin Heinrich (D),Tom Udall (D),815.0,Deb Haaland,Democrat,Deb Haaland (D),4570.0,New Mexico 1st,26800
+358,New Mexico,Congressional District 3,303683653,130129.0,696738.0,2387497076,1385280661,Martin Heinrich (D),Tom Udall (D),235.0,Ben Ray Luján,Democrat,Ben Ray Luján (D),1211.0,New Mexico 3rd,26800
+359,New Mexico,Congressional District 2,408588014,322115.0,700177.0,2387497076,1385280661,Martin Heinrich (D),Tom Udall (D),365.0,Xochitl Torres Small,Democrat,Xochitl Torres Small (D),2002.0,New Mexico 2nd,26800
+360,Utah,Congressional District 1,3222107014,72262.0,751772.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),322.0,Rob Bishop,Republican,Rob Bishop (R),1930.0,Utah 1st,48800
+361,Utah,Congressional District 3,458725091,52783.0,749828.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),107.0,John Curtis,Republican,John Curtis (R),535.0,Utah 3rd,48800
+362,Utah,Congressional District 4,373990713,93750.0,790994.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),137.0,Ben McAdams,Democrat,Ben McAdams (D),708.0,Utah 4th,48800
+363,Utah,Congressional District 2,2944001576,87580.0,752756.0,762350051,4652538839,Mike Lee (R),Mitt Romney (R),159.0,Chris Stewart,Republican,Chris Stewart (R),788.0,Utah 2nd,48800
+364,Wyoming,Congressional District (at Large),1867670745,44704.0,581836.0,45754750,29317376,John Barrasso (R),Michael Enzi (R),36.0,Liz Cheney,Republican,Liz Cheney (R),154.0,Wyoming Congressional District (at Large),9000
+365,Alaska,Congressional District (at Large),245481577452,28049.0,738516.0,23147822,58890104,Lisa Murkowski (R),Dan Sullivan (R),33.0,Don Young,Republican,Don Young (R),167.0,Alaska Congressional District (at Large),11500
+366,California,Congressional District 36,201717828,330744.0,743337.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),290.0,Raul Ruiz,Democrat,Raul Ruiz (D),1887.0,California 36th,572200
+367,California,Congressional District 16,118249352,420252.0,728535.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),507.0,Jim Costa,Democrat,Jim Costa (D),3393.0,California 16th,572200
+368,California,Congressional District 46,995827,437811.0,728906.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),874.0,Lou Correa,Democrat,Lou Correa (D),4967.0,California 46th,572200
+369,California,Congressional District 37,351790,166633.0,724002.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),282.0,Karen Bass,Democrat,Karen Bass (D),1803.0,California 37th,572200
+370,California,Congressional District 33,489486946,59639.0,713727.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),461.0,Ted Lieu,Democrat,Ted Lieu (D),2433.0,California 33rd,572200
+371,California,Congressional District 15,73625793,134942.0,773841.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),558.0,Eric Swalwell,Democrat,Eric Swalwell (D),2913.0,California 15th,572200
+372,California,Congressional District 53,5538110,229602.0,769137.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),264.0,Susan Davis,Democrat,Susan Davis (D),1390.0,California 53rd,572200
+373,California,Congressional District 47,1176361929,207886.0,714812.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),543.0,Alan Lowenthal,Democrat,Alan Lowenthal (D),3047.0,California 47th,572200
+374,California,Congressional District 31,5694100,334774.0,744628.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),468.0,Pete Aguilar,Democrat,Pete Aguilar (D),2851.0,California 31st,572200
+375,California,Congressional District 3,456161284,189209.0,736039.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),480.0,John Garamendi,Democrat,John Garamendi (D),3277.0,California 3rd,572200
+376,California,Congressional District 21,33795770,506639.0,712857.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),507.0,T.J. Cox,Democrat,T.J. Cox (D),3364.0,California 21st,572200
+377,California,Congressional District 48,281882221,125394.0,726516.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),682.0,Harley Rouda,Democrat,Harley Rouda (D),3933.0,California 48th,572200
+378,California,Congressional District 10,54084843,293829.0,744389.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),520.0,Josh Harder,Democrat,Josh Harder (D),3603.0,California 10th,572200
+379,California,Congressional District 34,783650,313330.0,729285.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),804.0,Jimmy Gomez,Democrat,Jimmy Gomez (D),5468.0,California 34th,572200
+380,California,Congressional District 52,296660721,83958.0,765158.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),821.0,Scott Peters,Democrat,Scott Peters (D),3971.0,California 52nd,572200
+381,California,Congressional District 30,5012026,131099.0,764572.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),338.0,Brad Sherman,Democrat,Brad Sherman (D),2000.0,California 30th,572200
+382,California,Congressional District 18,330001708,87749.0,740932.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),1057.0,Anna Eshoo,Democrat,Anna Eshoo (D),5301.0,California 18th,572200
+383,California,Congressional District 20,1572235024,360021.0,735667.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),299.0,Jimmy Panetta,Democrat,Jimmy Panetta (D),1783.0,California 20th,572200
+384,California,Congressional District 42,44261217,263063.0,795401.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),719.0,Ken Calvert,Republican,Ken Calvert (R),4328.0,California 42nd,572200
+385,California,Congressional District 25,30779288,210985.0,718950.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),480.0,Mike Garcia,Republican,Mike Garcia (R),2511.0,California 25th,572200
+386,California,Congressional District 32,5293443,387825.0,719643.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),606.0,Grace Napolitano,Democrat,Grace Napolitano (D),3243.0,California 32nd,572200
+387,California,Congressional District 43,555893,246038.0,727621.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),529.0,Maxine Waters,Democrat,Maxine Waters (D),2962.0,California 43rd,572200
+388,California,Congressional District 35,356550,455910.0,741990.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),1062.0,Norma Torres,Democrat,Norma Torres (D),6155.0,California 35th,572200
+389,California,Congressional District 13,127168051,114320.0,754861.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),394.0,Barbara Lee,Democrat,Barbara Lee (D),2237.0,California 13th,572200
+390,California,Congressional District 26,807884720,297653.0,725953.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),697.0,Julia Brownley,Democrat,Julia Brownley (D),3842.0,California 26th,572200
+391,California,Congressional District 44,66957266,425439.0,723072.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),755.0,Nanette Barragan,Democrat,Nanette Barragan (D),3696.0,California 44th,572200
+392,California,Congressional District 19,15265440,269165.0,759866.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),636.0,Zoe Lofgren,Democrat,Zoe Lofgren (D),3088.0,California 19th,572200
+393,California,Congressional District 49,511621679,165989.0,737614.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),654.0,Mike Levin,Democrat,Mike Levin (D),3353.0,California 49th,572200
+394,California,Congressional District 5,319288355,167464.0,728000.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),476.0,Mike Thompson,Democrat,Mike Thompson (D),2488.0,California 5th,572200
+395,California,Congressional District 24,3684367981,239120.0,734027.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),521.0,Salud Carbajal,Democrat,Salud Carbajal (D),3013.0,California 24th,572200
+396,California,Congressional District 29,1621914,345280.0,721304.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),478.0,Tony Cardenas,Democrat,Tony Cardenas (D),2756.0,California 29th,572200
+397,California,Congressional District 7,13173746,103703.0,747097.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),247.0,Ami Bera,Democrat,Ami Bera (D),1500.0,California 7th,572200
+398,California,Congressional District 6,10601204,179977.0,751475.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),252.0,Doris Matsui,Democrat,Doris Matsui (D),1459.0,California 6th,572200
+399,California,Congressional District 39,1078797,211550.0,727834.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),647.0,Gil Cisneros,Democrat,Gil Cisneros (D),3713.0,California 39th,572200
+400,California,Congressional District 11,101766052,135845.0,754654.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),392.0,Mark DeSaulnier,Democrat,Mark DeSaulnier (D),1049.0,California 11th,572200
+401,California,Congressional District 50,40261060,213962.0,747793.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),471.0,Duncan Hunter (Resigned),Republican,Duncan Hunter (Resigned) (R),2632.0,California 50th,572200
+402,California,Congressional District 23,99793011,257539.0,740768.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),345.0,Kevin McCarthy,Republican,Kevin McCarthy (R),1664.0,California 23rd,572200
+403,California,Congressional District 8,444227838,248334.0,721709.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),238.0,Paul Cook,Republican,Paul Cook (R),1449.0,California 8th,572200
+404,California,Congressional District 51,869815412,489529.0,729654.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),368.0,Juan Vargas,Democrat,Juan Vargas (D),1959.0,California 51st,572200
+405,California,Congressional District 28,2403435,98153.0,715011.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),416.0,Adam Schiff,Democrat,Adam Schiff (D),2587.0,California 28th,572200
+406,California,Congressional District 1,1948066307,79847.0,706822.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),434.0,Doug LaMalfa,Republican,Doug LaMalfa (R),2892.0,California 1st,572200
+407,California,Congressional District 40,1743216,517043.0,711793.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),815.0,Lucille Roybal-Allard,Democrat,Lucille Roybal-Allard (D),4698.0,California 40th,572200
+408,California,Congressional District 12,211661576,57826.0,756773.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),84.0,Nancy Pelosi,Democrat,Nancy Pelosi (D),334.0,California 12th,572200
+409,California,Congressional District 45,5161857,110407.0,772341.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),1054.0,Katie Porter,Democrat,Katie Porter (D),5850.0,California 45th,572200
+410,California,Congressional District 4,858297386,77392.0,734899.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),300.0,Tom McClintock,Republican,Tom McClintock (R),2056.0,California 4th,572200
+411,California,Congressional District 22,10371897,338607.0,755464.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),478.0,Devin Nunes,Republican,Devin Nunes (R),3193.0,California 22nd,572200
+412,California,Congressional District 9,140669213,255878.0,758327.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),388.0,Jerry McNerney,Democrat,Jerry McNerney (D),2502.0,California 9th,572200
+413,California,Congressional District 41,4159166,407587.0,754152.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),580.0,Mark Takano,Democrat,Mark Takano (D),3438.0,California 41st,572200
+414,California,Congressional District 27,7549848,162633.0,717944.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),388.0,Judy Chu,Democrat,Judy Chu (D),2247.0,California 27th,572200
+415,California,Congressional District 17,21997291,98372.0,771459.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),3329.0,Ro Khanna,Democrat,Ro Khanna (D),16311.0,California 17th,572200
+416,California,Congressional District 14,827165077,102391.0,753548.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),346.0,Jackie Speier,Democrat,Jackie Speier (D),1723.0,California 14th,572200
+417,California,Congressional District 2,4122024588,87599.0,717732.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),385.0,Jared Huffman,Democrat,Jared Huffman (D),2715.0,California 2nd,572200
+418,California,Congressional District 38,3823181,385908.0,716869.0,27808608324,46713420010,Dianne Feinstein (D),Kamala Harris (D),917.0,Linda Sánchez,Democrat,Linda Sánchez (D),5134.0,California 38th,572200
+419,Hawaii,Congressional District 1,456759507,17083.0,710707.0,917181,14381143,Mazie Hirono (D),Brian Schatz (D),1.0,Ed Case,Democrat,Ed Case (D),3.0,Hawaii 1st,24800
+420,Hawaii,Congressional District 2,11321049519,28749.0,711322.0,917181,14381143,Mazie Hirono (D),Brian Schatz (D),0.0,Tulsi Gabbard,Democrat,Tulsi Gabbard (D),2.0,Hawaii 2nd,24800
+421,Oregon,Congressional District 1,771013213,98352.0,832139.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),97.0,Suzanne Bonamici,Democrat,Suzanne Bonamici (D),555.0,Oregon 1st,58900
+422,Oregon,Congressional District 3,82267862,70878.0,830995.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),79.0,Earl Blumenauer,Democrat,Earl Blumenauer (D),443.0,Oregon 3rd,58900
+423,Oregon,Congressional District 5,1207538177,117605.0,818296.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),109.0,Kurt Schrader,Democrat,Kurt Schrader (D),700.0,Oregon 5th,58900
+424,Oregon,Congressional District 4,2227417158,49000.0,794776.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),92.0,Peter DeFazio,Democrat,Peter DeFazio (D),575.0,Oregon 4th,58900
+425,Oregon,Congressional District 2,1904150525,95334.0,805737.0,529925692,969661929,Jeff Merkley (D),Ron Wyden (D),91.0,Greg Walden,Republican,Greg Walden (R),618.0,Oregon 2nd,58900
+426,Washington,Congressional District 1,1097951634,50506.0,742135.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),275.0,Suzan DelBene,Democrat,Suzan DelBene (D),990.0,Washington 1st,113800
+427,Washington,Congressional District 3,1219984100,55727.0,719101.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),143.0,Jaime Herrera Beutler,Republican,Jaime Herrera Beutler (R),942.0,Washington 3rd,113800
+428,Washington,Congressional District 10,234826813,60036.0,735240.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),29.0,Denny Heck,Democrat,Denny Heck (D),195.0,Washington 10th,113800
+429,Washington,Congressional District 5,598822284,34799.0,705266.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),160.0,Cathy McMorris Rodgers,Republican,Cathy McMorris Rodgers (R),932.0,Washington 5th,113800
+430,Washington,Congressional District 4,808206849,265175.0,719814.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),241.0,Dan Newhouse,Republican,Dan Newhouse (R),1889.0,Washington 4th,113800
+431,Washington,Congressional District 7,339685089,35483.0,768042.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),109.0,Pramila Jayapal,Democrat,Pramila Jayapal (D),624.0,Washington 7th,113800
+432,Washington,Congressional District 2,2683559157,58274.0,730430.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),779.0,Rick Larsen,Democrat,Rick Larsen (D),2467.0,Washington 2nd,113800
+433,Washington,Congressional District 9,104450286,65381.0,738464.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),308.0,Adam Smith,Democrat,Adam Smith (D),1181.0,Washington 9th,113800
+434,Washington,Congressional District 6,5101382519,35069.0,698764.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),118.0,Derek Kilmer,Democrat,Derek Kilmer (D),529.0,Washington 6th,113800
+435,Washington,Congressional District 8,370410119,67758.0,737080.0,2470867887,1811901682,Maria Cantwell (D),Patty Murray (D),83.0,Kim Schrier,Democrat,Kim Schrier (D),596.0,Washington 8th,113800

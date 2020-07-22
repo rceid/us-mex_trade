@@ -31,7 +31,7 @@ def go(command_line=True):
     delim = select_delim(command_line)
     data_path = '..'+ delim + 'Data' + delim
     all_states(COLS, data_path, delim)
-        
+    print('All plots generated, script closing')
 
 def select_delim(command_line):
     '''
@@ -77,7 +77,8 @@ def plot_state(df, state, stat, path, min_max):
               "no plot will be generated")
         return
     state_df = state_df.append(min_max)
-    if len(state_df) > 3:
+    if len(state_df) > 4 and (state != 'Massachusetts' \
+                              and stat == 'Mexican-American Population'):
         state_df.plot(column=stat, linewidth=0.05, 
                       edgecolor='black', cmap='Greens', legend=True,
                       legend_kwds={'orientation': 'horizontal', 'fraction':.1,
@@ -94,17 +95,16 @@ def plot_state(df, state, stat, path, min_max):
     file_name = state + '.png'
     plt.savefig(path + file_name)
     plt.close(fig)
-    return state_df
-   
+
 def plot_country(df, stat, path):
     '''
     Plots a choropleth map of the entire country for a given metric
     '''
     assert stat in df.columns
     df = df[~df[stat].isna()]
-    fig, ax = plt.subplots(1,1, figsize=(20,10))
+    fig, ax = plt.subplots(1,1, figsize=(60,60))
     df = df.loc[(df['Name'] != 'Alaska') & (df['Name'] != 'Hawaii')]
-    df.plot(column=stat, linewidth=0.05, edgecolor='black', \
+    df.plot(column=stat, linewidth=0.08, edgecolor='black', \
             scheme = 'quantiles', cmap='Greens', legend=True)
         
     patches = legend_label(stat)
@@ -123,16 +123,16 @@ def legend_label(stat):
     '''
     cmap = plt.cm.get_cmap('Greens')
     if 'Exports' in stat:
-        patch1 = mpatches.Patch(color=cmap(0.0), label='1 - 114')
-        patch2 = mpatches.Patch(color=cmap(0.25), label='115 - 247')
-        patch3 = mpatches.Patch(color=cmap(0.5), label='248 - 387')
-        patch4 = mpatches.Patch(color=cmap(0.75), label='388 - 691')
+        patch1 = mpatches.Patch(color=cmap(0.0), label='1 - 110') 
+        patch2 = mpatches.Patch(color=cmap(0.25), label='111 - 247') 
+        patch3 = mpatches.Patch(color=cmap(0.5), label='248 - 386')
+        patch4 = mpatches.Patch(color=cmap(0.75), label='387 - 691')
         patch5 = mpatches.Patch(color=cmap(1.0), label='692 - 11,176')
     else:
-        patch1 = mpatches.Patch(color=cmap(0.0), label='2,645 - 11,655')
-        patch2 = mpatches.Patch(color=cmap(0.25), label='11,656 - 22,192')
-        patch3 = mpatches.Patch(color=cmap(0.5), label='22,193 - 49,171')
-        patch4 = mpatches.Patch(color=cmap(0.75), label='49,172 - 132,773')
+        patch1 = mpatches.Patch(color=cmap(0.0), label='2,645 - 11,587') 
+        patch2 = mpatches.Patch(color=cmap(0.25), label='11,588 - 22,224')
+        patch3 = mpatches.Patch(color=cmap(0.5), label='22,225 - 48,999')
+        patch4 = mpatches.Patch(color=cmap(0.75), label='49,000 - 132,773')
         patch5 = mpatches.Patch(color=cmap(1.0), label='132,774 - 607,546')
 
     return [patch1, patch2, patch3, patch4, patch5]
@@ -152,5 +152,3 @@ def get_min_max(df, stat):
                     
 if __name__ == '__main__':
     go()
-                
-                

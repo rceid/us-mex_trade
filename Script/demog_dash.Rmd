@@ -7,9 +7,9 @@ output:
 params:
   demography_table: NULL
   district_df: NULL
-#classoption: 
-  #landscape
-  #a3paper
+classoption: 
+  landscape
+  a3paper
 ---
 
 <style>
@@ -31,14 +31,7 @@ body {
 </style>
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)#, fig.align="center")
-```
-
-
-```{r}
-party <- paste("(", substr(params$district_df$"Party Affiliation", 1, 1), ")", sep = "")
-rep <- params$district_df$"Representative"
-rep <- paste(rep, party, sep= " ")
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
@@ -55,13 +48,13 @@ Row
 ### 
 ```{r}
 #valid colors can be found at https://www.rdocumentation.org/packages/shinydashboard/versions/0.7.1/topics/validColors
-valueBox(params$district_df$'Mexican Population', caption = "Mexican-American Population", icon="fa-male", color='maroon')
+valueBox(params$district_df$'Mexican-American Population', caption = "Mexican-American Population", icon="fa-male", color='maroon')
 
 ```
 
 ###
 ```{r}
-valueBox(rep, caption = "Representative", color='maroon')
+valueBox(params$district_df$Representative, caption = "Representative", color='maroon')
 ```
 
 ### 
@@ -75,25 +68,28 @@ Row
 
 ###
 ```{r}
-knitr::include_graphics(sprintf("../Data/Maps Mexican Population/%s.png", params$district_df$State))
+knitr::include_graphics(sprintf("../Data/Maps Mexican-American Population/%s.png", params$district_df$State))
 ```
 
 ###
 ```{r}
-knitr::include_graphics("../Data/USA_maps/USA_Mexican Population.png")
+knitr::include_graphics("../Data/USA_maps/USA_Mexican-American Population.png")
 ```
 
 
 Row
 -------------------------------------
     
+### Source: Census Bureau, 2014-2018 American Community Survey (ACS) 5-Year Estimates
 ```{r}
 rows <- nrow(params$demography_table)
-table_size <- paste(toString(39 * rows), 'px', sep='')
+table_size <- paste(toString(38.7 * rows), 'px', sep='')
+cut_tail <- paste(toString(38.7 * 18), 'px', sep='')
+cut_head <- paste(toString(37.7 * (rows - 16)), 'px', sep='')
 
 if (rows == 1) {datatable(
-  params$demography_table, options = list(dom = 't',
-                              scrollY = table_size,
+  params$demography_table, rownames = FALSE, options = list(dom = 't',
+                              scrollY = '80px',
                               columnDefs = list(list(className = 'dt-center', targets = "_all")),
                               initComplete = JS(
     "function(settings, json) {",
@@ -101,9 +97,46 @@ if (rows == 1) {datatable(
     "}")
 )
   )
-} else {datatable(
-  params$demography_table, options = list(dom = 't',
+} else if (rows <= 17) {datatable(
+  params$demography_table, rownames = FALSE, options = list(dom = 't',
                               scrollY = table_size,
+                              pageLength = 53,
+                              autoLength= FALSE,
+                              columnDefs = list(list(className = 'dt-center', targets = "_all")),
+                              initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'background-color': '#8B0000', 'color': '#fff'});",
+    "}")
+)
+  )  %>%
+  formatStyle(
+  'District',
+  target = 'row', 
+  backgroundColor = styleEqual(
+    c(toString(params$district_df$District)), c('lightgray'))
+  ) #datatable that cuts two pages on pdf
+} else {datatable(
+  params$demography_table[1:17,], rownames = FALSE, options = list(dom = 't',
+                              scrollY = cut_tail,
+                              pageLength = 53,
+                              autoLength= FALSE,
+                              columnDefs = list(list(className = 'dt-center', targets = "_all")),
+                              initComplete = JS(
+    "function(settings, json) {",
+    "$(this.api().table().header()).css({'background-color': '#8B0000', 'color': '#fff'});",
+    "}")
+)
+  )  %>%
+  formatStyle(
+  'District',
+  target = 'row', 
+  backgroundColor = styleEqual(
+    c(toString(params$district_df$District)), c('lightgray'))
+  )
+}
+if (rows > 17){datatable(
+  params$demography_table[18:rows,], rownames = FALSE, options = list(dom = 't',
+                              scrollY = cut_head,
                               pageLength = 53,
                               autoLength= FALSE,
                               columnDefs = list(list(className = 'dt-center', targets = "_all")),

@@ -17,8 +17,8 @@ library(DT)
 
 
 COUNTRY_DF <- read.csv(file = '../Data/factsheet_data.csv')
-COLS <- c("Name", 'District', "Representative", "Party.Affiliation",  "Mexican.American.Population", "Total.Population", "Exports.to.Mexico..2018..USD.Million.", "Total.Jobs..2018", "Namelsad")
-COL_NAMES <-c("State", 'District', "Representative", "Party Affiliation", "Mexican-American Population", "Total Population", "Exports to Mexico 2018 (USD Million)", "Total Jobs from exports to Mexico 2018", "File Names")
+COLS <- c("Name", 'District', "Rep.and.Party",  "Mexican.American.Population", "Total.Population", "Exports.to.Mexico..2018..USD.Million.", "Total.Jobs..2018", "Namelsad")
+COL_NAMES <-c("State", 'District', "Representative", "Mexican-American Population", "Total Population", "Exports to Mexico 2018 (USD Million)", "Total Jobs from Exports to Mexico 2018", "File Names")
 
 
 clean_df <- function(df) {
@@ -29,7 +29,6 @@ clean_df <- function(df) {
   #for-loop takes subset of columns and cleans their names
   for (col in colnames(df)) {
     idx <- match(col, COLS)
-    #df[[col]] <- prettyNum(df[[col]],big.mark=",")
     names(df)[names(df) == col] <- COL_NAMES[[idx]]
   }
   return(df)
@@ -78,18 +77,17 @@ go <- function(){
   }
   for (i in 1:nrow(states)) {
     state <- states[i,]
-    if(state != 'Vermont') next
     state_df <- subset_state(df, state)
-    demog_table <- state_df[, c('District', 'Representative', 'Party Affiliation', 'Mexican-American Population', 'Total Population')] 
-    t_table <- state_df[, c('District', "Representative", 'Party Affiliation',  "Exports to Mexico 2018 (USD Million)", "Total Jobs from exports to Mexico 2018" )]
+    demog_table <- state_df[, c('District', 'Representative', 'Mexican-American Population', 'Total Population')] 
+    t_table <- state_df[, c('District', "Representative", "Exports to Mexico 2018 (USD Million)", "Total Jobs from Exports to Mexico 2018" )]
     districts <- state_df$District
     for (n in 1:length(districts)) {
       district <- toString(districts[[n]])
       out_file <-  paste(state, state_df[which(state_df$District == district),][['File Names']])
       district_stats <- district_info(state_df, district)
-      rmarkdown::render('demog_dash.Rmd', output_file = out_file, output_dir = demog_folder, 
+      rmarkdown::render('demog_dash.Rmd', output_file = paste(out_file, 'Demography'), output_dir = demog_folder, 
                         params = list(demography_table = demog_table, district_df=district_stats))
-      rmarkdown::render('trade_dash.Rmd', output_file = out_file, output_dir = trade_folder, 
+      rmarkdown::render('trade_dash.Rmd', output_file = paste(out_file, 'Trade'), output_dir = trade_folder, 
                         params = list(trade_table = t_table, district_df=district_stats))
       }
     }

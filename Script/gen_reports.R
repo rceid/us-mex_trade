@@ -18,7 +18,7 @@ library(DT)
 
 COUNTRY_DF <- read.csv(file = '../Data/factsheet_data.csv')
 COLS <- c("Name", 'District', "Rep.and.Party",  "Mexican.American.Population", "Total.Population", "Exports.to.Mexico..2018..USD.Million.", "Total.Jobs..2018", "Namelsad")
-COL_NAMES <-c("State", 'District', "Representative", "Mexican-American Population", "Total Population", "Exports to Mexico 2018 (USD Million)", "Total Jobs from Exports to Mexico 2018", "File Names")
+COL_NAMES <-c("State", 'District', "Representative", "Mexican Identifying Population", "Total Population", "Exports to Mexico 2018 (USD Million)", "Total Jobs from Exports to Mexico 2018", "File Names")
 
 
 clean_df <- function(df) {
@@ -38,7 +38,7 @@ subset_state <- function(country_df, state) {
   '
   Creates a dataframe subset for a given US state given the dataframe containing all 50 states and Washington, D.C.
   '
-  country_df$'Percent Mexican' <- round(country_df[['Mexican-American Population']] / country_df[['Total Population']] * 100, digits=1)
+  country_df$'Percent Mexican' <- round(country_df[['Mexican Identifying Population']] / country_df[['Total Population']] * 100, digits=1)
   state_df <- country_df %>% dplyr::filter(State == state)
   #code below orders districts in ascending order
   state_df$District <- factor(state_df$District, levels = str_sort(state_df$District, numeric=TRUE))
@@ -78,7 +78,7 @@ go <- function(){
   for (i in 1:nrow(states)) {
     state <- states[i,]
     state_df <- subset_state(df, state)
-    demog_table <- state_df[, c('District', 'Representative', 'Mexican-American Population', 'Total Population')] 
+    demog_table <- state_df[, c('District', 'Representative', 'Mexican Identifying Population', 'Total Population')] 
     t_table <- state_df[, c('District', "Representative", "Exports to Mexico 2018 (USD Million)", "Total Jobs from Exports to Mexico 2018" )]
     districts <- state_df$District
     for (n in 1:length(districts)) {

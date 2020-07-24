@@ -48,7 +48,7 @@ Row
 ### 
 ```{r}
 #valid colors can be found at https://www.rdocumentation.org/packages/shinydashboard/versions/0.7.1/topics/validColors
-valueBox(params$district_df$'Mexican-American Population', caption = "Mexican-American Population", icon="fa-male", color='maroon')
+valueBox(params$district_df$'Mexican Identifying Population', caption = "Individuals Identifying as Mexican in US Census", icon="fa-male", color='maroon')
 
 ```
 
@@ -59,7 +59,7 @@ valueBox(params$district_df$Representative, caption = "Representative", color='m
 
 ### 
 ```{r}
-valueBox(paste(params$district_df$'Percent Mexican', '%'), caption = "Share of Population, Mexican-American", color='maroon')
+valueBox(paste(params$district_df$'Percent Mexican', '%'), caption = "Share of Population Identifying as Mexican in US Census", color='maroon')
 ```
     
 

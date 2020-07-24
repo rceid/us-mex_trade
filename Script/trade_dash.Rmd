@@ -31,7 +31,7 @@ body {
 </style>
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)#, fig.align="center")
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 

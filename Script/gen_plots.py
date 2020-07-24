@@ -20,7 +20,7 @@ COLS = ['Name', 'Namelsad', 'geometry', 'Mexican-American Population',
             'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)',
             'Total Jobs, 2018', 'Representative', 'Party Affiliation']
 
-QUANTILE = 5
+QUANTILE = 10
 
 def go(command_line=True):
     '''
@@ -55,13 +55,14 @@ def all_states(cols, data_path, delim):
         os.mkdir(usa_maps)
     for stat in STATS:
         print("Generating maps for the following stat: {}".format(stat))
-        plot_country(tab_df, stat, usa_maps + delim)
+        quant = stat + ' Quantiles'
+        tab_df[quant] = \
+            pd.qcut(tab_df[stat], q=QUANTILE, labels=False) + 1
+        plot_country(tab_df, quant, usa_maps + delim)
         path = data_path + 'Maps ' + stat
         if not os.path.exists(path):
             os.mkdir(path)
         min_max = get_min_max(tab_df, stat)
-        tab_df[stat + ' Quantiles'] = \
-            pd.qcut(tab_df[stat], q=QUANTILE, labels=False) + 1   
         for State in tab_df['Name'].unique():
             plot_state(tab_df, State, stat + ' Quantiles', path + delim, min_max)
                     
@@ -77,10 +78,10 @@ def plot_state(df, state, stat, path, min_max):
               "no plot will be generated")
         return
     state_df = state_df.append(min_max)
-    if len(state_df) > 4 and (state != 'Massachusetts' \
-                              and stat == 'Mexican-American Population'):
-        state_df.plot(column=stat, linewidth=0.05, 
-                      edgecolor='black', cmap='Greens', legend=True,
+    if len(state_df) > 4:# and (state != 'Massachusetts' \
+                              #and stat == 'Mexican-American Population'):
+        state_df.plot(column=stat, linewidth=0.05#, labels=['0', '1', '2', '3','4', '5','6','7', '8', '9', '10']
+                      ,edgecolor='black', cmap='Greens', legend=True,
                       legend_kwds={'orientation': 'horizontal', 'fraction':.1,
                                    'pad':0, 'shrink':.4})
     else:
@@ -105,11 +106,12 @@ def plot_country(df, stat, path):
     fig, ax = plt.subplots(1,1, figsize=(60,60))
     df = df.loc[(df['Name'] != 'Alaska') & (df['Name'] != 'Hawaii')]
     df.plot(column=stat, linewidth=0.08, edgecolor='black', \
-            scheme = 'quantiles', cmap='Greens', legend=True)
+             cmap='Greens', legend=True)#, scheme = 'quantiles')
         
-    patches = legend_label(stat)
-    plt.legend(handles=patches, loc='lower right', bbox_to_anchor=(.35,-.35),\
-                             fontsize='small', title='Quantile Breakdown')
+    patches = legend_label(df, stat)
+    pos = -.07*QUANTILE
+    plt.legend(handles=patches, loc='lower right', bbox_to_anchor=(.35, pos),\
+                             fontsize='x-small', title='Quantile Breakdown')
 
     plt.figtext(.5, .95, 'United States of America', fontsize=16, ha='center')
     plt.figtext(.5, .90, stat, fontsize=10, ha='center')
@@ -118,24 +120,30 @@ def plot_country(df, stat, path):
     plt.savefig(path + file_name)
     plt.close(fig)
     
-def legend_label(stat):
+def legend_label(df, stat):
     '''
     '''
+    stat = stat.replace(' Quantiles', '')
     cmap = plt.cm.get_cmap('Greens')
-    if 'Exports' in stat:
-        patch1 = mpatches.Patch(color=cmap(0.0), label='1 - 110') 
-        patch2 = mpatches.Patch(color=cmap(0.25), label='111 - 247') 
-        patch3 = mpatches.Patch(color=cmap(0.5), label='248 - 386')
-        patch4 = mpatches.Patch(color=cmap(0.75), label='387 - 691')
-        patch5 = mpatches.Patch(color=cmap(1.0), label='692 - 11,176')
-    else:
-        patch1 = mpatches.Patch(color=cmap(0.0), label='2,645 - 11,587') 
-        patch2 = mpatches.Patch(color=cmap(0.25), label='11,588 - 22,224')
-        patch3 = mpatches.Patch(color=cmap(0.5), label='22,225 - 48,999')
-        patch4 = mpatches.Patch(color=cmap(0.75), label='49,000 - 132,773')
-        patch5 = mpatches.Patch(color=cmap(1.0), label='132,774 - 607,546')
+    patches = []
+    labels = pd.qcut(df[stat], QUANTILE, retbins=True, precision=0)[0].unique()
+    labels = list(map(lambda grp: str(grp).split(', '), labels))
+    labels = sorted(labels, key = lambda x: int(x[0][1:-2]))
 
-    return [patch1, patch2, patch3, patch4, patch5]
+    for q in range(QUANTILE):
+        color = q/(QUANTILE-1)
+        label = ', '.join(labels[q])
+        label = label.replace('.0', '').replace('(', '').replace(']', '')\
+            #.replace(',', ' -')
+        low, up = label.split(', ')
+        if low != 0:
+            low = str(int(low) +1)            
+        low , up = "{:,}".format(int(low)), "{:,}".format(int(up))
+        label = low + ' - ' + up
+        patch = mpatches.Patch(color=cmap(color), label=label)
+        patches.append(patch)
+
+    return patches
 
 def get_min_max(df, stat):
     '''

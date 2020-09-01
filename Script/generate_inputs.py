@@ -14,12 +14,11 @@ import census_scripts
 import requests
 import zipfile
 import io
+import us
 import os
 #import jellyfish
-#from us import states as st
 
 
-#cols = ['Name', 'Namelsad', 'geometry', 'Mexican-American Population', 'Latino Population', 'Total Population', 'Exports to Mexico, 2018 (USD Million)','Total Jobs, 2018', 'Representative', 'Party Affiliation']
 #data_path = '.\\..\\Data\\'
 
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
@@ -27,23 +26,26 @@ SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip
 STATE_STATS = 'State_trade_politics.xlsx'
 STATE_FIPS = 'state-geocodes-v2016.xls'
 DISTRICT_EXPORTS = 'Mexico_exports.csv'
+DISTRICT_EXPORTS_19 = 'Mexico_exports_district_2019.xlsx'
 OUTPUT_DATA = 'factsheet_data.csv'
 COLS_TO_KEEP = ['Name', 'Namelsad', 'AWATER',
                 'Mexican-American Population', 'Total Population', 
                 'State Exports to Mexico, 2019', 'State Imports from Mexico, 2019',
-                'Sen1', 'Sen2', 'Exports to Mexico, 2018 (USD Million)',
+                'Sen1', 'Sen2', 'Exports to Mexico, 2019 (USD Million)',
                 'Representative', 'Party Affiliation', 'Rep and Party', 
-                'Total Jobs, 2018', 'District', 'State Jobs, 2017']
+                'Total Jobs, 2019', 'District', 'State Jobs, 2019', 'Nombre',\
+                    'Apellido']
 
-def prepare_df(cols, data_path, delim):
+def prepare_df(data_path, delim):
     '''
     Cleans and merges all dataframes before writing them to a csv file
     '''
+    print('Fetching data...')
     all_data = merge_clean(data_path, delim)
     all_data = trim_alaska(all_data)
     data_file = all_data[COLS_TO_KEEP]
-    print('Writing dataframe to file')
-    data_file.to_csv(data_path + OUTPUT_DATA)
+    print('Writing dataframe to file...')
+    data_file.to_csv(data_path + OUTPUT_DATA, encoding='iso-8859-1')
     
     return all_data
 
@@ -73,6 +75,7 @@ def clean_dfs(data_path, delim):
     shape['State (FIPS)'] = shape['State (FIPS)'].astype(int)
     state_info = state_stats(data_path)
     exports = clean_exports(exports)
+    exports = update_exports(exports, data_path)
 
     return states, shape, census, state_info, exports
 
@@ -105,6 +108,39 @@ def clean_exports(exports_df):
          ' (' + exports_df['Party Affiliation'].apply(lambda P: str(P)[0]) + ')'
     
     return exports_df
+
+def update_exports(export_df_18, data_path):
+    '''
+    '''
+    exports_df = pd.read_excel(data_path + DISTRICT_EXPORTS_19)
+    exports_df = (exports_df.groupby(['ST', 'CD'])[2018].sum() / 1000000)\
+        .reset_index(name='Exports to Mexico, 2019 (USD Million)')
+    jobs = pd.read_excel(data_path + DISTRICT_EXPORTS_19, sheet_name=1)
+    jobs = jobs.groupby(['ST', 'CD'])['Total Jobs 2018'].sum().\
+        reset_index(name='Total Jobs, 2019')
+    jobs['Total Jobs, 2019'] = jobs['Total Jobs, 2019']\
+        .apply(lambda job: int(round(job)))
+    exports_df = pd.merge(exports_df, jobs, how='inner', on=['ST', 'CD'])
+    del jobs
+    exports_df.rename(columns={'ST':"Name", 'CD':"Namelsad"}, inplace=True)
+    exports_df['Name'] = exports_df['Name'].replace(us.states.mapping('abbr','name'))
+    #standardizing district labels to match previous export df
+    exports_df.loc[exports_df['Namelsad'] == 'AL', 'Namelsad'] = '00'
+    exports_df.loc[exports_df['Name'] == 'District of Columbia', 'Namelsad'] = '98'
+    states = set(map(lambda state: str(state), us.states.STATES\
+                     + ['District of Columbia']))
+    exports_df = exports_df[exports_df['Name'].isin(states)]
+    exports_df['Namelsad'] = exports_df['Namelsad'].astype(str)
+    exports_df['Namelsad'] = exports_df['Namelsad'].apply(format_district)
+    state_jobs = exports_df.groupby('Name')['Total Jobs, 2019'].sum().\
+        reset_index(name='State Jobs, 2019')
+    exports_df = pd.merge(exports_df, state_jobs, how='inner', on='Name')   
+    #merge with 2018 trade info df to get desired stats
+    exports_df = pd.merge(exports_df, export_df_18, how='inner', \
+                          on=['Name', 'Namelsad'])
+    return exports_df
+    
+    
 
 def state_stats(data_path):
     '''

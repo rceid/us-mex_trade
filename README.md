@@ -1,5 +1,7 @@
 # us-mex_trade
-This repository contains the code to generate factsheets for 436 congressional districts.
+This repository contains code to create a dataframe containing demographic, trade, and political iformation for 436 US Congressional Districts. The data frame serves two purposes:
+1) It is used by a Tableau to create the interactive map on the Mexican Embassy's website. 
+2) The Scripts contained in this repository also use the data to generate factsheets for 436 congressional districts.
 
 #### To generate the PDF factsheets, from the Script directory run the following: 
 *$ sh run_scripts.sh username key* 

@@ -13,3 +13,5 @@ where _username_ and _key_ are your username and API key from pdfcrowd, the appl
 * html_to_pdf.py: Takes all previously mentioned html files and converts them to pdfs, saving them in the Data folder. <username> and <key> are both arugments in this function described above.
 
 All png, html, and pdf files are ignored by git and will not be pushed to the repository; they are saved locally. The shape file queried from the internet in gen_plots.py is also ignored by git, given the size of the file.
+
+Factsheets.zip file contains both trade and demographic factsheets for each congressional district

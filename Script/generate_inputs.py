@@ -1,7 +1,18 @@
 """
-Created on Thu Jun 25 13:13:11 2020
+generate_inputs.py
 
-@author: Ray
+This script generates the factsheet dataframe by breaking down each state by
+its congressional districts, and subsequently merging district-level stats by
+querying the 2018 ACS5 census, importing the trade stats from the Embassy's 
+excel files, importing a file of current congresspeople, importing geographic
+shape files of US congressional districts from a government webiste, and cleaning
+all states and districts to a standard naming format.
+
+This dataframe is used to create choropleth maps with gen_plots.py, to create
+factsheets with gen_repots.R, and underlies the interactive US map displaying
+trade and demographic information pertinent to 
+exico. 
+ 
 """
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
@@ -16,13 +27,9 @@ import zipfile
 import io
 import us
 import os
-#import jellyfish
 
-
-#data_path = '.\\..\\Data\\'
 
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
-
 STATE_STATS = 'State_trade_politics.xlsx'
 STATE_FIPS = 'state-geocodes-v2016.xls'
 DISTRICT_EXPORTS = 'Mexico_exports.csv'
@@ -39,6 +46,13 @@ COLS_TO_KEEP = ['Name', 'Namelsad', 'AWATER',
 def prepare_df(data_path, delim):
     '''
     Cleans and merges all dataframes before writing them to a csv file
+    Inputs:
+        data_path: The path to the Data folder
+        delim: The delimiter used to create folder paths. Varies across computer
+            systems
+    Output:
+        all_data: A dataframe contianing all relevant information, broken down
+            by congressional district
     '''
     print('Fetching data...')
     all_data = merge_clean(data_path, delim)
@@ -48,6 +62,7 @@ def prepare_df(data_path, delim):
     data_file.to_csv(data_path + OUTPUT_DATA, encoding='iso-8859-1')
     
     return all_data
+
 
 def merge_clean(data_path, delim):
     '''
@@ -59,7 +74,9 @@ def merge_clean(data_path, delim):
         main_df['Namelsad'].apply(lambda row: format_district(row, True))
     #State (FIPS) column is needed for tableau merge:
     main_df['State (FIPS)'] = main_df['State (FIPS)'].astype(str)
+    
     return main_df
+
 
 def clean_dfs(data_path, delim):
     '''
@@ -78,6 +95,7 @@ def clean_dfs(data_path, delim):
     exports = update_exports(exports, data_path)
 
     return states, shape, census, state_info, exports
+
 
 def clean_exports(exports_df):
     '''
@@ -99,15 +117,11 @@ def clean_exports(exports_df):
     exports_df['Namelsad'] = exports_df['Namelsad']\
         .apply(lambda x: str(x) if len(str(x)) > 1 else '0' + str(x))
     exports_df['Namelsad'] = exports_df['Namelsad'].apply(format_district)
-    #obtained political parties of candidates via string matching with a database online
-    #function was imperfect so I added non matches by hand. Results are
-    #stored directly in the Mexico_exports.csv file and were loaded directly
-    #exports_df = get_party(exports_df)
-    
     exports_df['Rep and Party'] = exports_df['Representative'] +\
          ' (' + exports_df['Party Affiliation'].apply(lambda P: str(P)[0]) + ')'
     
     return exports_df
+
 
 def update_exports(export_df_18, data_path):
     '''
@@ -139,8 +153,7 @@ def update_exports(export_df_18, data_path):
     exports_df = pd.merge(exports_df, export_df_18, how='inner', \
                           on=['Name', 'Namelsad'])
     return exports_df
-    
-    
+
 
 def state_stats(data_path):
     '''
@@ -169,7 +182,6 @@ def state_stats(data_path):
     state_trade['Name'] = state_trade['Name'].str.strip('\xa0')
     
     return pd.merge(state_trade, senators, on='Name', how='outer')
-    
     
 
 def format_district(row, to_state=False):
@@ -201,6 +213,7 @@ def format_district(row, to_state=False):
         else:
             return num + 'th'
         
+        
 def merge_dfs(state_df, shape_df, census_df, state_info, export_df):
     '''
     Merges all dataframes, which are now clean
@@ -211,9 +224,9 @@ def merge_dfs(state_df, shape_df, census_df, state_info, export_df):
     all_data = pd.merge(all_data, state_info, on='Name', how='inner')
     all_data = pd.merge(all_data, export_df, on=['Name', 'Namelsad'], how='inner')
 
-    
     return gpd.GeoDataFrame(all_data)
     
+
 def get_districts(data_path, delim):
     '''
     Imports the shape file containing the geometry of every US congressional 
@@ -230,9 +243,10 @@ def get_districts(data_path, delim):
 
     return gpd.read_file(shape_folder + delim + shapefile)
     
+
 def trim_alaska(all_data):
     '''
-    removes the Aleutian Islands as it distorts Alaska state plot.
+    removes the Aleutian Islands as they distorts Alaska state plot.
     Code obtained from the following article:
     https://towardsdatascience.com/how-to-split-shapefiles-e8a8ac494189?gi=a2a29fdbde28
     '''
@@ -251,37 +265,3 @@ def trim_alaska(all_data):
         = alaska_trimmed['geometry'].values
         
     return states_trimmed
-    
-
-# def get_party(exports_df):
-#    '''
-#    string cleaning and record linkage function, partially used then went in
-#    by hand and fixed unmatches
-#    '''
-#     similarity = lambda s1, s2: jellyfish.jaro_winkler(s1, s2)
-#     party_df = \
-#         pd.read_csv\
-#             ("https://theunitedstates.io/congress-legislators/legislators-current.csv")
-#     party_df['full_name'] = \
-#         np.where(party_df['full_name'].isna(),\
-#                  party_df['ballotpedia_id'], party_df['full_name'])  
-#     party_df = party_df[party_df['type'] == 'rep']
-#     name_change = {'Brian Higgins': 'Chris Jacobs', }
-#     for prev, current in name_change.items():
-#         party_df.loc[party_df.first_name == prev, \
-#                  ['full_name', 'last_name']] = current[0], current[1]
-#     party_df['state'] = party_df['state'].apply(lambda row: str(st.lookup(row)))
-    
-#     exports_df['Party Affiliation'] = 'No match'
-#     for _, party in party_df.iterrows():
-#         for _, rep in exports_df.iterrows():
-#             name = rep['Representative']
-#             if name == 'Rodney Davis' and party['full_name'] == 'Rodney Davis':
-#             if similarity(party['last_name'].split()[-1], \
-#                           rep['Apellido'].split()[-1]) > 0.94\
-#                 and party['state'] == rep['Name']:
-
-#                 exports_df.loc[exports_df.Representative == name, \
-#                                'Party Affiliation'] = party['party']
-#                 break    
-#     return party_df

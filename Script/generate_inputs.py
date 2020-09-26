@@ -3,15 +3,14 @@ generate_inputs.py
 
 This script generates the factsheet dataframe by breaking down each state by
 its congressional districts, and subsequently merging district-level stats by
-querying the 2018 ACS5 census, importing the trade stats from the Embassy's 
-excel files, importing a file of current congresspeople, importing geographic
-shape files of US congressional districts from a government webiste, and cleaning
-all states and districts to a standard naming format.
+querying the 2018 ACS5 census, importing trade stats from the Embassy's 
+excel files, a file of current congresspeople, geographic shape files of US 
+congressional districts from a government webiste, and finally, cleaning all 
+states and districts to a standard naming format.
 
-This dataframe is used to create choropleth maps with gen_plots.py, to create
-factsheets with gen_repots.R, and underlies the interactive US map displaying
-trade and demographic information pertinent to 
-exico. 
+The outputted dataframe is used to create choropleth maps with gen_plots.py, to 
+create factsheets with gen_repots.R, and underlies the interactive US map 
+displaying trade and demographic information pertinent to Mexico. 
  
 """
 import warnings
@@ -28,7 +27,7 @@ import io
 import us
 import os
 
-
+#Global variables
 SHAPE_URL = 'https://www2.census.gov/geo/tiger/TIGER2018/CD/tl_2018_us_cd116.zip'
 STATE_STATS = 'State_trade_politics.xlsx'
 STATE_FIPS = 'state-geocodes-v2016.xls'
@@ -109,6 +108,7 @@ def clean_exports(exports_df):
             inplace=True)
     exports_df['Representative'] = exports_df['Nombre'] + ' ' + \
         exports_df['Apellido']
+    #Entering two missing representatives
     exports_df['Representative'] = np.where((exports_df['Name'] == 'North Carolina')
                   & (exports_df['Namelsad'] == '3'), 'Greg Murphy', \
                       np.where((exports_df['Name'] == 'North Carolina') \

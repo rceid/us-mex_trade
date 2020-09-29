@@ -1,9 +1,6 @@
-'''
-This script takes the factsheet dataframe created in generate_inputs.py and extracts trade, 
-demographic, and political data from each row (i.e., US Congressional District) and inputs
-the data into trade_dash.Rmd and demog_dash.Rmd to create two factsheets for each district.
-
-'''
+# This script takes the factsheet dataframe created in generate_inputs.py and extracts trade, 
+# demographic, and political data from each row (i.e., US Congressional District) and inputs
+# the data into trade_dash.Rmd and demog_dash.Rmd to create two factsheets for each district.
 
 
 list.of.packages <- c("fontawesome", "dplyr", "stringr", "flexdashboard", "DT")

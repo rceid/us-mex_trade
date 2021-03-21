@@ -2,15 +2,17 @@
 generate_inputs.py
 
 This script generates the factsheet dataframe by breaking down each state by
-its congressional districts, and subsequently merging district-level stats by
-querying the 2018 ACS5 census, importing trade stats from the Embassy's 
-excel files, a file of current congresspeople, geographic shape files of US 
-congressional districts from a government webiste, and finally, cleaning all 
-states and districts to a standard naming format.
+its congressional districts, and subsequently merging district-level stats by doing the following:
+1. Querying the 2018 ACS5 census
+2. Importing trade stats from the Embassy's excel files
+3. Importing a file of current congresspeople
+4. Importing geographic shape files of US congressional districts from a government webiste
+5. Cleaning all states and districts to a standard naming format.
 
-The outputted dataframe is used to create choropleth maps with gen_plots.py, to 
-create factsheets with gen_repots.R, and underlies the interactive US map 
-displaying trade and demographic information pertinent to Mexico. 
+The output dataframe is used to:
+1. Create choropleth maps with gen_plots.py
+2. Create factsheets with gen_repots.R
+4. Underlie the interactive US map displaying trade and demographic information pertinent to Mexico. 
  
 """
 import warnings
@@ -125,6 +127,7 @@ def clean_exports(exports_df):
 
 def update_exports(export_df_18, data_path):
     '''
+    This function sets exports stats to the most current available year, 2019.
     '''
     exports_df = pd.read_excel(data_path + DISTRICT_EXPORTS_19)
     exports_df = (exports_df.groupby(['ST', 'CD'])[2018].sum() / 1000000)\
@@ -246,7 +249,7 @@ def get_districts(data_path, delim):
 
 def trim_alaska(all_data):
     '''
-    removes the Aleutian Islands as they distorts Alaska state plot.
+    removes the Aleutian Islands as they distort the Alaska state plot.
     Code obtained from the following article:
     https://towardsdatascience.com/how-to-split-shapefiles-e8a8ac494189?gi=a2a29fdbde28
     '''
